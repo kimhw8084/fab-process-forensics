@@ -1,0 +1,1279 @@
+test_analyze_writes_reproducible_evidence_envelope (test_cli.CliTests.test_analyze_writes_reproducible_evidence_envelope) ... ok
+test_bootstrap_cannot_fake_internal (test_contracts.ContractTests.test_bootstrap_cannot_fake_internal) ... ok
+test_bounded_reads (test_contracts.ContractTests.test_bounded_reads) ... ok
+test_catalog_scale_and_determinism (test_contracts.ContractTests.test_catalog_scale_and_determinism) ... ok
+test_evidence_envelope_rejects_unknown_root_fields (test_contracts.ContractTests.test_evidence_envelope_rejects_unknown_root_fields) ... ok
+test_no_fake_semantics (test_contracts.ContractTests.test_no_fake_semantics) ... ok
+test_refusal_requires_reason (test_contracts.ContractTests.test_refusal_requires_reason) ... ok
+test_unknown_product_rejected (test_contracts.ContractTests.test_unknown_product_rejected) ... ok
+test_cancellation_interrupts_analysis_without_returning_partial_evidence (test_engine.EngineCase.test_cancellation_interrupts_analysis_without_returning_partial_evidence) ... ok
+test_deterministic (test_engine.EngineCase.test_deterministic) ... ok
+test_fixed_negative_oracle (test_engine.EngineCase.test_fixed_negative_oracle) ... ok
+test_fixed_positive_oracle (test_engine.EngineCase.test_fixed_positive_oracle) ... ok
+test_never_claim_caused_or_control (test_engine.EngineCase.test_never_claim_caused_or_control) ... ok
+test_chamber_overlap_never_transfers_exact_exposure (test_heldout_adversarial.HeldoutAdversarialTests.test_chamber_overlap_never_transfers_exact_exposure) ... ok
+test_clock_uncertainty_prevents_definite_exposure_and_order (test_heldout_adversarial.HeldoutAdversarialTests.test_clock_uncertainty_prevents_definite_exposure_and_order) ... ok
+test_missing_population_observations_stay_unknown (test_heldout_adversarial.HeldoutAdversarialTests.test_missing_population_observations_stay_unknown) ... ok
+test_repeated_operation_instances_remain_two_chronological_events (test_heldout_adversarial.HeldoutAdversarialTests.test_repeated_operation_instances_remain_two_chronological_events) ... ok
+test_route_gap_is_incomplete_coverage_not_violation (test_heldout_adversarial.HeldoutAdversarialTests.test_route_gap_is_incomplete_coverage_not_violation) ... ok
+test_source_linked_maintenance_is_temporal_context_not_cause (test_heldout_adversarial.HeldoutAdversarialTests.test_source_linked_maintenance_is_temporal_context_not_cause) ... ok
+test_unapproved_relationship_produces_no_factual_claims (test_heldout_adversarial.HeldoutAdversarialTests.test_unapproved_relationship_produces_no_factual_claims) ... ok
+test_active_analysis_can_be_cancelled_without_partial_findings (test_local_server.LocalServerTests.test_active_analysis_can_be_cancelled_without_partial_findings) ... ok
+test_api_refuses_outcome_rows_over_local_limit (test_local_server.LocalServerTests.test_api_refuses_outcome_rows_over_local_limit) ... ok
+test_api_requires_per_process_local_token (test_local_server.LocalServerTests.test_api_requires_per_process_local_token) ... ok
+test_cancel_arriving_before_analysis_is_queued_and_honored (test_local_server.LocalServerTests.test_cancel_arriving_before_analysis_is_queued_and_honored) ... ok
+test_post_returns_frozen_evidence_envelope (test_local_server.LocalServerTests.test_post_returns_frozen_evidence_envelope) ... ok
+test_serves_local_interactive_ui_and_bundled_demo (test_local_server.LocalServerTests.test_serves_local_interactive_ui_and_bundled_demo) ... ok
+test_shutdown_signals_active_analysis_threads (test_local_server.LocalServerTests.test_shutdown_signals_active_analysis_threads) ... ok
+test_snapshot_preflight_refuses_boolean_only_event_provenance (test_local_server.LocalServerTests.test_snapshot_preflight_refuses_boolean_only_event_provenance) ... ok
+test_snapshot_preflight_returns_declared_relationships_without_analysis (test_local_server.LocalServerTests.test_snapshot_preflight_returns_declared_relationships_without_analysis) ... ok
+test_unknown_path_is_not_served (test_local_server.LocalServerTests.test_unknown_path_is_not_served) ... ok
+test_rejects_remote_plain_http_and_inline_credentials (test_mcp_adapter.MCPAdapterConfigTests.test_rejects_remote_plain_http_and_inline_credentials) ... ok
+test_stdio_accepts_only_argument_vectors_and_named_environment_sources (test_mcp_adapter.MCPAdapterConfigTests.test_stdio_accepts_only_argument_vectors_and_named_environment_sources) ... ok
+test_cancellation_is_confirmed_and_session_recovers (test_mcp_adapter.MCPAdapterProtocolTests.test_cancellation_is_confirmed_and_session_recovers) ... Executing <Task pending name='Task-2' coro=<MCPAdapterProtocolTests.test_cancellation_is_confirmed_and_session_recovers() running at /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/tests/test_mcp_adapter.py:232> cb=[_run_until_complete_cb() at /opt/anaconda3/lib/python3.11/asyncio/base_events.py:180] created at /opt/anaconda3/lib/python3.11/asyncio/runners.py:100> took 0.225 seconds
+ok
+test_effective_time_and_source_relationship_provenance_are_checked (test_mcp_adapter.MCPAdapterProtocolTests.test_effective_time_and_source_relationship_provenance_are_checked) ... ok
+test_real_stdio_transport_negotiates_and_completes_all_logical_operations (test_mcp_adapter.MCPAdapterProtocolTests.test_real_stdio_transport_negotiates_and_completes_all_logical_operations) ... ok
+test_real_streamable_http_transport_completes_all_logical_operations (test_mcp_adapter.MCPAdapterProtocolTests.test_real_streamable_http_transport_completes_all_logical_operations) ... Executing <Task finished name='Task-42' coro=<MCPAdapterProtocolTests.test_real_streamable_http_transport_completes_all_logical_operations() done, defined at /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/tests/test_mcp_adapter.py:87> result=None created at /opt/anaconda3/lib/python3.11/asyncio/runners.py:100> took 0.161 seconds
+ok
+test_result_and_audit_hashes_and_response_bytes_are_checked (test_mcp_adapter.MCPAdapterProtocolTests.test_result_and_audit_hashes_and_response_bytes_are_checked) ... ok
+test_row_grain_time_and_relationship_are_independently_checked (test_mcp_adapter.MCPAdapterProtocolTests.test_row_grain_time_and_relationship_are_independently_checked) ... ok
+test_server_enforces_query_row_limit_even_if_client_check_is_bypassed (test_mcp_adapter.MCPAdapterProtocolTests.test_server_enforces_query_row_limit_even_if_client_check_is_bypassed) ... Tool 'read_bounded' failed: 'Error executing tool read_bounded: QUERY_LIMIT_EXCEEDED'
+ok
+test_server_enforces_source_and_permission_denial (test_mcp_adapter.MCPAdapterProtocolTests.test_server_enforces_source_and_permission_denial) ... Tool 'semantics' failed: 'Error executing tool semantics: PERMISSION_DENIED'
+Tool 'read_bounded' failed: 'Error executing tool read_bounded: PERMISSION_DENIED'
+ok
+test_server_query_timeout_does_not_poison_next_request (test_mcp_adapter.MCPAdapterProtocolTests.test_server_query_timeout_does_not_poison_next_request) ... Tool 'read_bounded' failed: 'Error executing tool read_bounded: QUERY_TIMEOUT'
+ok
+test_server_truncates_to_the_full_bounded_response_byte_limit (test_mcp_adapter.MCPAdapterProtocolTests.test_server_truncates_to_the_full_bounded_response_byte_limit) ... ok
+test_unapproved_relationship_is_never_promoted_for_a_read (test_mcp_adapter.MCPAdapterProtocolTests.test_unapproved_relationship_is_never_promoted_for_a_read) ... ok
+test_100_seeded_cohorts_match_independent_exact_chamber_oracle (test_p2_challenges.P2ChallengeTests.test_100_seeded_cohorts_match_independent_exact_chamber_oracle) ... ok
+test_100_seeded_cohorts_match_independent_exact_tool_oracle (test_p2_challenges.P2ChallengeTests.test_100_seeded_cohorts_match_independent_exact_tool_oracle) ... ok
+test_100_seeded_exposure_windows_match_interval_oracle_across_timezones (test_p2_challenges.P2ChallengeTests.test_100_seeded_exposure_windows_match_interval_oracle_across_timezones) ... ok
+test_40_seeded_counterevidence_cohorts_match_independent_cross_tab_oracle (test_p2_challenges.P2ChallengeTests.test_40_seeded_counterevidence_cohorts_match_independent_cross_tab_oracle) ... ok
+test_approved_flag_without_source_relationship_is_refused (test_p2_challenges.P2ChallengeTests.test_approved_flag_without_source_relationship_is_refused) ... ok
+test_approved_route_comparison_requires_coverage_and_reports_mismatch_carefully (test_p2_challenges.P2ChallengeTests.test_approved_route_comparison_requires_coverage_and_reports_mismatch_carefully) ... ok
+test_catalog_join_requires_exact_approved_effective_relationship (test_p2_challenges.P2ChallengeTests.test_catalog_join_requires_exact_approved_effective_relationship) ... ok
+test_chamber_scope_does_not_transfer_between_overlapping_chambers (test_p2_challenges.P2ChallengeTests.test_chamber_scope_does_not_transfer_between_overlapping_chambers) ... ok
+test_equal_time_order_is_partial_not_tie_broken_as_fact (test_p2_challenges.P2ChallengeTests.test_equal_time_order_is_partial_not_tie_broken_as_fact) ... ok
+test_equipment_and_time_fields_must_be_approved_by_event_relationship (test_p2_challenges.P2ChallengeTests.test_equipment_and_time_fields_must_be_approved_by_event_relationship) ... ok
+test_event_input_permutations_preserve_chronological_investigation (test_p2_challenges.P2ChallengeTests.test_event_input_permutations_preserve_chronological_investigation) ... ok
+test_event_source_without_metadata_is_refused (test_p2_challenges.P2ChallengeTests.test_event_source_without_metadata_is_refused) ... ok
+test_exact_duplicate_rows_are_counted_once_and_conflicts_refuse (test_p2_challenges.P2ChallengeTests.test_exact_duplicate_rows_are_counted_once_and_conflicts_refuse) ... ok
+test_exact_tool_window_uses_tool_id_without_inferring_chamber_membership (test_p2_challenges.P2ChallengeTests.test_exact_tool_window_uses_tool_id_without_inferring_chamber_membership) ... ok
+test_explicit_rework_link_is_retained_and_removed_from_base_route_comparison (test_p2_challenges.P2ChallengeTests.test_explicit_rework_link_is_retained_and_removed_from_base_route_comparison) ... ok
+test_false_condition_relationship_refuses_condition_context (test_p2_challenges.P2ChallengeTests.test_false_condition_relationship_refuses_condition_context) ... ok
+test_history_coverage_states_are_explicit_and_missing_records_remain_incomplete (test_p2_challenges.P2ChallengeTests.test_history_coverage_states_are_explicit_and_missing_records_remain_incomplete) ... ok
+test_incomplete_coverage_never_labels_nonmatch_unexposed (test_p2_challenges.P2ChallengeTests.test_incomplete_coverage_never_labels_nonmatch_unexposed) ... ok
+test_interval_overlap_and_half_open_window_boundaries (test_p2_challenges.P2ChallengeTests.test_interval_overlap_and_half_open_window_boundaries) ... ok
+test_invalid_maintenance_context_is_refused_as_unverified_input (test_p2_challenges.P2ChallengeTests.test_invalid_maintenance_context_is_refused_as_unverified_input) ... ok
+test_missing_population_moves_remain_unknown_even_with_other_observations (test_p2_challenges.P2ChallengeTests.test_missing_population_moves_remain_unknown_even_with_other_observations) ... ok
+test_operation_definitions_are_distinct_from_step_instances (test_p2_challenges.P2ChallengeTests.test_operation_definitions_are_distinct_from_step_instances) ... ok
+test_ordered_history_edges_include_both_event_relationships (test_p2_challenges.P2ChallengeTests.test_ordered_history_edges_include_both_event_relationships) ... ok
+test_outcome_provenance_requires_effective_relationship_and_all_keys (test_p2_challenges.P2ChallengeTests.test_outcome_provenance_requires_effective_relationship_and_all_keys) ... ok
+test_overlapping_clock_ranges_refuse_route_order_and_exact_exposure (test_p2_challenges.P2ChallengeTests.test_overlapping_clock_ranges_refuse_route_order_and_exact_exposure) ... ok
+test_p2_01_repeated_operation_keeps_distinct_step_instances (test_p2_challenges.P2ChallengeTests.test_p2_01_repeated_operation_keeps_distinct_step_instances) ... ok
+test_p2_02_same_hour_wrong_chamber_is_verified_unexposed_only_with_coverage (test_p2_challenges.P2ChallengeTests.test_p2_02_same_hour_wrong_chamber_is_verified_unexposed_only_with_coverage) ... ok
+test_p2_03_unapproved_relationship_refuses_path (test_p2_challenges.P2ChallengeTests.test_p2_03_unapproved_relationship_refuses_path) ... ok
+test_p2_04_missing_chamber_on_known_tool_is_unknown (test_p2_challenges.P2ChallengeTests.test_p2_04_missing_chamber_on_known_tool_is_unknown) ... ok
+test_p2_05_naive_timestamp_refuses_order (test_p2_challenges.P2ChallengeTests.test_p2_05_naive_timestamp_refuses_order) ... ok
+test_p2_06_namespaced_wafer_aliases_are_not_merged (test_p2_challenges.P2ChallengeTests.test_p2_06_namespaced_wafer_aliases_are_not_merged) ... ok
+test_p2_07_outside_maintenance_window_is_not_exposed (test_p2_challenges.P2ChallengeTests.test_p2_07_outside_maintenance_window_is_not_exposed) ... ok
+test_p2_08_incomplete_events_do_not_become_route_violation (test_p2_challenges.P2ChallengeTests.test_p2_08_incomplete_events_do_not_become_route_violation) ... ok
+test_p2_09_lot_membership_is_retained_at_each_event (test_p2_challenges.P2ChallengeTests.test_p2_09_lot_membership_is_retained_at_each_event) ... ok
+test_p2_10_and_11_normal_exposure_and_abnormal_nonexposure_are_counterevidence (test_p2_challenges.P2ChallengeTests.test_p2_10_and_11_normal_exposure_and_abnormal_nonexposure_are_counterevidence) ... ok
+test_p2_12_13k_catalog_rejects_unapproved_join (test_p2_challenges.P2ChallengeTests.test_p2_12_13k_catalog_rejects_unapproved_join) ... ok
+test_record_time_is_preserved_separately_from_event_time (test_p2_challenges.P2ChallengeTests.test_record_time_is_preserved_separately_from_event_time) ... ok
+test_repeated_processing_retains_each_exact_exposure_instance (test_p2_challenges.P2ChallengeTests.test_repeated_processing_retains_each_exact_exposure_instance) ... ok
+test_rework_relationship_carries_step_instance_provenance (test_p2_challenges.P2ChallengeTests.test_rework_relationship_carries_step_instance_provenance) ... ok
+test_route_version_changes_and_explicit_allowed_exceptions_are_supported (test_p2_challenges.P2ChallengeTests.test_route_version_changes_and_explicit_allowed_exceptions_are_supported) ... ok
+test_same_wafer_token_across_sources_requires_explicit_identity_approval (test_p2_challenges.P2ChallengeTests.test_same_wafer_token_across_sources_requires_explicit_identity_approval) ... ok
+test_source_linked_condition_events_report_time_context_without_causal_claim (test_p2_challenges.P2ChallengeTests.test_source_linked_condition_events_report_time_context_without_causal_claim) ... ok
+test_target_wafer_cohort_emits_a_chronology_claim_for_each_selected_wafer (test_p2_challenges.P2ChallengeTests.test_target_wafer_cohort_emits_a_chronology_claim_for_each_selected_wafer) ... ok
+test_time_scoped_membership_split_and_merge_links_keep_source_provenance (test_p2_challenges.P2ChallengeTests.test_time_scoped_membership_split_and_merge_links_keep_source_provenance) ... ok
+test_bad_limits_and_write_scope_are_reported (test_preflight.PreflightTests.test_bad_limits_and_write_scope_are_reported) ... ok
+test_capture_rejects_credential_fields_without_echoing_values (test_preflight.PreflightTests.test_capture_rejects_credential_fields_without_echoing_values) ... ok
+test_capture_requires_matching_contract_exact_tool_versions_and_source_scopes (test_preflight.PreflightTests.test_capture_requires_matching_contract_exact_tool_versions_and_source_scopes) ... ok
+test_complete_capture_is_structural_only_not_company_qualification (test_preflight.PreflightTests.test_complete_capture_is_structural_only_not_company_qualification) ... ok
+test_no_live_adapter_is_always_pending_internal (test_preflight.PreflightTests.test_no_live_adapter_is_always_pending_internal) ... ok
+test_manifest_declares_candidate_not_external_release (test_schema_and_ui.SourceContractTests.test_manifest_declares_candidate_not_external_release) ... ok
+test_no_remote_frontend_assets (test_schema_and_ui.SourceContractTests.test_no_remote_frontend_assets) ... ok
+test_schema_files_identify_version (test_schema_and_ui.SourceContractTests.test_schema_files_identify_version) ... ok
+test_no_guess_on_missing_chamber (test_scientific_baseline.SpecializedTests.test_no_guess_on_missing_chamber) ... ok
+test_refuse_naive_timestamp (test_scientific_baseline.SpecializedTests.test_refuse_naive_timestamp) ... ok
+test_engine_directly_refuses_oversized_outcome_population (test_snapshot_preflight.SnapshotPreflightTests.test_engine_directly_refuses_oversized_outcome_population) ... ok
+test_oversized_local_snapshot_is_refused_before_analysis (test_snapshot_preflight.SnapshotPreflightTests.test_oversized_local_snapshot_is_refused_before_analysis) ... ok
+test_oversized_outcome_population_is_refused_before_analysis (test_snapshot_preflight.SnapshotPreflightTests.test_oversized_outcome_population_is_refused_before_analysis) ... ok
+test_preflight_refuses_invalid_condition_context_types (test_snapshot_preflight.SnapshotPreflightTests.test_preflight_refuses_invalid_condition_context_types) ... ok
+test_relationship_flag_cannot_replace_source_and_relationship_records (test_snapshot_preflight.SnapshotPreflightTests.test_relationship_flag_cannot_replace_source_and_relationship_records) ... ok
+test_target_lot_refuses_unrelated_or_incomplete_declared_membership (test_snapshot_preflight.SnapshotPreflightTests.test_target_lot_refuses_unrelated_or_incomplete_declared_membership) ... ok
+test_target_lot_uses_only_declared_outcome_membership_and_discloses_scope (test_snapshot_preflight.SnapshotPreflightTests.test_target_lot_uses_only_declared_outcome_membership_and_discloses_scope) ... ok
+test_target_wafer_cohort_is_explicit_and_must_fit_population (test_snapshot_preflight.SnapshotPreflightTests.test_target_wafer_cohort_is_explicit_and_must_fit_population) ... ok
+test_tool_exposure_scope_is_explicit_in_preflight (test_snapshot_preflight.SnapshotPreflightTests.test_tool_exposure_scope_is_explicit_in_preflight) ... ok
+test_valid_snapshot_lists_sources_relationship_usage_and_scope (test_snapshot_preflight.SnapshotPreflightTests.test_valid_snapshot_lists_sources_relationship_usage_and_scope) ... ok
+
+----------------------------------------------------------------------
+Ran 107 tests in 13.160s
+
+OK
+SOURCE INTEGRITY PASS: 179 files
+P2 TESTS PASS — RELEASE STATE: CANDIDATE — EXTERNAL_TRANSFER_READY NOT CLAIMED
+Looking in links: /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/annotated_types-0.8.0-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 1))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/anyio-4.16.0-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 2))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/attrs-26.1.0-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 3))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/cffi-2.1.1-cp311-cp311-macosx_11_0_arm64.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 4))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/click-8.5.1-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 5))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/cryptography-50.0.2-cp311-abi3-macosx_11_0_arm64.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 6))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/h11-0.16.0-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 7))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/httpcore2-2.16.2-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 8))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/httpx2-2.16.2-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 9))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/idna-3.20-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 10))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/jsonschema-4.26.0-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 11))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/jsonschema_specifications-2025.9.1-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 12))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/mcp-2.3.0-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 13))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/mcp_types-2.3.0-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 14))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/opentelemetry_api-1.45.2-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 15))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/pycparser-3.12-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 16))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/pydantic-2.14.4-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 17))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/pydantic_core-2.50.5-cp311-cp311-macosx_11_0_arm64.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 18))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/pyjwt-2.15.1-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 19))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/python_multipart-0.0.34-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 20))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/referencing-0.37.0-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 21))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/rpds_py-2026.9.1-cp311-cp311-macosx_11_0_arm64.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 22))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/sse_starlette-3.7.0-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 23))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/starlette-1.10.0-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 24))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/truststore-0.10.5-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 25))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/typing_extensions-4.16.0-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 26))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/typing_inspection-0.4.5-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 27))
+Processing ./vendor/mcp-sdk-2.3.0/macos-arm64-cp311/wheelhouse/uvicorn-0.54.0-py3-none-any.whl (from -r /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock (line 28))
+Installing collected packages: typing_extensions, truststore, rpds-py, python-multipart, PyJWT, pycparser, idna, h11, click, attrs, annotated-types, uvicorn, typing-inspection, referencing, pydantic_core, opentelemetry-api, httpcore2, cffi, anyio, starlette, pydantic, jsonschema-specifications, httpx2, cryptography, sse-starlette, mcp-types, jsonschema, mcp
+Successfully installed PyJWT-2.15.1 annotated-types-0.8.0 anyio-4.16.0 attrs-26.1.0 cffi-2.1.1 click-8.5.1 cryptography-50.0.2 h11-0.16.0 httpcore2-2.16.2 httpx2-2.16.2 idna-3.20 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 mcp-2.3.0 mcp-types-2.3.0 opentelemetry-api-1.45.2 pycparser-3.12 pydantic-2.14.4 pydantic_core-2.50.5 python-multipart-0.0.34 referencing-0.37.0 rpds-py-2026.9.1 sse-starlette-3.7.0 starlette-1.10.0 truststore-0.10.5 typing-inspection-0.4.5 typing_extensions-4.16.0 uvicorn-0.54.0
+No broken requirements found.
+{
+  "external_transfer_ready": false,
+  "internal_qualified": false,
+  "note": "Offline deterministic P2 candidate. Real MCP, target OS, security, license, and release gates remain separate.",
+  "product": {
+    "capabilities": [
+      "B01",
+      "B02",
+      "B03",
+      "B05",
+      "headless-shared-shell-panels",
+      "synthetic-mock-read-only-mcp-transports",
+      "reproducible-evidence-export"
+    ],
+    "contract_version": "1.0.0",
+    "dependencies": [
+      "p2-core: Python 3.10+ standard library",
+      "optional-read-only-MCP-transport: official Python SDK 2.3.0; local offline wheelhouse tested only on macOS arm64 CPython 3.11"
+    ],
+    "entrypoints": {
+      "analysis": "products.p2.engine:analyze",
+      "cli": "python -m fabintel",
+      "evidence_contract": "contracts/evidence.v1.schema.json",
+      "headless_panels": "ui/p2-panels.js:renderP2Contribution",
+      "internal_preflight": "python -m fabintel preflight --capabilities <authorized-local-capture.json>",
+      "local_ui": "python -m fabintel serve --host 127.0.0.1",
+      "mcp_adapter": "fabintel.mcp_adapter:ConfiguredMCPAdapter",
+      "offline_install": "python release/install_offline.py",
+      "offline_install_with_mcp": "python release/install_offline.py --with-mcp (macOS arm64 CPython 3.11 wheelhouse only)",
+      "ui_contribution": "ui/contribution.manifest.json",
+      "ui_route": "/fab-intelligence/p2"
+    },
+    "product_id": "p2",
+    "release_state": "CANDIDATE",
+    "title": "FAB Process Forensics"
+  },
+  "state": "CANDIDATE"
+}
+Offline environment ready with the optional pinned MCP SDK and its hash-checked dependency closure.
+test_analyze_writes_reproducible_evidence_envelope (test_cli.CliTests.test_analyze_writes_reproducible_evidence_envelope) ... ok
+test_bootstrap_cannot_fake_internal (test_contracts.ContractTests.test_bootstrap_cannot_fake_internal) ... ok
+test_bounded_reads (test_contracts.ContractTests.test_bounded_reads) ... ok
+test_catalog_scale_and_determinism (test_contracts.ContractTests.test_catalog_scale_and_determinism) ... ok
+test_evidence_envelope_rejects_unknown_root_fields (test_contracts.ContractTests.test_evidence_envelope_rejects_unknown_root_fields) ... ok
+test_no_fake_semantics (test_contracts.ContractTests.test_no_fake_semantics) ... ok
+test_refusal_requires_reason (test_contracts.ContractTests.test_refusal_requires_reason) ... ok
+test_unknown_product_rejected (test_contracts.ContractTests.test_unknown_product_rejected) ... ok
+test_cancellation_interrupts_analysis_without_returning_partial_evidence (test_engine.EngineCase.test_cancellation_interrupts_analysis_without_returning_partial_evidence) ... ok
+test_deterministic (test_engine.EngineCase.test_deterministic) ... ok
+test_fixed_negative_oracle (test_engine.EngineCase.test_fixed_negative_oracle) ... ok
+test_fixed_positive_oracle (test_engine.EngineCase.test_fixed_positive_oracle) ... ok
+test_never_claim_caused_or_control (test_engine.EngineCase.test_never_claim_caused_or_control) ... ok
+test_chamber_overlap_never_transfers_exact_exposure (test_heldout_adversarial.HeldoutAdversarialTests.test_chamber_overlap_never_transfers_exact_exposure) ... ok
+test_clock_uncertainty_prevents_definite_exposure_and_order (test_heldout_adversarial.HeldoutAdversarialTests.test_clock_uncertainty_prevents_definite_exposure_and_order) ... ok
+test_missing_population_observations_stay_unknown (test_heldout_adversarial.HeldoutAdversarialTests.test_missing_population_observations_stay_unknown) ... ok
+test_repeated_operation_instances_remain_two_chronological_events (test_heldout_adversarial.HeldoutAdversarialTests.test_repeated_operation_instances_remain_two_chronological_events) ... ok
+test_route_gap_is_incomplete_coverage_not_violation (test_heldout_adversarial.HeldoutAdversarialTests.test_route_gap_is_incomplete_coverage_not_violation) ... ok
+test_source_linked_maintenance_is_temporal_context_not_cause (test_heldout_adversarial.HeldoutAdversarialTests.test_source_linked_maintenance_is_temporal_context_not_cause) ... ok
+test_unapproved_relationship_produces_no_factual_claims (test_heldout_adversarial.HeldoutAdversarialTests.test_unapproved_relationship_produces_no_factual_claims) ... ok
+test_active_analysis_can_be_cancelled_without_partial_findings (test_local_server.LocalServerTests.test_active_analysis_can_be_cancelled_without_partial_findings) ... ok
+test_api_refuses_outcome_rows_over_local_limit (test_local_server.LocalServerTests.test_api_refuses_outcome_rows_over_local_limit) ... ok
+test_api_requires_per_process_local_token (test_local_server.LocalServerTests.test_api_requires_per_process_local_token) ... ok
+test_cancel_arriving_before_analysis_is_queued_and_honored (test_local_server.LocalServerTests.test_cancel_arriving_before_analysis_is_queued_and_honored) ... ok
+test_post_returns_frozen_evidence_envelope (test_local_server.LocalServerTests.test_post_returns_frozen_evidence_envelope) ... ok
+test_serves_local_interactive_ui_and_bundled_demo (test_local_server.LocalServerTests.test_serves_local_interactive_ui_and_bundled_demo) ... ok
+test_shutdown_signals_active_analysis_threads (test_local_server.LocalServerTests.test_shutdown_signals_active_analysis_threads) ... ok
+test_snapshot_preflight_refuses_boolean_only_event_provenance (test_local_server.LocalServerTests.test_snapshot_preflight_refuses_boolean_only_event_provenance) ... ok
+test_snapshot_preflight_returns_declared_relationships_without_analysis (test_local_server.LocalServerTests.test_snapshot_preflight_returns_declared_relationships_without_analysis) ... ok
+test_unknown_path_is_not_served (test_local_server.LocalServerTests.test_unknown_path_is_not_served) ... ok
+test_rejects_remote_plain_http_and_inline_credentials (test_mcp_adapter.MCPAdapterConfigTests.test_rejects_remote_plain_http_and_inline_credentials) ... ok
+test_stdio_accepts_only_argument_vectors_and_named_environment_sources (test_mcp_adapter.MCPAdapterConfigTests.test_stdio_accepts_only_argument_vectors_and_named_environment_sources) ... ok
+test_cancellation_is_confirmed_and_session_recovers (test_mcp_adapter.MCPAdapterProtocolTests.test_cancellation_is_confirmed_and_session_recovers) ... Executing <Task pending name='Task-2' coro=<MCPAdapterProtocolTests.test_cancellation_is_confirmed_and_session_recovers() running at /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/tests/test_mcp_adapter.py:232> cb=[_run_until_complete_cb() at /opt/anaconda3/lib/python3.11/asyncio/base_events.py:180] created at /opt/anaconda3/lib/python3.11/asyncio/runners.py:100> took 0.918 seconds
+Executing <Task finished name='Task-4' coro=<Client.call_tool() done, defined at /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/.venv/lib/python3.11/site-packages/mcp/client/client.py:756> result=CallToolResul...pe='complete') created at /opt/anaconda3/lib/python3.11/asyncio/tasks.py:680> took 0.207 seconds
+ok
+test_effective_time_and_source_relationship_provenance_are_checked (test_mcp_adapter.MCPAdapterProtocolTests.test_effective_time_and_source_relationship_provenance_are_checked) ... ok
+test_real_stdio_transport_negotiates_and_completes_all_logical_operations (test_mcp_adapter.MCPAdapterProtocolTests.test_real_stdio_transport_negotiates_and_completes_all_logical_operations) ... ok
+test_real_streamable_http_transport_completes_all_logical_operations (test_mcp_adapter.MCPAdapterProtocolTests.test_real_streamable_http_transport_completes_all_logical_operations) ... Executing <Task finished name='Task-43' coro=<MCPAdapterProtocolTests.test_real_streamable_http_transport_completes_all_logical_operations() done, defined at /Users/haewonkim/home/work/product 2/FAB_INTELLIGENCE_P2_CODEX_LAUNCHKIT_2026-11-22/release/fabintel-verify-a048s7qw/FAB_PROCESS_FORENSICS_P2/tests/test_mcp_adapter.py:87> result=None created at /opt/anaconda3/lib/python3.11/asyncio/runners.py:100> took 0.117 seconds
+ok
+test_result_and_audit_hashes_and_response_bytes_are_checked (test_mcp_adapter.MCPAdapterProtocolTests.test_result_and_audit_hashes_and_response_bytes_are_checked) ... ok
+test_row_grain_time_and_relationship_are_independently_checked (test_mcp_adapter.MCPAdapterProtocolTests.test_row_grain_time_and_relationship_are_independently_checked) ... ok
+test_server_enforces_query_row_limit_even_if_client_check_is_bypassed (test_mcp_adapter.MCPAdapterProtocolTests.test_server_enforces_query_row_limit_even_if_client_check_is_bypassed) ... Tool 'read_bounded' failed: 'Error executing tool read_bounded: QUERY_LIMIT_EXCEEDED'
+ok
+test_server_enforces_source_and_permission_denial (test_mcp_adapter.MCPAdapterProtocolTests.test_server_enforces_source_and_permission_denial) ... Tool 'semantics' failed: 'Error executing tool semantics: PERMISSION_DENIED'
+Tool 'read_bounded' failed: 'Error executing tool read_bounded: PERMISSION_DENIED'
+ok
+test_server_query_timeout_does_not_poison_next_request (test_mcp_adapter.MCPAdapterProtocolTests.test_server_query_timeout_does_not_poison_next_request) ... Tool 'read_bounded' failed: 'Error executing tool read_bounded: QUERY_TIMEOUT'
+ok
+test_server_truncates_to_the_full_bounded_response_byte_limit (test_mcp_adapter.MCPAdapterProtocolTests.test_server_truncates_to_the_full_bounded_response_byte_limit) ... ok
+test_unapproved_relationship_is_never_promoted_for_a_read (test_mcp_adapter.MCPAdapterProtocolTests.test_unapproved_relationship_is_never_promoted_for_a_read) ... ok
+test_100_seeded_cohorts_match_independent_exact_chamber_oracle (test_p2_challenges.P2ChallengeTests.test_100_seeded_cohorts_match_independent_exact_chamber_oracle) ... ok
+test_100_seeded_cohorts_match_independent_exact_tool_oracle (test_p2_challenges.P2ChallengeTests.test_100_seeded_cohorts_match_independent_exact_tool_oracle) ... ok
+test_100_seeded_exposure_windows_match_interval_oracle_across_timezones (test_p2_challenges.P2ChallengeTests.test_100_seeded_exposure_windows_match_interval_oracle_across_timezones) ... ok
+test_40_seeded_counterevidence_cohorts_match_independent_cross_tab_oracle (test_p2_challenges.P2ChallengeTests.test_40_seeded_counterevidence_cohorts_match_independent_cross_tab_oracle) ... ok
+test_approved_flag_without_source_relationship_is_refused (test_p2_challenges.P2ChallengeTests.test_approved_flag_without_source_relationship_is_refused) ... ok
+test_approved_route_comparison_requires_coverage_and_reports_mismatch_carefully (test_p2_challenges.P2ChallengeTests.test_approved_route_comparison_requires_coverage_and_reports_mismatch_carefully) ... ok
+test_catalog_join_requires_exact_approved_effective_relationship (test_p2_challenges.P2ChallengeTests.test_catalog_join_requires_exact_approved_effective_relationship) ... ok
+test_chamber_scope_does_not_transfer_between_overlapping_chambers (test_p2_challenges.P2ChallengeTests.test_chamber_scope_does_not_transfer_between_overlapping_chambers) ... ok
+test_equal_time_order_is_partial_not_tie_broken_as_fact (test_p2_challenges.P2ChallengeTests.test_equal_time_order_is_partial_not_tie_broken_as_fact) ... ok
+test_equipment_and_time_fields_must_be_approved_by_event_relationship (test_p2_challenges.P2ChallengeTests.test_equipment_and_time_fields_must_be_approved_by_event_relationship) ... ok
+test_event_input_permutations_preserve_chronological_investigation (test_p2_challenges.P2ChallengeTests.test_event_input_permutations_preserve_chronological_investigation) ... ok
+test_event_source_without_metadata_is_refused (test_p2_challenges.P2ChallengeTests.test_event_source_without_metadata_is_refused) ... ok
+test_exact_duplicate_rows_are_counted_once_and_conflicts_refuse (test_p2_challenges.P2ChallengeTests.test_exact_duplicate_rows_are_counted_once_and_conflicts_refuse) ... ok
+test_exact_tool_window_uses_tool_id_without_inferring_chamber_membership (test_p2_challenges.P2ChallengeTests.test_exact_tool_window_uses_tool_id_without_inferring_chamber_membership) ... ok
+test_explicit_rework_link_is_retained_and_removed_from_base_route_comparison (test_p2_challenges.P2ChallengeTests.test_explicit_rework_link_is_retained_and_removed_from_base_route_comparison) ... ok
+test_false_condition_relationship_refuses_condition_context (test_p2_challenges.P2ChallengeTests.test_false_condition_relationship_refuses_condition_context) ... ok
+test_history_coverage_states_are_explicit_and_missing_records_remain_incomplete (test_p2_challenges.P2ChallengeTests.test_history_coverage_states_are_explicit_and_missing_records_remain_incomplete) ... ok
+test_incomplete_coverage_never_labels_nonmatch_unexposed (test_p2_challenges.P2ChallengeTests.test_incomplete_coverage_never_labels_nonmatch_unexposed) ... ok
+test_interval_overlap_and_half_open_window_boundaries (test_p2_challenges.P2ChallengeTests.test_interval_overlap_and_half_open_window_boundaries) ... ok
+test_invalid_maintenance_context_is_refused_as_unverified_input (test_p2_challenges.P2ChallengeTests.test_invalid_maintenance_context_is_refused_as_unverified_input) ... ok
+test_missing_population_moves_remain_unknown_even_with_other_observations (test_p2_challenges.P2ChallengeTests.test_missing_population_moves_remain_unknown_even_with_other_observations) ... ok
+test_operation_definitions_are_distinct_from_step_instances (test_p2_challenges.P2ChallengeTests.test_operation_definitions_are_distinct_from_step_instances) ... ok
+test_ordered_history_edges_include_both_event_relationships (test_p2_challenges.P2ChallengeTests.test_ordered_history_edges_include_both_event_relationships) ... ok
+test_outcome_provenance_requires_effective_relationship_and_all_keys (test_p2_challenges.P2ChallengeTests.test_outcome_provenance_requires_effective_relationship_and_all_keys) ... ok
+test_overlapping_clock_ranges_refuse_route_order_and_exact_exposure (test_p2_challenges.P2ChallengeTests.test_overlapping_clock_ranges_refuse_route_order_and_exact_exposure) ... ok
+test_p2_01_repeated_operation_keeps_distinct_step_instances (test_p2_challenges.P2ChallengeTests.test_p2_01_repeated_operation_keeps_distinct_step_instances) ... ok
+test_p2_02_same_hour_wrong_chamber_is_verified_unexposed_only_with_coverage (test_p2_challenges.P2ChallengeTests.test_p2_02_same_hour_wrong_chamber_is_verified_unexposed_only_with_coverage) ... ok
+test_p2_03_unapproved_relationship_refuses_path (test_p2_challenges.P2ChallengeTests.test_p2_03_unapproved_relationship_refuses_path) ... ok
+test_p2_04_missing_chamber_on_known_tool_is_unknown (test_p2_challenges.P2ChallengeTests.test_p2_04_missing_chamber_on_known_tool_is_unknown) ... ok
+test_p2_05_naive_timestamp_refuses_order (test_p2_challenges.P2ChallengeTests.test_p2_05_naive_timestamp_refuses_order) ... ok
+test_p2_06_namespaced_wafer_aliases_are_not_merged (test_p2_challenges.P2ChallengeTests.test_p2_06_namespaced_wafer_aliases_are_not_merged) ... ok
+test_p2_07_outside_maintenance_window_is_not_exposed (test_p2_challenges.P2ChallengeTests.test_p2_07_outside_maintenance_window_is_not_exposed) ... ok
+test_p2_08_incomplete_events_do_not_become_route_violation (test_p2_challenges.P2ChallengeTests.test_p2_08_incomplete_events_do_not_become_route_violation) ... ok
+test_p2_09_lot_membership_is_retained_at_each_event (test_p2_challenges.P2ChallengeTests.test_p2_09_lot_membership_is_retained_at_each_event) ... ok
+test_p2_10_and_11_normal_exposure_and_abnormal_nonexposure_are_counterevidence (test_p2_challenges.P2ChallengeTests.test_p2_10_and_11_normal_exposure_and_abnormal_nonexposure_are_counterevidence) ... ok
+test_p2_12_13k_catalog_rejects_unapproved_join (test_p2_challenges.P2ChallengeTests.test_p2_12_13k_catalog_rejects_unapproved_join) ... ok
+test_record_time_is_preserved_separately_from_event_time (test_p2_challenges.P2ChallengeTests.test_record_time_is_preserved_separately_from_event_time) ... ok
+test_repeated_processing_retains_each_exact_exposure_instance (test_p2_challenges.P2ChallengeTests.test_repeated_processing_retains_each_exact_exposure_instance) ... ok
+test_rework_relationship_carries_step_instance_provenance (test_p2_challenges.P2ChallengeTests.test_rework_relationship_carries_step_instance_provenance) ... ok
+test_route_version_changes_and_explicit_allowed_exceptions_are_supported (test_p2_challenges.P2ChallengeTests.test_route_version_changes_and_explicit_allowed_exceptions_are_supported) ... ok
+test_same_wafer_token_across_sources_requires_explicit_identity_approval (test_p2_challenges.P2ChallengeTests.test_same_wafer_token_across_sources_requires_explicit_identity_approval) ... ok
+test_source_linked_condition_events_report_time_context_without_causal_claim (test_p2_challenges.P2ChallengeTests.test_source_linked_condition_events_report_time_context_without_causal_claim) ... ok
+test_target_wafer_cohort_emits_a_chronology_claim_for_each_selected_wafer (test_p2_challenges.P2ChallengeTests.test_target_wafer_cohort_emits_a_chronology_claim_for_each_selected_wafer) ... ok
+test_time_scoped_membership_split_and_merge_links_keep_source_provenance (test_p2_challenges.P2ChallengeTests.test_time_scoped_membership_split_and_merge_links_keep_source_provenance) ... ok
+test_bad_limits_and_write_scope_are_reported (test_preflight.PreflightTests.test_bad_limits_and_write_scope_are_reported) ... ok
+test_capture_rejects_credential_fields_without_echoing_values (test_preflight.PreflightTests.test_capture_rejects_credential_fields_without_echoing_values) ... ok
+test_capture_requires_matching_contract_exact_tool_versions_and_source_scopes (test_preflight.PreflightTests.test_capture_requires_matching_contract_exact_tool_versions_and_source_scopes) ... ok
+test_complete_capture_is_structural_only_not_company_qualification (test_preflight.PreflightTests.test_complete_capture_is_structural_only_not_company_qualification) ... ok
+test_no_live_adapter_is_always_pending_internal (test_preflight.PreflightTests.test_no_live_adapter_is_always_pending_internal) ... ok
+test_manifest_declares_candidate_not_external_release (test_schema_and_ui.SourceContractTests.test_manifest_declares_candidate_not_external_release) ... ok
+test_no_remote_frontend_assets (test_schema_and_ui.SourceContractTests.test_no_remote_frontend_assets) ... ok
+test_schema_files_identify_version (test_schema_and_ui.SourceContractTests.test_schema_files_identify_version) ... ok
+test_no_guess_on_missing_chamber (test_scientific_baseline.SpecializedTests.test_no_guess_on_missing_chamber) ... ok
+test_refuse_naive_timestamp (test_scientific_baseline.SpecializedTests.test_refuse_naive_timestamp) ... ok
+test_engine_directly_refuses_oversized_outcome_population (test_snapshot_preflight.SnapshotPreflightTests.test_engine_directly_refuses_oversized_outcome_population) ... ok
+test_oversized_local_snapshot_is_refused_before_analysis (test_snapshot_preflight.SnapshotPreflightTests.test_oversized_local_snapshot_is_refused_before_analysis) ... ok
+test_oversized_outcome_population_is_refused_before_analysis (test_snapshot_preflight.SnapshotPreflightTests.test_oversized_outcome_population_is_refused_before_analysis) ... ok
+test_preflight_refuses_invalid_condition_context_types (test_snapshot_preflight.SnapshotPreflightTests.test_preflight_refuses_invalid_condition_context_types) ... ok
+test_relationship_flag_cannot_replace_source_and_relationship_records (test_snapshot_preflight.SnapshotPreflightTests.test_relationship_flag_cannot_replace_source_and_relationship_records) ... ok
+test_target_lot_refuses_unrelated_or_incomplete_declared_membership (test_snapshot_preflight.SnapshotPreflightTests.test_target_lot_refuses_unrelated_or_incomplete_declared_membership) ... ok
+test_target_lot_uses_only_declared_outcome_membership_and_discloses_scope (test_snapshot_preflight.SnapshotPreflightTests.test_target_lot_uses_only_declared_outcome_membership_and_discloses_scope) ... ok
+test_target_wafer_cohort_is_explicit_and_must_fit_population (test_snapshot_preflight.SnapshotPreflightTests.test_target_wafer_cohort_is_explicit_and_must_fit_population) ... ok
+test_tool_exposure_scope_is_explicit_in_preflight (test_snapshot_preflight.SnapshotPreflightTests.test_tool_exposure_scope_is_explicit_in_preflight) ... ok
+test_valid_snapshot_lists_sources_relationship_usage_and_scope (test_snapshot_preflight.SnapshotPreflightTests.test_valid_snapshot_lists_sources_relationship_usage_and_scope) ... ok
+
+----------------------------------------------------------------------
+Ran 107 tests in 14.102s
+
+OK
+{
+  "artifacts": [
+    {
+      "content_sha256": "d094f0485ab01a6e89f7754a8846f15416ac50cfe9da52645cbb3280abdd1f00",
+      "exposure_analysis": {
+        "chamber_id": "C1",
+        "condition_context": {
+          "condition_type": "UNSPECIFIED",
+          "evidence_status": "NOT_SUPPLIED"
+        },
+        "condition_event_evidence": [],
+        "condition_event_status": "NO_CONDITION_EVENT_RECORDS_SUPPLIED",
+        "coverage_complete": true,
+        "coverage_evidence": {
+          "accepted_for_query": true,
+          "assessment": "Complete declared coverage spans the entire query window and listed population.",
+          "complete_assertion": true,
+          "covered_wafer_ids": [
+            "W1",
+            "W2"
+          ],
+          "record_type": "CALLER_DECLARED_COVERAGE",
+          "source_ids": [
+            "SYN_PROCESS"
+          ],
+          "window_end": "2026-11-21T03:00:00+00:00",
+          "window_start": "2026-11-21T00:00:00+00:00"
+        },
+        "coverage_reason": "Complete declared coverage spans the entire query window and listed population.",
+        "definitely_exposed": [
+          "W1"
+        ],
+        "evidence": [
+          {
+            "classification": "EXACT_CHAMBER_WINDOW_MATCH",
+            "processing_end": null,
+            "processing_end_uncertainty_seconds": 0,
+            "processing_start": null,
+            "processing_start_uncertainty_seconds": 0,
+            "relationship_id": "SYN_REL_WAFER_STEP",
+            "scope_id": "C1",
+            "scope_type": "CHAMBER",
+            "source_id": "SYN_PROCESS",
+            "step_instance_id": "S1",
+            "timestamp": "2026-11-21T01:00:00+00:00",
+            "timestamp_utc": "2026-11-21T01:00:00+00:00",
+            "wafer_id": "W1"
+          }
+        ],
+        "not_observed_exposed": [
+          "W2"
+        ],
+        "population": [
+          "W1",
+          "W2"
+        ],
+        "possibly_exposed": [],
+        "potentially_exposed": [],
+        "scope_id": "C1",
+        "scope_type": "CHAMBER",
+        "unknown": [],
+        "verified_unexposed": [
+          "W2"
+        ],
+        "window": {
+          "end": "2026-11-21T03:00:00+00:00",
+          "start": "2026-11-21T00:00:00+00:00"
+        }
+      },
+      "format": "application/json",
+      "journey": {
+        "journeys": [
+          {
+            "history_coverage": {
+              "covered_wafer_ids": [],
+              "missing_record_ids": [],
+              "source_references": [],
+              "status": "COVERAGE_UNKNOWN"
+            },
+            "history_status": "COVERAGE_UNKNOWN",
+            "material_relationships": [],
+            "rework_edges": [],
+            "route_conformance": "NO_APPROVED_EXPECTED_ROUTE",
+            "route_segments": [],
+            "sequence_edges": [
+              {
+                "from_step_instance": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S1"
+                },
+                "meaning": "Derived ordering of adjacent observed records; not a causal or recipe-transition claim.",
+                "ordering_basis": "non-overlapping timezone-normalized event-time uncertainty intervals",
+                "ordering_margin_seconds": 3600.0,
+                "provenance": [
+                  {
+                    "relationship_id": "SYN_REL_WAFER_STEP",
+                    "source_id": "SYN_PROCESS",
+                    "step_instance_id": "S1"
+                  },
+                  {
+                    "relationship_id": "SYN_REL_WAFER_STEP",
+                    "source_id": "SYN_PROCESS",
+                    "step_instance_id": "S3"
+                  }
+                ],
+                "relationship_type": "OBSERVED_CHRONOLOGICAL_ADJACENCY",
+                "to_step_instance": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S3"
+                }
+              },
+              {
+                "from_step_instance": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S3"
+                },
+                "meaning": "Derived ordering of adjacent observed records; not a causal or recipe-transition claim.",
+                "ordering_basis": "non-overlapping timezone-normalized event-time uncertainty intervals",
+                "ordering_margin_seconds": 10800.0,
+                "provenance": [
+                  {
+                    "relationship_id": "SYN_REL_WAFER_STEP",
+                    "source_id": "SYN_PROCESS",
+                    "step_instance_id": "S3"
+                  },
+                  {
+                    "relationship_id": "SYN_REL_WAFER_STEP",
+                    "source_id": "SYN_PROCESS",
+                    "step_instance_id": "S4"
+                  }
+                ],
+                "relationship_type": "OBSERVED_CHRONOLOGICAL_ADJACENCY",
+                "to_step_instance": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S4"
+                }
+              }
+            ],
+            "steps": [
+              {
+                "chamber_id": "C1",
+                "duplicate_record_copies_collapsed": 0,
+                "identity_relationship_id": null,
+                "lot_id_at_event": null,
+                "membership_state": "UNKNOWN",
+                "operation": "ETCH",
+                "operation_definition_id": null,
+                "operation_definition_source_id": null,
+                "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+                "order_uncertain_with": [],
+                "recorded_at": null,
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "rework_of_source_id": null,
+                "rework_of_step_instance_id": null,
+                "route_id": null,
+                "route_version": null,
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S1",
+                "step_instance_ref": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S1"
+                },
+                "time_scoped_material_relationship_ids": [],
+                "time_uncertainty_seconds": 0.0,
+                "timestamp": "2026-11-21T01:00:00+00:00",
+                "timestamp_utc": "2026-11-21T01:00:00+00:00",
+                "tool_id": null
+              },
+              {
+                "chamber_id": "M1",
+                "duplicate_record_copies_collapsed": 0,
+                "identity_relationship_id": null,
+                "lot_id_at_event": null,
+                "membership_state": "UNKNOWN",
+                "operation": "MET",
+                "operation_definition_id": null,
+                "operation_definition_source_id": null,
+                "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+                "order_uncertain_with": [],
+                "recorded_at": null,
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "rework_of_source_id": null,
+                "rework_of_step_instance_id": null,
+                "route_id": null,
+                "route_version": null,
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S3",
+                "step_instance_ref": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S3"
+                },
+                "time_scoped_material_relationship_ids": [],
+                "time_uncertainty_seconds": 0.0,
+                "timestamp": "2026-11-21T02:00:00+00:00",
+                "timestamp_utc": "2026-11-21T02:00:00+00:00",
+                "tool_id": null
+              },
+              {
+                "chamber_id": "C1",
+                "duplicate_record_copies_collapsed": 0,
+                "identity_relationship_id": null,
+                "lot_id_at_event": null,
+                "membership_state": "UNKNOWN",
+                "operation": "ETCH",
+                "operation_definition_id": null,
+                "operation_definition_source_id": null,
+                "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+                "order_uncertain_with": [],
+                "recorded_at": null,
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "rework_of_source_id": null,
+                "rework_of_step_instance_id": null,
+                "route_id": null,
+                "route_version": null,
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S4",
+                "step_instance_ref": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S4"
+                },
+                "time_scoped_material_relationship_ids": [],
+                "time_uncertainty_seconds": 0.0,
+                "timestamp": "2026-11-21T05:00:00+00:00",
+                "timestamp_utc": "2026-11-21T05:00:00+00:00",
+                "tool_id": null
+              }
+            ],
+            "wafer_id": "W1"
+          },
+          {
+            "history_coverage": {
+              "covered_wafer_ids": [],
+              "missing_record_ids": [],
+              "source_references": [],
+              "status": "COVERAGE_UNKNOWN"
+            },
+            "history_status": "COVERAGE_UNKNOWN",
+            "material_relationships": [],
+            "rework_edges": [],
+            "route_conformance": "NO_APPROVED_EXPECTED_ROUTE",
+            "route_segments": [],
+            "sequence_edges": [],
+            "steps": [
+              {
+                "chamber_id": "C2",
+                "duplicate_record_copies_collapsed": 0,
+                "identity_relationship_id": null,
+                "lot_id_at_event": null,
+                "membership_state": "UNKNOWN",
+                "operation": "ETCH",
+                "operation_definition_id": null,
+                "operation_definition_source_id": null,
+                "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+                "order_uncertain_with": [],
+                "recorded_at": null,
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "rework_of_source_id": null,
+                "rework_of_step_instance_id": null,
+                "route_id": null,
+                "route_version": null,
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S2",
+                "step_instance_ref": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S2"
+                },
+                "time_scoped_material_relationship_ids": [],
+                "time_uncertainty_seconds": 0.0,
+                "timestamp": "2026-11-21T01:30:00+00:00",
+                "timestamp_utc": "2026-11-21T01:30:00+00:00",
+                "tool_id": null
+              }
+            ],
+            "wafer_id": "W2"
+          }
+        ],
+        "material_relationships": [],
+        "route_variants": [
+          {
+            "count": 1,
+            "meaning": "Observed event sequence; conformance is reported only against an approved expected route with complete route coverage.",
+            "operations": [
+              "ETCH"
+            ],
+            "order_status": "ORDERED",
+            "route_id_sequence": [
+              null
+            ],
+            "route_version_sequence": [
+              null
+            ],
+            "wafer_ids": [
+              "W2"
+            ]
+          },
+          {
+            "count": 1,
+            "meaning": "Observed event sequence; conformance is reported only against an approved expected route with complete route coverage.",
+            "operations": [
+              "ETCH",
+              "MET",
+              "ETCH"
+            ],
+            "order_status": "ORDERED",
+            "route_id_sequence": [
+              null,
+              null,
+              null
+            ],
+            "route_version_sequence": [
+              null,
+              null,
+              null
+            ],
+            "wafer_ids": [
+              "W1"
+            ]
+          }
+        ]
+      },
+      "kind": "investigation_snapshot",
+      "note": "The deterministic envelope itself is the reproducible export.",
+      "scope": {
+        "target_lot_id": null,
+        "target_wafer_ids": [
+          "W1"
+        ]
+      },
+      "source_relationships": [
+        {
+          "cardinality": "one outcome to one wafer identity",
+          "effective_end_utc": "2026-11-22T00:00:00+00:00",
+          "effective_start_utc": "2026-11-20T00:00:00+00:00",
+          "grain": "one outcome per wafer",
+          "id": "SYN_REL_OUTCOME_WAFER",
+          "keys": [
+            "lot_id",
+            "wafer_id"
+          ],
+          "source_ids": [
+            "SYN_OUTCOME"
+          ],
+          "status": "CALLER_DECLARED_APPROVED"
+        },
+        {
+          "cardinality": "one process step instance to one wafer identity",
+          "effective_end_utc": "2026-11-22T00:00:00+00:00",
+          "effective_start_utc": "2026-11-20T00:00:00+00:00",
+          "grain": "one process step instance",
+          "id": "SYN_REL_WAFER_STEP",
+          "keys": [
+            "chamber_id",
+            "step_instance_id",
+            "timestamp",
+            "wafer_id"
+          ],
+          "source_ids": [
+            "SYN_PROCESS"
+          ],
+          "status": "CALLER_DECLARED_APPROVED"
+        }
+      ],
+      "target_outcomes": [
+        {
+          "label": "NORMAL",
+          "lot_id": "LOT-A",
+          "relationship_id": "SYN_REL_OUTCOME_WAFER",
+          "source_id": "SYN_OUTCOME",
+          "timestamp": "2026-11-21T06:00:00+00:00",
+          "wafer_id": "W1"
+        }
+      ]
+    }
+  ],
+  "assumptions": [],
+  "claims": [
+    {
+      "category": "DESCRIPTIVE",
+      "certainty": "SUPPORTED",
+      "method": "typed_step_instance_chronology",
+      "source_ids": [
+        "SYN_PROCESS"
+      ],
+      "statement": "Wafer W1 has 3 distinct step instances in the submitted snapshot; repeated operation = True."
+    },
+    {
+      "category": "DESCRIPTIVE",
+      "certainty": "SUPPORTED",
+      "method": "exact_wafer_event_sequence_grouping",
+      "source_ids": [
+        "SYN_PROCESS"
+      ],
+      "statement": "Observed 2 ordered route sequence variant(s) across 2 wafer(s); chronology unresolved for 0 wafer(s)."
+    },
+    {
+      "category": "DESCRIPTIVE",
+      "certainty": "SUPPORTED",
+      "method": "exact_chamber_and_timezone_aware_window_with_coverage_gate",
+      "source_ids": [
+        "SYN_PROCESS"
+      ],
+      "statement": "Observed exact-chamber/window processing matches = ['W1']; potentially exposed from observed missing assignment or clock uncertainty = []; unknown under incomplete coverage = []; not observed exposed under declared complete coverage = ['W2']."
+    },
+    {
+      "category": "DESCRIPTIVE",
+      "certainty": "CONDITIONAL",
+      "method": "descriptive_outcome_exposure_cross_tabulation",
+      "source_ids": [
+        "SYN_OUTCOME",
+        "SYN_PROCESS"
+      ],
+      "statement": "Hypothesis comparison for the suspected exposure: abnormal wafers with exact exposure=[]; normal wafers with exact exposure=['W1']; abnormal wafers not observed exposed=['W2']; normal wafers not observed exposed=[]; unknown exposure=[]; missing outcome=[]."
+    }
+  ],
+  "counterevidence": [
+    {
+      "abnormal_wafers_not_observed_exposed": [
+        "W2"
+      ],
+      "abnormal_wafers_verified_unexposed": [
+        "W2"
+      ],
+      "abnormal_wafers_with_exact_exposure": [],
+      "abnormal_wafers_without_exposure_evidence": [
+        "W2"
+      ],
+      "abnormal_wafers_without_observed_exact_exposure": [
+        "W2"
+      ],
+      "causal_conclusion": {
+        "category": "CAUSAL_CONCLUSION",
+        "reason": "No causal design, intervention, or confounder adjustment has been validated.",
+        "status": "NOT_ESTABLISHED"
+      },
+      "confounders": {
+        "equipment": {
+          "equipment_by_outcome": {
+            "ABNORMAL": {
+              "chamber_ids": [
+                "C2"
+              ],
+              "tool_ids": []
+            },
+            "NORMAL": {
+              "chamber_ids": [
+                "C1",
+                "M1"
+              ],
+              "tool_ids": []
+            }
+          },
+          "limitation": "Tool/chamber context is descriptive and does not infer shared chamber membership or an effect.",
+          "status": "SOURCE_LINKED_EVENT_CONTEXT_DESCRIPTIVE_ONLY"
+        },
+        "product_mix": {
+          "product_ids": [],
+          "status": "NOT_ASSESSED_PRODUCT_FIELD_NOT_VERIFIED",
+          "strata": {}
+        },
+        "selection_and_coverage": {
+          "coverage_assessment": "Complete declared coverage spans the entire query window and listed population.",
+          "exposure_coverage_complete": true,
+          "missing_outcome_wafer_ids": [],
+          "outcome_count_in_population": 2,
+          "population_count": 2,
+          "status": "CALLER_DECLARED_COVERAGE_ONLY"
+        },
+        "time": {
+          "limitation": "Outcome-day grouping does not adjust for time-varying selection or establish temporal causality.",
+          "status": "OUTCOME_DAY_STRATA_DESCRIPTIVE_ONLY",
+          "utc_day_strata": {
+            "2026-11-21": {
+              "ABNORMAL__NOT_OBSERVED_EXPOSED": [
+                "W2"
+              ],
+              "NORMAL__EXPOSED": [
+                "W1"
+              ]
+            }
+          }
+        }
+      },
+      "contradicting_observations": {
+        "abnormal_wafers_without_observed_exact_exposure": [
+          "W2"
+        ],
+        "normal_wafers_sharing_exact_exposure": [
+          {
+            "process_event_refs": [
+              {
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "scope_id": "C1",
+                "scope_type": "CHAMBER",
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S1",
+                "timestamp_utc": "2026-11-21T01:00:00+00:00"
+              }
+            ],
+            "wafer_id": "W1"
+          }
+        ]
+      },
+      "interpretation": "This source-linked snapshot reports descriptive support, contradiction, missingness, and confounder context. It does not compute a statistical association or establish a causal conclusion.",
+      "missing_or_ambiguous_evidence": {
+        "condition_event_evidence": [],
+        "condition_event_status": "NO_CONDITION_EVENT_RECORDS_SUPPLIED",
+        "outcomes_missing": [],
+        "population_potential_exposure": [],
+        "population_unknown_exposure": [],
+        "potentially_exposed_outcomes": [],
+        "unknown_exposure_outcomes": []
+      },
+      "next_authorized_verification": {
+        "authorization_status": "MUST_BE_CONFIRMED_BY_THE_CONFIGURED_MCP_SERVER",
+        "logical_operation": "semantics",
+        "purpose": "Verify whether a product-family field exists with an approved meaning and row grain for mix-confounder review."
+      },
+      "normal_wafers_not_observed_exposed": [],
+      "normal_wafers_verified_unexposed": [],
+      "normal_wafers_with_exact_exposure": [
+        "W1"
+      ],
+      "outcome_evidence": [
+        {
+          "exposure_classification": "EXPOSED",
+          "label": "NORMAL",
+          "lot_id": "LOT-A",
+          "relationship_id": "SYN_REL_OUTCOME_WAFER",
+          "source_id": "SYN_OUTCOME",
+          "timestamp": "2026-11-21T06:00:00+00:00",
+          "wafer_id": "W1"
+        },
+        {
+          "exposure_classification": "NOT_OBSERVED_EXPOSED",
+          "label": "ABNORMAL",
+          "lot_id": "LOT-A",
+          "relationship_id": "SYN_REL_OUTCOME_WAFER",
+          "source_id": "SYN_OUTCOME",
+          "timestamp": "2026-11-21T06:00:00+00:00",
+          "wafer_id": "W2"
+        }
+      ],
+      "outcomes_with_potential_exposure": [],
+      "outcomes_with_unknown_exposure": [],
+      "outcomes_with_unknown_exposure_only": [],
+      "population_wafers_missing_outcome": [],
+      "proposed_explanation": {
+        "category": "PROPOSED_EXPLANATION",
+        "evidence_refs": [
+          "SYN_REL_WAFER_STEP"
+        ],
+        "statement": "The selected equipment/time window is a candidate exposure to review against the observed outcome pattern.",
+        "status": "CANDIDATE_FOR_ENGINEER_REVIEW"
+      },
+      "question": "Does the suspected exposure explain the observed outcome?",
+      "statistical_association": {
+        "method": null,
+        "reason": "The output is a deterministic cross-tabulation without a prespecified adjustment design.",
+        "status": "NOT_COMPUTED"
+      },
+      "supporting_observations": []
+    }
+  ],
+  "investigation_id": "SYN-p2-d094f0485ab0",
+  "limitations": [
+    "Synthetic or caller-supplied evidence is not proof of company data, authorization, or source semantics.",
+    "This descriptive reconstruction does not establish a root cause or intervention effect.",
+    "A complete route or route violation cannot be inferred without an approved expected-route definition and event coverage.",
+    "Identity aliases are kept separate; no unapproved wafer or lot identity merge is performed.",
+    "Wafer history coverage is incomplete or unverified; chronology describes only submitted event records.",
+    "Operation definition records were not supplied; operation labels are retained as event values and are not upgraded to approved operation definitions."
+  ],
+  "mode": "SYNTHETIC_DEMO",
+  "populations": [
+    {
+      "basis": "A source-linked process-step instance names the exact chamber and its time interval overlaps the query window.",
+      "classification": "EXPOSED",
+      "count": 1,
+      "wafer_ids": [
+        "W1"
+      ]
+    },
+    {
+      "basis": "An observed event has missing selected-equipment assignment or time uncertainty that could overlap the query window.",
+      "classification": "POTENTIALLY_EXPOSED",
+      "count": 0,
+      "wafer_ids": []
+    },
+    {
+      "basis": "Coverage is incomplete or the source relationship does not approve the required equipment/time fields.",
+      "classification": "UNKNOWN",
+      "count": 0,
+      "wafer_ids": []
+    },
+    {
+      "basis": "Complete declared coverage spans the entire query window and listed population.",
+      "classification": "NOT_OBSERVED_EXPOSED",
+      "count": 1,
+      "wafer_ids": [
+        "W2"
+      ]
+    }
+  ],
+  "product_id": "p2",
+  "provenance": {
+    "engine_version": "0.3.0",
+    "input_sha256": "d094f0485ab01a6e89f7754a8846f15416ac50cfe9da52645cbb3280abdd1f00",
+    "semantic_catalog_version": "SYNTHETIC-1"
+  },
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "approved_semantic_version": "SYNTHETIC-ORACLE-1",
+      "grain": "one outcome per wafer",
+      "id": "SYN_OUTCOME",
+      "permissions_ref": "SYNTHETIC-ONLY",
+      "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    {
+      "approved_semantic_version": "SYNTHETIC-ORACLE-1",
+      "grain": "one process step instance",
+      "id": "SYN_PROCESS",
+      "permissions_ref": "SYNTHETIC-ONLY",
+      "source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ],
+  "status": "VALID",
+  "transformations": [
+    {
+      "id": "p2-event-time-normalization-v1",
+      "input_grain": "one approved process-step instance",
+      "operation": "Normalize timezone-aware event times to UTC; retain original timestamp in journey.",
+      "output_grain": "one event in one wafer journey"
+    },
+    {
+      "id": "p2-journey-and-route-variants-v1",
+      "journeys": [
+        {
+          "history_coverage": {
+            "covered_wafer_ids": [],
+            "missing_record_ids": [],
+            "source_references": [],
+            "status": "COVERAGE_UNKNOWN"
+          },
+          "history_status": "COVERAGE_UNKNOWN",
+          "material_relationships": [],
+          "rework_edges": [],
+          "route_conformance": "NO_APPROVED_EXPECTED_ROUTE",
+          "route_segments": [],
+          "sequence_edges": [
+            {
+              "from_step_instance": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S1"
+              },
+              "meaning": "Derived ordering of adjacent observed records; not a causal or recipe-transition claim.",
+              "ordering_basis": "non-overlapping timezone-normalized event-time uncertainty intervals",
+              "ordering_margin_seconds": 3600.0,
+              "provenance": [
+                {
+                  "relationship_id": "SYN_REL_WAFER_STEP",
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S1"
+                },
+                {
+                  "relationship_id": "SYN_REL_WAFER_STEP",
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S3"
+                }
+              ],
+              "relationship_type": "OBSERVED_CHRONOLOGICAL_ADJACENCY",
+              "to_step_instance": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S3"
+              }
+            },
+            {
+              "from_step_instance": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S3"
+              },
+              "meaning": "Derived ordering of adjacent observed records; not a causal or recipe-transition claim.",
+              "ordering_basis": "non-overlapping timezone-normalized event-time uncertainty intervals",
+              "ordering_margin_seconds": 10800.0,
+              "provenance": [
+                {
+                  "relationship_id": "SYN_REL_WAFER_STEP",
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S3"
+                },
+                {
+                  "relationship_id": "SYN_REL_WAFER_STEP",
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S4"
+                }
+              ],
+              "relationship_type": "OBSERVED_CHRONOLOGICAL_ADJACENCY",
+              "to_step_instance": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S4"
+              }
+            }
+          ],
+          "steps": [
+            {
+              "chamber_id": "C1",
+              "duplicate_record_copies_collapsed": 0,
+              "identity_relationship_id": null,
+              "lot_id_at_event": null,
+              "membership_state": "UNKNOWN",
+              "operation": "ETCH",
+              "operation_definition_id": null,
+              "operation_definition_source_id": null,
+              "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+              "order_uncertain_with": [],
+              "recorded_at": null,
+              "relationship_id": "SYN_REL_WAFER_STEP",
+              "rework_of_source_id": null,
+              "rework_of_step_instance_id": null,
+              "route_id": null,
+              "route_version": null,
+              "source_id": "SYN_PROCESS",
+              "step_instance_id": "S1",
+              "step_instance_ref": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S1"
+              },
+              "time_scoped_material_relationship_ids": [],
+              "time_uncertainty_seconds": 0.0,
+              "timestamp": "2026-11-21T01:00:00+00:00",
+              "timestamp_utc": "2026-11-21T01:00:00+00:00",
+              "tool_id": null
+            },
+            {
+              "chamber_id": "M1",
+              "duplicate_record_copies_collapsed": 0,
+              "identity_relationship_id": null,
+              "lot_id_at_event": null,
+              "membership_state": "UNKNOWN",
+              "operation": "MET",
+              "operation_definition_id": null,
+              "operation_definition_source_id": null,
+              "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+              "order_uncertain_with": [],
+              "recorded_at": null,
+              "relationship_id": "SYN_REL_WAFER_STEP",
+              "rework_of_source_id": null,
+              "rework_of_step_instance_id": null,
+              "route_id": null,
+              "route_version": null,
+              "source_id": "SYN_PROCESS",
+              "step_instance_id": "S3",
+              "step_instance_ref": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S3"
+              },
+              "time_scoped_material_relationship_ids": [],
+              "time_uncertainty_seconds": 0.0,
+              "timestamp": "2026-11-21T02:00:00+00:00",
+              "timestamp_utc": "2026-11-21T02:00:00+00:00",
+              "tool_id": null
+            },
+            {
+              "chamber_id": "C1",
+              "duplicate_record_copies_collapsed": 0,
+              "identity_relationship_id": null,
+              "lot_id_at_event": null,
+              "membership_state": "UNKNOWN",
+              "operation": "ETCH",
+              "operation_definition_id": null,
+              "operation_definition_source_id": null,
+              "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+              "order_uncertain_with": [],
+              "recorded_at": null,
+              "relationship_id": "SYN_REL_WAFER_STEP",
+              "rework_of_source_id": null,
+              "rework_of_step_instance_id": null,
+              "route_id": null,
+              "route_version": null,
+              "source_id": "SYN_PROCESS",
+              "step_instance_id": "S4",
+              "step_instance_ref": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S4"
+              },
+              "time_scoped_material_relationship_ids": [],
+              "time_uncertainty_seconds": 0.0,
+              "timestamp": "2026-11-21T05:00:00+00:00",
+              "timestamp_utc": "2026-11-21T05:00:00+00:00",
+              "tool_id": null
+            }
+          ],
+          "wafer_id": "W1"
+        },
+        {
+          "history_coverage": {
+            "covered_wafer_ids": [],
+            "missing_record_ids": [],
+            "source_references": [],
+            "status": "COVERAGE_UNKNOWN"
+          },
+          "history_status": "COVERAGE_UNKNOWN",
+          "material_relationships": [],
+          "rework_edges": [],
+          "route_conformance": "NO_APPROVED_EXPECTED_ROUTE",
+          "route_segments": [],
+          "sequence_edges": [],
+          "steps": [
+            {
+              "chamber_id": "C2",
+              "duplicate_record_copies_collapsed": 0,
+              "identity_relationship_id": null,
+              "lot_id_at_event": null,
+              "membership_state": "UNKNOWN",
+              "operation": "ETCH",
+              "operation_definition_id": null,
+              "operation_definition_source_id": null,
+              "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+              "order_uncertain_with": [],
+              "recorded_at": null,
+              "relationship_id": "SYN_REL_WAFER_STEP",
+              "rework_of_source_id": null,
+              "rework_of_step_instance_id": null,
+              "route_id": null,
+              "route_version": null,
+              "source_id": "SYN_PROCESS",
+              "step_instance_id": "S2",
+              "step_instance_ref": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S2"
+              },
+              "time_scoped_material_relationship_ids": [],
+              "time_uncertainty_seconds": 0.0,
+              "timestamp": "2026-11-21T01:30:00+00:00",
+              "timestamp_utc": "2026-11-21T01:30:00+00:00",
+              "tool_id": null
+            }
+          ],
+          "wafer_id": "W2"
+        }
+      ],
+      "material_relationships": [],
+      "route_variants": [
+        {
+          "count": 1,
+          "meaning": "Observed event sequence; conformance is reported only against an approved expected route with complete route coverage.",
+          "operations": [
+            "ETCH"
+          ],
+          "order_status": "ORDERED",
+          "route_id_sequence": [
+            null
+          ],
+          "route_version_sequence": [
+            null
+          ],
+          "wafer_ids": [
+            "W2"
+          ]
+        },
+        {
+          "count": 1,
+          "meaning": "Observed event sequence; conformance is reported only against an approved expected route with complete route coverage.",
+          "operations": [
+            "ETCH",
+            "MET",
+            "ETCH"
+          ],
+          "order_status": "ORDERED",
+          "route_id_sequence": [
+            null,
+            null,
+            null
+          ],
+          "route_version_sequence": [
+            null,
+            null,
+            null
+          ],
+          "wafer_ids": [
+            "W1"
+          ]
+        }
+      ]
+    },
+    {
+      "exposure": {
+        "chamber_id": "C1",
+        "condition_context": {
+          "condition_type": "UNSPECIFIED",
+          "evidence_status": "NOT_SUPPLIED"
+        },
+        "condition_event_evidence": [],
+        "condition_event_status": "NO_CONDITION_EVENT_RECORDS_SUPPLIED",
+        "coverage_complete": true,
+        "coverage_evidence": {
+          "accepted_for_query": true,
+          "assessment": "Complete declared coverage spans the entire query window and listed population.",
+          "complete_assertion": true,
+          "covered_wafer_ids": [
+            "W1",
+            "W2"
+          ],
+          "record_type": "CALLER_DECLARED_COVERAGE",
+          "source_ids": [
+            "SYN_PROCESS"
+          ],
+          "window_end": "2026-11-21T03:00:00+00:00",
+          "window_start": "2026-11-21T00:00:00+00:00"
+        },
+        "coverage_reason": "Complete declared coverage spans the entire query window and listed population.",
+        "definitely_exposed": [
+          "W1"
+        ],
+        "evidence": [
+          {
+            "classification": "EXACT_CHAMBER_WINDOW_MATCH",
+            "processing_end": null,
+            "processing_end_uncertainty_seconds": 0,
+            "processing_start": null,
+            "processing_start_uncertainty_seconds": 0,
+            "relationship_id": "SYN_REL_WAFER_STEP",
+            "scope_id": "C1",
+            "scope_type": "CHAMBER",
+            "source_id": "SYN_PROCESS",
+            "step_instance_id": "S1",
+            "timestamp": "2026-11-21T01:00:00+00:00",
+            "timestamp_utc": "2026-11-21T01:00:00+00:00",
+            "wafer_id": "W1"
+          }
+        ],
+        "not_observed_exposed": [
+          "W2"
+        ],
+        "population": [
+          "W1",
+          "W2"
+        ],
+        "possibly_exposed": [],
+        "potentially_exposed": [],
+        "scope_id": "C1",
+        "scope_type": "CHAMBER",
+        "unknown": [],
+        "verified_unexposed": [
+          "W2"
+        ],
+        "window": {
+          "end": "2026-11-21T03:00:00+00:00",
+          "start": "2026-11-21T00:00:00+00:00"
+        }
+      },
+      "id": "p2-exposure-evidence-v1"
+    }
+  ],
+  "uncertainty": {
+    "causal_identifiability": "NOT_ESTABLISHED",
+    "collapsed_duplicate_source_records": 0,
+    "equal_timestamp_ties": [],
+    "exposure_coverage_complete": true,
+    "history_coverage_status": "COVERAGE_UNKNOWN",
+    "order_uncertainty_groups": [],
+    "route_conformance_counts": {
+      "NO_APPROVED_EXPECTED_ROUTE": 2
+    }
+  },
+  "units": {}
+}
+Removed the bundle-managed local virtual environment. Source files and user data were untouched.
+PASS: checksum, safe extraction, source integrity, hash-checked offline MCP installation, full suite, demo, and rollback.

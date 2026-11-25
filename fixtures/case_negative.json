@@ -1,0 +1,13 @@
+{
+  "wafer_id": "W1",
+  "events": [
+    {
+      "wafer_id": "W1",
+      "step_instance_id": "S1",
+      "operation": "ETCH",
+      "timestamp": "2026-11-21T01:00:00+00:00",
+      "chamber_id": "C1",
+      "approved_relationship": false
+    }
+  ]
+}

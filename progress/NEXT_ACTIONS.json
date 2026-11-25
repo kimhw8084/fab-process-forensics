@@ -1,0 +1,43 @@
+{
+  "updated_at": "2026-11-24",
+  "product": "P2 FAB Process Forensics; independent product and qualification scope",
+  "release_state": "FROZEN_BASELINE_PRESERVED; WORKING_REVISION_SEPARATE",
+  "frozen_candidate_sha256": "8cd4d26b58cec464e21bebc3a6c4704ea862ed496de5c729568f297970303f5d",
+  "frozen_source_manifest_sha256": "dbfe462fa80ae9117a8541d9b6c75b7747c42d4683aee538d925babe8ccfcf88",
+  "next_action": {
+    "id": "REPEATED-100WAFER-STANDALONE-UI-LATENCY",
+    "priority": 1,
+    "status": "PARTIAL",
+    "requirement": "One successful real-browser sample has been recorded for the existing 100-wafer synthetic MCP investigation. The five-run stage-separated latency acceptance remains open; do not derive p50/p95 or optimize from this sample.",
+    "acceptance": [
+      "At least five runs; separate option discovery, bounded reads, analysis, browser render, search/filter, provenance drill-down and export.",
+      "Report p50/p95, artifact size, available memory metrics, and environment; do not claim production performance or human time savings.",
+      "Retain fixed expected science: 98 observed histories, actual repeated step instances, uncertainty/coverage states, route variants, and no causal conclusion."
+    ],
+    "resume_commands": [
+      "rtk env P2_TEST_SDK_PATH=/tmp/p2-mcp-sdk-2.3 P2_REFERENCE_SYNTHETIC_SCENARIO=engineer-100-alt-alias-13k python -m fabintel serve --port 8773",
+      "Reload the standalone local page after server start, then gather five bounded successful UI run timings and independent search/provenance/export measurements."
+    ],
+    "observed_evidence": "qualification/evidence/browser-onboarding-workflow-latency-2026-11-24.json"
+  },
+  "qualification_states": {
+    "p2_standalone_engine_and_workflow": "SYNTHETICALLY_VERIFIED; independent manufacturing review pending",
+    "p2_browser_workflow": "VERIFIED for 13k aliased MCP catalog and 100-wafer scenario through the standalone browser; explicit denial and synthetic-authorized refreshed ambiguity passed",
+    "optional_cross_product_interoperability": "NOT_REQUIRED; existing module artifacts are optional",
+    "offline_technical_release": "FROZEN BASELINE PASSED on the recorded macOS arm64 / CPython 3.11 environment; working revision has not been repackaged",
+    "transfer_rights": "PENDING_REVIEW",
+    "internal_company_qualification": "PENDING_INTERNAL"
+  },
+  "remaining_dependencies": [
+    "Authorized company MCP access, real permissions, approved source semantics and authenticated coverage evidence (PENDING_INTERNAL; does not block synthetic benchmark).",
+    "Approved target OS/runtime and host security policies.",
+    "Independent engineer and blinded manufacturing holdout.",
+    "Source ownership, OSS transfer and redistribution authorization.",
+    "Real site task-time and ROI measurement; no synthetic ROI claim."
+  ],
+  "do_not": [
+    "Modify or rebuild the frozen baseline in place.",
+    "Treat another product's host as a P2 dependency or completion gate.",
+    "Use real company systems or invent source mappings, permissions, manufacturing facts, or transfer rights."
+  ]
+}

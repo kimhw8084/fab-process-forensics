@@ -1,0 +1,1 @@
+PASS: React 18 declaration host TypeScript check completed with exit code 0.\nCommand: /tmp/p2-react18-host/node_modules/.bin/tsc -p /tmp/p2-react18-host/tsconfig.json\n

@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-24",
+  "environment": {
+    "application": "P2 standalone React reference host",
+    "url": "http://127.0.0.1:8773/reference/",
+    "mode": "synthetic official-SDK MCP peer; engineer-100-alt-alias-13k",
+    "browser_viewport_screenshot_width_px": 1260,
+    "host_session": "local loopback session token refreshed by reloading after server restart"
+  },
+  "confirmed_successful_runs": 1,
+  "browser_investigation": {
+    "visible_investigation_id": "SYN-p2-cb397660e17b",
+    "click_to_completed_result_observation_ms": 3334,
+    "timing_scope": "single wall-clock interval around browser button click and repeated compact status reads until a new completed investigation ID appeared; includes browser automation/query overhead and is not an isolated server or render latency",
+    "journeys": 98,
+    "actual_process_step_instances": 403,
+    "ordered_route_variants": 5,
+    "chronology_unresolved_wafers": 1,
+    "exposure_counts": {
+      "exact": 24,
+      "potential": 25,
+      "unknown": 49,
+      "verified_unexposed": 0
+    },
+    "coverage": "CONTRADICTORY; nonmatches remain unknown",
+    "causal_conclusion": "NOT_ESTABLISHED",
+    "follow_up": "A specific lot-membership read proposal was displayed but not executed in this measured run. Synthetic authorization remains a separate explicit action."
+  },
+  "search_interaction": {
+    "query": "SYN-EW-010",
+    "input_action_wall_ms": 91,
+    "verified_result": "one matching wafer journey with five chronological step instances, including two ETCH instances",
+    "latency_caveat": "The result was confirmed on the next browser observation; 91 ms is only the fill/read interaction duration and is not claimed as a render-latency measurement."
+  },
+  "ui_observation": "At the 1260 px screenshot width the wide step-instance table exposed a horizontal scrollbar and the evidence-inspector column was partly off-screen. This is recorded as an observation only; no change is justified from one run.",
+  "not_measured": [
+    "p50/p95",
+    "browser memory",
+    "export click/download",
+    "isolated discovery/read/analysis/render timings",
+    "human engineer time or ROI"
+  ],
+  "failed_attempt_recovery": "One pre-refresh run returned 'local session token required' because its page token predated a local server restart. Reload obtained the current loopback token; the subsequent complete run succeeded. This is expected session binding behavior, not a source or permission bypass.",
+  "frozen_release": {
+    "candidate_sha256": "8cd4d26b58cec464e21bebc3a6c4704ea862ed496de5c729568f297970303f5d",
+    "source_manifest_sha256": "dbfe462fa80ae9117a8541d9b6c75b7747c42d4683aee538d925babe8ccfcf88",
+    "rebuild_performed": false
+  },
+  "limitations": "Single synthetic browser sample; do not report a latency distribution, production-scale performance, company data qualification, or engineer time savings."
+}

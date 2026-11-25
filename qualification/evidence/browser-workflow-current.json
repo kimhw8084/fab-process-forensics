@@ -1,0 +1,58 @@
+{
+  "browser": "Codex in-app browser",
+  "status": "PASS_LOCAL_SYNTHETIC_BROWSER_REPLAY_EXPORT_CAPTURED",
+  "tested_url": "http://127.0.0.1:8768/",
+  "synthetic_only": true,
+  "external_service_contacted": false,
+  "workflow": {
+    "start_mode": "PROCESS_MAINTENANCE_CHANGE_INTERVAL",
+    "scope": {
+      "equipment_type": "CHAMBER",
+      "equipment_id": "C1",
+      "window_start": "2026-11-21T00:00:00+00:00",
+      "window_end_exclusive": "2026-11-21T03:00:00+00:00"
+    },
+    "preflight": "READY_FOR_LOCAL_ANALYSIS",
+    "preflight_source_ids": ["SYN_COVERAGE", "SYN_OUTCOME", "SYN_PROCESS"],
+    "coverage_relationship": "SYN_REL_COVERAGE",
+    "coverage_status": "CALLER_DECLARED_SOURCE_LINKED_COVERAGE",
+    "analysis_status": "VALID",
+    "investigation_id": "SYN-p2-006c21a7c117",
+    "input_sha256": "006c21a7c117ef58a1f678820182de9864e983dcb67fd4700fd5453afaf61e2a",
+    "route_variants": [
+      {"wafer_id": "W1", "operations": ["ETCH", "MET", "ETCH"], "step_instances": ["S1", "S3", "S4"]},
+      {"wafer_id": "W2", "operations": ["ETCH"], "step_instances": ["S2"]}
+    ],
+    "exposure": {
+      "EXPOSED": ["W1"],
+      "POTENTIALLY_EXPOSED": [],
+      "UNKNOWN": [],
+      "NOT_OBSERVED_EXPOSED": ["W2"],
+      "basis": "caller-declared source-linked coverage; not authenticated against a live service"
+    },
+    "counterevidence": {
+      "normal_wafers_sharing_exact_exposure": ["W1"],
+      "abnormal_wafers_without_observed_exact_exposure": ["W2"],
+      "statistical_association": "NOT_COMPUTED",
+      "causal_conclusion": "NOT_ESTABLISHED"
+    },
+    "journey_coverage": {
+      "status": "COVERAGE_UNKNOWN",
+      "reason": "The synthetic example has no process-history coverage record; the UI retains this explicitly."
+    },
+    "route_conformance": "NO_APPROVED_EXPECTED_ROUTE"
+  },
+  "export_action": {
+    "button_activated": true,
+    "visible_status": "Evidence JSON download started · SYN-p2-006c21a7c117.json",
+    "download_artifact_captured": true,
+    "downloaded_file": "qualification/evidence/browser-current-export.json",
+    "download_sha256": "8a2021762a9d0355bd7e0e148f9fc32dce2670d55d0067373163e24faca0b821",
+    "download_bytes": 36865
+  },
+  "limitations": [
+    "All source IDs, relationships, outcomes, and coverage declarations are synthetic and caller supplied.",
+    "The browser replay verifies this local P2 interface, not the P1 shared shell, company authorization, target accessibility acceptance, or manufacturing semantics.",
+    "History completeness remains unknown in this snapshot, and no approved expected route was supplied."
+  ]
+}

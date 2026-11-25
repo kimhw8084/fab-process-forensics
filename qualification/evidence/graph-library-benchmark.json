@@ -1,0 +1,34 @@
+{
+  "benchmark": "explicit time-scoped typed relationship neighborhood traversal",
+  "correctness": "PASS: all 25 held-out result sets identical",
+  "graph": {
+    "edges": 100000,
+    "nodes": 110000,
+    "queries": 250
+  },
+  "interpretation": "This workload needs explicit-edge provenance and time filtering. The stdlib adjacency index had lower build/runtime overhead in this measured Python environment; NetworkX remains useful as an independent graph-algorithm oracle, but is not required by the product runtime for this traversal.",
+  "networkx": "3.1",
+  "networkx_multigraph": {
+    "build_ms": 519.096,
+    "peak_tracemalloc_bytes": 89047336,
+    "queries": {
+      "median_ms": 0.01554,
+      "p95_ms": 0.02033,
+      "query_count": 250,
+      "total_ms": 4.04
+    }
+  },
+  "p2_typed_adjacency": {
+    "build_ms": 85.437,
+    "peak_tracemalloc_bytes": 18675972,
+    "queries": {
+      "median_ms": 0.00525,
+      "p95_ms": 0.00654,
+      "query_count": 250,
+      "total_ms": 1.301
+    }
+  },
+  "python": "3.11.7",
+  "seed": 20261122,
+  "synthetic_only": true
+}

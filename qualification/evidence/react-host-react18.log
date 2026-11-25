@@ -1,0 +1,15 @@
+✔ typed models preserve evidence references and do not mutate the source envelope (1.182417ms)
+✔ P1 host adapters mount all five evidence panels with accessible tables and provenance drill-down (30.906709ms)
+✔ the headless fallback remains keyboard and table accessible when P1 adapters are not injected (11.114083ms)
+✔ large fallback histories page journey and table rows without dropping export evidence (71.799625ms)
+✔ host request controls delegate cancel, retry, and new investigation actions (1.280833ms)
+✔ empty, error, and refused states stay explicit and never assert a cause (2.102041ms)
+✔ invalid contract envelopes are rejected before rendering (0.18525ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 531.257333

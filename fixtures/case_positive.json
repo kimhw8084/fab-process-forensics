@@ -1,0 +1,142 @@
+{
+  "wafer_id": "W1",
+  "cohort": ["W1", "W2"],
+  "events": [
+    {
+      "wafer_id": "W1",
+      "step_instance_id": "S1",
+      "operation": "ETCH",
+      "timestamp": "2026-11-21T01:00:00+00:00",
+      "chamber_id": "C1",
+      "source_id": "SYN_PROCESS",
+      "relationship_id": "SYN_REL_WAFER_STEP",
+      "approved_relationship": true
+    },
+    {
+      "wafer_id": "W2",
+      "step_instance_id": "S2",
+      "operation": "ETCH",
+      "timestamp": "2026-11-21T01:30:00+00:00",
+      "chamber_id": "C2",
+      "source_id": "SYN_PROCESS",
+      "relationship_id": "SYN_REL_WAFER_STEP",
+      "approved_relationship": true
+    },
+    {
+      "wafer_id": "W1",
+      "step_instance_id": "S3",
+      "operation": "MET",
+      "timestamp": "2026-11-21T02:00:00+00:00",
+      "chamber_id": "M1",
+      "source_id": "SYN_PROCESS",
+      "relationship_id": "SYN_REL_WAFER_STEP",
+      "approved_relationship": true
+    },
+    {
+      "wafer_id": "W1",
+      "step_instance_id": "S4",
+      "operation": "ETCH",
+      "timestamp": "2026-11-21T05:00:00+00:00",
+      "chamber_id": "C1",
+      "source_id": "SYN_PROCESS",
+      "relationship_id": "SYN_REL_WAFER_STEP",
+      "approved_relationship": true
+    }
+  ],
+  "suspected_exposure": {
+    "chamber_id": "C1",
+    "start": "2026-11-21T00:00:00+00:00",
+    "end": "2026-11-21T03:00:00+00:00"
+  },
+  "coverage": {
+    "complete": true,
+    "covered_wafer_ids": ["W1", "W2"],
+    "covered_lot_ids": ["LOT-A"],
+    "covered_operation_ids": ["ETCH", "MET"],
+    "population_kind": "WAFER",
+    "source_authority_claim": "SYNTHETIC_FIXTURE_ASSERTION",
+    "source_ids": ["SYN_COVERAGE"],
+    "covered_source_ids": ["SYN_PROCESS"],
+    "missing_record_ids": [],
+    "relationship_id": "SYN_REL_COVERAGE",
+    "record_id": "SYN_COVERAGE_RECORD",
+    "window_start": "2026-11-21T00:00:00+00:00",
+    "window_end": "2026-11-21T03:00:00+00:00",
+    "valid_until": "2026-11-22T00:00:00+00:00"
+  },
+  "outcomes": [
+    {
+      "wafer_id": "W1",
+      "lot_id": "LOT-A",
+      "label": "NORMAL",
+      "timestamp": "2026-11-21T06:00:00+00:00",
+      "source_id": "SYN_OUTCOME",
+      "relationship_id": "SYN_REL_OUTCOME_WAFER",
+      "approved_relationship": true
+    },
+    {
+      "wafer_id": "W2",
+      "lot_id": "LOT-A",
+      "label": "ABNORMAL",
+      "timestamp": "2026-11-21T06:00:00+00:00",
+      "source_id": "SYN_OUTCOME",
+      "relationship_id": "SYN_REL_OUTCOME_WAFER",
+      "approved_relationship": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "SYN_PROCESS",
+      "approved_semantic_version": "SYNTHETIC-ORACLE-1",
+      "grain": "one process step instance",
+      "source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "permissions_ref": "SYNTHETIC-ONLY"
+    },
+    {
+      "id": "SYN_OUTCOME",
+      "approved_semantic_version": "SYNTHETIC-ORACLE-1",
+      "grain": "one outcome per wafer",
+      "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "permissions_ref": "SYNTHETIC-ONLY"
+    },
+    {
+      "id": "SYN_COVERAGE",
+      "approved_semantic_version": "SYNTHETIC-ORACLE-1",
+      "grain": "one exposure coverage record per population and time window",
+      "source_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "permissions_ref": "SYNTHETIC-ONLY"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "SYN_REL_WAFER_STEP",
+      "approved": true,
+      "source_ids": ["SYN_PROCESS"],
+      "keys": ["wafer_id", "step_instance_id", "timestamp", "chamber_id"],
+      "cardinality": "one process step instance to one wafer identity",
+      "grain": "one process step instance",
+      "effective_start": "2026-11-20T00:00:00+00:00",
+      "effective_end": "2026-11-22T00:00:00+00:00"
+    },
+    {
+      "id": "SYN_REL_OUTCOME_WAFER",
+      "approved": true,
+      "source_ids": ["SYN_OUTCOME"],
+      "keys": ["wafer_id", "timestamp", "lot_id"],
+      "cardinality": "one outcome to one wafer identity",
+      "grain": "one outcome per wafer",
+      "effective_start": "2026-11-20T00:00:00+00:00",
+      "effective_end": "2026-11-22T00:00:00+00:00"
+    },
+    {
+      "id": "SYN_REL_COVERAGE",
+      "approved": true,
+      "source_ids": ["SYN_COVERAGE"],
+      "keys": ["record_id", "complete", "covered_wafer_ids", "covered_lot_ids", "covered_operation_ids", "covered_source_ids", "population_kind", "source_authority_claim", "window_start", "window_end", "valid_until", "missing_record_ids"],
+      "cardinality": "one coverage record to an explicitly listed wafer population and time window",
+      "grain": "one exposure coverage record per population and time window",
+      "effective_start": "2026-11-20T00:00:00+00:00",
+      "effective_end": "2026-11-22T00:00:00+00:00"
+    }
+  ]
+}

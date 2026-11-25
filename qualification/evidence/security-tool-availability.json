@@ -1,0 +1,21 @@
+{
+  "dependency_manifests_in_launchkit": [
+    "ui/p2-react/package-lock.json"
+  ],
+  "interpretation": "No transitive dependency or license approval is inferred. A current authorized vulnerability database and owner/transfer decision are still required for E09 PASS.",
+  "license_ownership": "NOASSERTION",
+  "network_used": false,
+  "python_runtime_imports_outside_stdlib_and_local_packages": [
+    "httpx2",
+    "mcp",
+    "mcp_types"
+  ],
+  "scanner_binaries_in_path": {
+    "grype": null,
+    "osv-scanner": null,
+    "pip-audit": null,
+    "syft": null
+  },
+  "status": "PARTIAL",
+  "vulnerability_database": "NOT_AVAILABLE_OR_NOT_VERIFIED_FROM_LAUNCHKIT"
+}

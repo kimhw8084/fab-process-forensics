@@ -1,0 +1,23 @@
+{
+  "capture": "ACTUAL_LOCAL_BROWSER_DOWNLOAD",
+  "company_authorization_verified": false,
+  "compressed_artifact": "qualification/evidence/engineer-100-browser-export.json.gz",
+  "compressed_bytes": 107470,
+  "compressed_sha256": "c0a920cdc39e21404bf8e3dec2528fd4e8051b0b50c37bc9bb8da79f166d10fd",
+  "coverage_evidence_level": "CONTRADICTORY",
+  "downloaded_filename": "p2-investigation-SYN-p2-426cac3fac29.json",
+  "investigation_id": "SYN-p2-426cac3fac29",
+  "journey_count": 98,
+  "mcp_read_rows": {
+    "coverage": 1,
+    "events": 404,
+    "history_coverage": 1,
+    "material_relationships": 2,
+    "outcomes": 98,
+    "route_coverage": 1,
+    "route_definitions": 2
+  },
+  "raw_bytes": 5528500,
+  "raw_sha256": "61f42dbaf546b124cf19520c68f207b887ebe9527fddff0483b6b81a88c78181",
+  "source_count": 7
+}

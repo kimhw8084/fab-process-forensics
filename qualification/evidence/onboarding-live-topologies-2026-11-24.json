@@ -1,0 +1,315 @@
+{
+  "benchmark_date": "2026-11-24",
+  "environments": [
+    {
+      "abstained_roles": 0,
+      "approval_boundary": "DIGEST_BOUND_SYNTHETIC_REVIEW_VALIDATED",
+      "correct_role_decisions": 2,
+      "descriptor_capture_sha256": "477f6c9e30dea68d6d04432bb9931e5d46332044c78b75b91621b498a630f1cb",
+      "environment": "standard",
+      "false_mapping_acceptances": 0,
+      "fixed_answer_pass": true,
+      "mapping_auto_approved": false,
+      "performance": {
+        "descriptors_examined": 7,
+        "elapsed_mcp_discovery_and_mapping_ms": 1078.993,
+        "mapping_ms": 0.521,
+        "relationships_ms": 1.396,
+        "semantics_ms": 1.918,
+        "source_discovery_ms": 29.268,
+        "tool_discovery_ms": 686.467
+      },
+      "proposal_sha256": "8113e3ee359b20edc72b1abc181c0bc5d7e7ddfdd20e4d9c3d337f7a26caaf74",
+      "role_expectations_checked": 2,
+      "roles": {
+        "events": {
+          "actual_state": "UNIQUE_REVIEW_REQUIRED",
+          "expected": {
+            "candidate_state": "STRUCTURALLY_COMPATIBLE_REVIEW_REQUIRED",
+            "source_ids": [
+              "SYN_PROCESS"
+            ],
+            "state": "UNIQUE_REVIEW_REQUIRED"
+          },
+          "fixed_answer_pass": true,
+          "preferred_source_id": "SYN_PROCESS",
+          "ranked_source_ids": [
+            "SYN_PROCESS"
+          ]
+        },
+        "material_relationships": {
+          "actual_state": "UNIQUE_REVIEW_REQUIRED",
+          "expected": {
+            "candidate_state": "STRUCTURALLY_COMPATIBLE_REVIEW_REQUIRED",
+            "source_ids": [
+              "SYN_MATERIAL"
+            ],
+            "state": "UNIQUE_REVIEW_REQUIRED"
+          },
+          "fixed_answer_pass": true,
+          "preferred_source_id": "SYN_MATERIAL",
+          "ranked_source_ids": [
+            "SYN_MATERIAL"
+          ]
+        }
+      },
+      "selected_source_role_fields_in_successful_review": 0,
+      "source_rows_read_during_discovery": false,
+      "synthetic_review_mode": "ONE_EXACT_PROPOSAL_REVIEW_RECORD",
+      "unresolved_role_questions": 0
+    },
+    {
+      "abstained_roles": 1,
+      "approval_boundary": "CORRECTLY_REJECTED_UNRESOLVED_MAPPING",
+      "correct_role_decisions": 1,
+      "descriptor_capture_sha256": "6917209450234808ceb420442c6445280fa7ddf7cd06acd150752f09e16c6d79",
+      "environment": "arrival-time-only",
+      "false_mapping_acceptances": 0,
+      "fixed_answer_pass": true,
+      "mapping_auto_approved": false,
+      "performance": {
+        "descriptors_examined": 7,
+        "elapsed_mcp_discovery_and_mapping_ms": 710.24,
+        "mapping_ms": 0.45,
+        "relationships_ms": 1.435,
+        "semantics_ms": 1.747,
+        "source_discovery_ms": 1.651,
+        "tool_discovery_ms": 353.527
+      },
+      "proposal_sha256": "d4f24116ccf6402a99e3efc973132bb0e22c95884b7953b17d5b54519e1ee4da",
+      "role_expectations_checked": 1,
+      "roles": {
+        "events": {
+          "actual_state": "NO_STRUCTURALLY_COMPATIBLE_SOURCE",
+          "expected": {
+            "diagnostic": "EVENT_TIME_NOT_ESTABLISHED",
+            "source_ids": [],
+            "state": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+          },
+          "fixed_answer_pass": true,
+          "preferred_source_id": null,
+          "ranked_source_ids": []
+        }
+      },
+      "selected_source_role_fields_in_successful_review": null,
+      "source_rows_read_during_discovery": false,
+      "synthetic_review_mode": "NOT_APPROVED",
+      "unresolved_role_questions": 1
+    },
+    {
+      "abstained_roles": 1,
+      "approval_boundary": "CORRECTLY_REJECTED_UNRESOLVED_MAPPING",
+      "correct_role_decisions": 1,
+      "descriptor_capture_sha256": "4777366567ddc4315375af42e33d26dbd0db150c20ef2defda1be11c63f2503f",
+      "environment": "static-membership",
+      "false_mapping_acceptances": 0,
+      "fixed_answer_pass": true,
+      "mapping_auto_approved": false,
+      "performance": {
+        "descriptors_examined": 7,
+        "elapsed_mcp_discovery_and_mapping_ms": 734.254,
+        "mapping_ms": 0.478,
+        "relationships_ms": 1.435,
+        "semantics_ms": 1.839,
+        "source_discovery_ms": 1.7,
+        "tool_discovery_ms": 360.288
+      },
+      "proposal_sha256": "19863bf16efb5cec2d0e870a38a61b773928715e294df3f8ea37fe87d36dec83",
+      "role_expectations_checked": 1,
+      "roles": {
+        "material_relationships": {
+          "actual_state": "NO_STRUCTURALLY_COMPATIBLE_SOURCE",
+          "expected": {
+            "diagnostic": "TIME_SCOPED_MEMBERSHIP_NOT_ESTABLISHED",
+            "source_ids": [],
+            "state": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+          },
+          "fixed_answer_pass": true,
+          "preferred_source_id": null,
+          "ranked_source_ids": []
+        }
+      },
+      "selected_source_role_fields_in_successful_review": null,
+      "source_rows_read_during_discovery": false,
+      "synthetic_review_mode": "NOT_APPROVED",
+      "unresolved_role_questions": 1
+    },
+    {
+      "abstained_roles": 1,
+      "approval_boundary": "CORRECTLY_REJECTED_UNRESOLVED_MAPPING",
+      "correct_role_decisions": 1,
+      "descriptor_capture_sha256": "3df03fdd16ebe9df575c38b9ad971d16870a861b09108e6421d1fbd99b91ad88",
+      "environment": "missing-event-relationship-key",
+      "false_mapping_acceptances": 0,
+      "fixed_answer_pass": true,
+      "mapping_auto_approved": false,
+      "performance": {
+        "descriptors_examined": 7,
+        "elapsed_mcp_discovery_and_mapping_ms": 735.836,
+        "mapping_ms": 0.47,
+        "relationships_ms": 1.577,
+        "semantics_ms": 1.56,
+        "source_discovery_ms": 1.767,
+        "tool_discovery_ms": 379.427
+      },
+      "proposal_sha256": "c5fd8aa54b5b170a530939f1a07c691256b3d80ca0e54e009fa47f1ef1c534b7",
+      "role_expectations_checked": 1,
+      "roles": {
+        "events": {
+          "actual_state": "NO_STRUCTURALLY_COMPATIBLE_SOURCE",
+          "expected": {
+            "source_ids": [],
+            "state": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+          },
+          "fixed_answer_pass": true,
+          "preferred_source_id": null,
+          "ranked_source_ids": []
+        }
+      },
+      "selected_source_role_fields_in_successful_review": null,
+      "source_rows_read_during_discovery": false,
+      "synthetic_review_mode": "NOT_APPROVED",
+      "unresolved_role_questions": 1
+    },
+    {
+      "abstained_roles": 0,
+      "approval_boundary": "EXPLICIT_PARTIAL_MAPPING_REVIEW_VALIDATED",
+      "correct_role_decisions": 1,
+      "descriptor_capture_sha256": "bce567e954d4146521219f886b015c7e9f9d21c4b20be9caa80b0f2f1ced79e1",
+      "environment": "equipment-group-only",
+      "false_mapping_acceptances": 0,
+      "fixed_answer_pass": true,
+      "mapping_auto_approved": false,
+      "performance": {
+        "descriptors_examined": 7,
+        "elapsed_mcp_discovery_and_mapping_ms": 714.679,
+        "mapping_ms": 0.493,
+        "relationships_ms": 1.407,
+        "semantics_ms": 1.646,
+        "source_discovery_ms": 1.893,
+        "tool_discovery_ms": 358.11
+      },
+      "proposal_sha256": "922c2ef681a2d645ed452ae91f5c96b19400ea46434c99a31ed404cc056bb3b7",
+      "role_expectations_checked": 1,
+      "roles": {
+        "events": {
+          "actual_state": "UNIQUE_REVIEW_REQUIRED",
+          "expected": {
+            "candidate_state": "STRUCTURALLY_PARTIAL_REVIEW_REQUIRED",
+            "diagnostic": "EXACT_CHAMBER_NOT_ESTABLISHED",
+            "missing_field": "chamber_id",
+            "source_ids": [
+              "SYN_PROCESS"
+            ],
+            "state": "UNIQUE_REVIEW_REQUIRED"
+          },
+          "fixed_answer_pass": true,
+          "preferred_source_id": "SYN_PROCESS",
+          "ranked_source_ids": [
+            "SYN_PROCESS"
+          ]
+        }
+      },
+      "selected_source_role_fields_in_successful_review": 7,
+      "source_rows_read_during_discovery": false,
+      "synthetic_review_mode": "ONE_DETAILED_SYNTHETIC_REVIEW_RECORD",
+      "unresolved_role_questions": 1
+    },
+    {
+      "abstained_roles": 1,
+      "approval_boundary": "CORRECTLY_REJECTED_UNRESOLVED_MAPPING",
+      "correct_role_decisions": 1,
+      "descriptor_capture_sha256": "d82664ac4e90d9c6196e9d4dc9407ab86ebda68ec3e76f6bed84ad08116e26e8",
+      "environment": "duplicate-event-version",
+      "false_mapping_acceptances": 0,
+      "fixed_answer_pass": true,
+      "mapping_auto_approved": false,
+      "performance": {
+        "descriptors_examined": 8,
+        "elapsed_mcp_discovery_and_mapping_ms": 710.172,
+        "mapping_ms": 0.534,
+        "relationships_ms": 1.454,
+        "semantics_ms": 1.648,
+        "source_discovery_ms": 1.838,
+        "tool_discovery_ms": 351.704
+      },
+      "proposal_sha256": "9f16b9abff37c9daafcabb45bdd3cbaca15e0f8ae1b7a72a249c5fda740edd98",
+      "role_expectations_checked": 1,
+      "roles": {
+        "events": {
+          "actual_state": "AMBIGUOUS",
+          "expected": {
+            "preferred_source_id": null,
+            "source_ids": [
+              "SYN_PROCESS",
+              "SYN_PROCESS_OLDER_SEMANTICS"
+            ],
+            "state": "AMBIGUOUS"
+          },
+          "fixed_answer_pass": true,
+          "preferred_source_id": null,
+          "ranked_source_ids": [
+            "SYN_PROCESS",
+            "SYN_PROCESS_OLDER_SEMANTICS"
+          ]
+        }
+      },
+      "selected_source_role_fields_in_successful_review": null,
+      "source_rows_read_during_discovery": false,
+      "synthetic_review_mode": "NOT_APPROVED",
+      "unresolved_role_questions": 1
+    },
+    {
+      "abstained_roles": 1,
+      "approval_boundary": "CORRECTLY_REJECTED_UNRESOLVED_MAPPING",
+      "correct_role_decisions": 1,
+      "descriptor_capture_sha256": "d825eca1b304b2969a08399724d5966a211bd115a4c944c11404634e860e9706",
+      "environment": "combined-untyped-process-outcome",
+      "false_mapping_acceptances": 0,
+      "fixed_answer_pass": true,
+      "mapping_auto_approved": false,
+      "performance": {
+        "descriptors_examined": 7,
+        "elapsed_mcp_discovery_and_mapping_ms": 729.766,
+        "mapping_ms": 0.428,
+        "relationships_ms": 1.387,
+        "semantics_ms": 1.629,
+        "source_discovery_ms": 1.678,
+        "tool_discovery_ms": 369.821
+      },
+      "proposal_sha256": "ff54ddea2207130cc05a9288066c3d861cec60a1656167d48574da370288a476",
+      "role_expectations_checked": 1,
+      "roles": {
+        "events": {
+          "actual_state": "NO_STRUCTURALLY_COMPATIBLE_SOURCE",
+          "expected": {
+            "source_ids": [],
+            "state": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+          },
+          "fixed_answer_pass": true,
+          "preferred_source_id": null,
+          "ranked_source_ids": []
+        }
+      },
+      "selected_source_role_fields_in_successful_review": null,
+      "source_rows_read_during_discovery": false,
+      "synthetic_review_mode": "NOT_APPROVED",
+      "unresolved_role_questions": 1
+    }
+  ],
+  "fixed_answer_oracle": "qualification/fixtures/live_onboarding_topologies_expected_v1.json",
+  "mcp_protocol": "official SDK synthetic stdio peer",
+  "qualification_boundary": "Synthetic source descriptors and synthetic reviewer records only; no company authority, permission, source semantics, or manufacturing evidence is established.",
+  "schema_version": "p2-live-onboarding-topology-benchmark/v1",
+  "summary": {
+    "environments_needing_additional_semantic_or_relationship_evidence": 5,
+    "environments_passed": 7,
+    "environments_total": 7,
+    "false_mapping_acceptances": 0,
+    "individual_source_role_fields_selected_in_successful_reviews": 7,
+    "mapping_auto_approvals": 0,
+    "role_expectations_checked": 8,
+    "source_reads_during_discovery": 0,
+    "successful_synthetic_review_records": 2
+  }
+}

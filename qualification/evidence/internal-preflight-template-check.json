@@ -1,0 +1,26 @@
+{
+  "capture_structure": "INCOMPLETE",
+  "contract_version_checked": "1.0.0",
+  "distinct_tools_checked": 0,
+  "meaning": "Local capture review only; payload claims are not live MCP authorization or compatibility evidence.",
+  "missing": [
+    "logical operation mapping: audit",
+    "logical operation mapping: cancel",
+    "logical operation mapping: discover",
+    "logical operation mapping: read_bounded",
+    "logical operation mapping: relationships",
+    "logical operation mapping: semantics",
+    "read-only permission scope attestation",
+    "positive limit: max_rows",
+    "positive limit: max_bytes",
+    "positive limit: timeout_seconds",
+    "non-empty discovery field: semantic_version",
+    "non-empty discovery field: auth_scope",
+    "audit support must be explicitly true",
+    "cancellation support must be explicitly true"
+  ],
+  "network_requests": 0,
+  "operation_mappings_checked": 0,
+  "status": "PENDING_INTERNAL_QUALIFICATION",
+  "tool_versions_checked": 0
+}

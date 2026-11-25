@@ -1,0 +1,587 @@
+{
+  "artifacts": [
+    {
+      "content_sha256": "0368b0ff6fb3af227513ddd221ae75566ef1f3d61e9d44820439a43f53d0601e",
+      "exposure_analysis": {
+        "chamber_id": "C1",
+        "coverage_complete": true,
+        "coverage_evidence": {
+          "accepted_for_query": true,
+          "assessment": "Complete declared coverage spans the entire query window and listed population.",
+          "complete_assertion": true,
+          "covered_wafer_ids": [
+            "W1",
+            "W2"
+          ],
+          "record_type": "CALLER_DECLARED_COVERAGE",
+          "source_ids": [
+            "SYN_PROCESS"
+          ],
+          "window_end": "2026-11-21T03:00:00+00:00",
+          "window_start": "2026-11-21T00:00:00+00:00"
+        },
+        "coverage_reason": "Complete declared coverage spans the entire query window and listed population.",
+        "definitely_exposed": [
+          "W1"
+        ],
+        "evidence": [
+          {
+            "classification": "EXACT_CHAMBER_WINDOW_MATCH",
+            "processing_end": null,
+            "processing_start": null,
+            "relationship_id": "SYN_REL_WAFER_STEP",
+            "source_id": "SYN_PROCESS",
+            "step_instance_id": "S1",
+            "timestamp": "2026-11-21T01:00:00+00:00",
+            "timestamp_utc": "2026-11-21T01:00:00+00:00",
+            "wafer_id": "W1"
+          }
+        ],
+        "population": [
+          "W1",
+          "W2"
+        ],
+        "possibly_exposed": [],
+        "verified_unexposed": [
+          "W2"
+        ],
+        "window": {
+          "end": "2026-11-21T03:00:00+00:00",
+          "start": "2026-11-21T00:00:00+00:00"
+        }
+      },
+      "format": "application/json",
+      "journey": {
+        "journeys": [
+          {
+            "route_conformance": "NO_APPROVED_EXPECTED_ROUTE",
+            "steps": [
+              {
+                "chamber_id": "C1",
+                "identity_relationship_id": null,
+                "lot_id_at_event": null,
+                "operation": "ETCH",
+                "order_uncertain_with": [],
+                "recorded_at": null,
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "rework_of_step_instance_id": null,
+                "route_id": null,
+                "route_version": null,
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S1",
+                "time_uncertainty_seconds": 0,
+                "timestamp": "2026-11-21T01:00:00+00:00",
+                "timestamp_utc": "2026-11-21T01:00:00+00:00",
+                "tool_id": null
+              },
+              {
+                "chamber_id": "M1",
+                "identity_relationship_id": null,
+                "lot_id_at_event": null,
+                "operation": "MET",
+                "order_uncertain_with": [],
+                "recorded_at": null,
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "rework_of_step_instance_id": null,
+                "route_id": null,
+                "route_version": null,
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S3",
+                "time_uncertainty_seconds": 0,
+                "timestamp": "2026-11-21T02:00:00+00:00",
+                "timestamp_utc": "2026-11-21T02:00:00+00:00",
+                "tool_id": null
+              },
+              {
+                "chamber_id": "C1",
+                "identity_relationship_id": null,
+                "lot_id_at_event": null,
+                "operation": "ETCH",
+                "order_uncertain_with": [],
+                "recorded_at": null,
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "rework_of_step_instance_id": null,
+                "route_id": null,
+                "route_version": null,
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S4",
+                "time_uncertainty_seconds": 0,
+                "timestamp": "2026-11-21T05:00:00+00:00",
+                "timestamp_utc": "2026-11-21T05:00:00+00:00",
+                "tool_id": null
+              }
+            ],
+            "wafer_id": "W1"
+          },
+          {
+            "route_conformance": "NO_APPROVED_EXPECTED_ROUTE",
+            "steps": [
+              {
+                "chamber_id": "C2",
+                "identity_relationship_id": null,
+                "lot_id_at_event": null,
+                "operation": "ETCH",
+                "order_uncertain_with": [],
+                "recorded_at": null,
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "rework_of_step_instance_id": null,
+                "route_id": null,
+                "route_version": null,
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S2",
+                "time_uncertainty_seconds": 0,
+                "timestamp": "2026-11-21T01:30:00+00:00",
+                "timestamp_utc": "2026-11-21T01:30:00+00:00",
+                "tool_id": null
+              }
+            ],
+            "wafer_id": "W2"
+          }
+        ],
+        "route_variants": [
+          {
+            "count": 1,
+            "meaning": "Observed event sequence; conformance is reported only against an approved expected route with complete route coverage.",
+            "operations": [
+              "ETCH"
+            ],
+            "order_status": "ORDERED",
+            "route_id_sequence": [
+              null
+            ],
+            "route_version_sequence": [
+              null
+            ],
+            "wafer_ids": [
+              "W2"
+            ]
+          },
+          {
+            "count": 1,
+            "meaning": "Observed event sequence; conformance is reported only against an approved expected route with complete route coverage.",
+            "operations": [
+              "ETCH",
+              "MET",
+              "ETCH"
+            ],
+            "order_status": "ORDERED",
+            "route_id_sequence": [
+              null,
+              null,
+              null
+            ],
+            "route_version_sequence": [
+              null,
+              null,
+              null
+            ],
+            "wafer_ids": [
+              "W1"
+            ]
+          }
+        ]
+      },
+      "kind": "investigation_snapshot",
+      "note": "The deterministic envelope itself is the reproducible export.",
+      "scope": {
+        "target_lot_id": "LOT-A",
+        "target_wafer_ids": [
+          "W1",
+          "W2"
+        ]
+      },
+      "source_relationships": [
+        {
+          "cardinality": "one outcome to one wafer identity",
+          "effective_end_utc": "2026-11-22T00:00:00+00:00",
+          "effective_start_utc": "2026-11-20T00:00:00+00:00",
+          "grain": "one outcome per wafer",
+          "id": "SYN_REL_OUTCOME_WAFER",
+          "keys": [
+            "lot_id",
+            "wafer_id"
+          ],
+          "source_ids": [
+            "SYN_OUTCOME"
+          ],
+          "status": "CALLER_DECLARED_APPROVED"
+        },
+        {
+          "cardinality": "one process step instance to one wafer identity",
+          "effective_end_utc": "2026-11-22T00:00:00+00:00",
+          "effective_start_utc": "2026-11-20T00:00:00+00:00",
+          "grain": "one process step instance",
+          "id": "SYN_REL_WAFER_STEP",
+          "keys": [
+            "step_instance_id",
+            "wafer_id"
+          ],
+          "source_ids": [
+            "SYN_PROCESS"
+          ],
+          "status": "CALLER_DECLARED_APPROVED"
+        }
+      ],
+      "target_outcomes": [
+        {
+          "label": "NORMAL",
+          "lot_id": "LOT-A",
+          "relationship_id": "SYN_REL_OUTCOME_WAFER",
+          "source_id": "SYN_OUTCOME",
+          "timestamp": "2026-11-21T06:00:00+00:00",
+          "wafer_id": "W1"
+        },
+        {
+          "label": "ABNORMAL",
+          "lot_id": "LOT-A",
+          "relationship_id": "SYN_REL_OUTCOME_WAFER",
+          "source_id": "SYN_OUTCOME",
+          "timestamp": "2026-11-21T06:00:00+00:00",
+          "wafer_id": "W2"
+        }
+      ]
+    }
+  ],
+  "assumptions": [],
+  "claims": [
+    {
+      "category": "DESCRIPTIVE",
+      "certainty": "SUPPORTED",
+      "method": "typed_step_instance_chronology",
+      "source_ids": [
+        "SYN_PROCESS"
+      ],
+      "statement": "Wafer W1 has 3 distinct step instances in the submitted snapshot; repeated operation = True."
+    },
+    {
+      "category": "DESCRIPTIVE",
+      "certainty": "SUPPORTED",
+      "method": "typed_step_instance_chronology",
+      "source_ids": [
+        "SYN_PROCESS"
+      ],
+      "statement": "Wafer W2 has 1 distinct step instances in the submitted snapshot; repeated operation = False."
+    },
+    {
+      "category": "DESCRIPTIVE",
+      "certainty": "SUPPORTED",
+      "method": "exact_wafer_event_sequence_grouping",
+      "source_ids": [
+        "SYN_PROCESS"
+      ],
+      "statement": "Observed 2 ordered route sequence variant(s) across 2 wafer(s); chronology unresolved for 0 wafer(s)."
+    },
+    {
+      "category": "DESCRIPTIVE",
+      "certainty": "SUPPORTED",
+      "method": "exact_chamber_and_timezone_aware_window_with_coverage_gate",
+      "source_ids": [
+        "SYN_PROCESS"
+      ],
+      "statement": "verified exact-chamber/window wafers = ['W1']; possible exposure due to missing chamber or clock-boundary uncertainty: []; verified unexposed under declared complete coverage: ['W2']."
+    },
+    {
+      "category": "DESCRIPTIVE",
+      "certainty": "CONDITIONAL",
+      "method": "descriptive_outcome_exposure_cross_tabulation",
+      "source_ids": [
+        "SYN_OUTCOME",
+        "SYN_PROCESS"
+      ],
+      "statement": "Hypothesis comparison for the suspected exposure: abnormal wafers with exact exposure=[]; normal wafers with exact exposure=['W1']; abnormal wafers verified unexposed=['W2']; normal wafers verified unexposed=[]; unknown exposure=[]; missing outcome=[]."
+    }
+  ],
+  "counterevidence": [
+    {
+      "abnormal_wafers_verified_unexposed": [
+        "W2"
+      ],
+      "abnormal_wafers_with_exact_exposure": [],
+      "interpretation": "Co-occurrence is descriptive support only. Normal exposed wafers, abnormal verified-unexposed wafers, missing outcomes, or unknown exposure contradict or limit the explanation. No causal effect is established.",
+      "normal_wafers_verified_unexposed": [],
+      "normal_wafers_with_exact_exposure": [
+        "W1"
+      ],
+      "outcome_evidence": [
+        {
+          "exposure_classification": "DEFINITELY_EXPOSED",
+          "label": "NORMAL",
+          "lot_id": "LOT-A",
+          "relationship_id": "SYN_REL_OUTCOME_WAFER",
+          "source_id": "SYN_OUTCOME",
+          "timestamp": "2026-11-21T06:00:00+00:00",
+          "wafer_id": "W1"
+        },
+        {
+          "exposure_classification": "VERIFIED_UNEXPOSED",
+          "label": "ABNORMAL",
+          "lot_id": "LOT-A",
+          "relationship_id": "SYN_REL_OUTCOME_WAFER",
+          "source_id": "SYN_OUTCOME",
+          "timestamp": "2026-11-21T06:00:00+00:00",
+          "wafer_id": "W2"
+        }
+      ],
+      "outcomes_with_unknown_exposure": [],
+      "population_wafers_missing_outcome": [],
+      "question": "Does the suspected exposure explain the observed outcome?"
+    }
+  ],
+  "investigation_id": "SYN-p2-0368b0ff6fb3",
+  "limitations": [
+    "Synthetic or caller-supplied evidence is not proof of company data, authorization, or source semantics.",
+    "This descriptive reconstruction does not establish a root cause or intervention effect.",
+    "A complete route or route violation cannot be inferred without an approved expected-route definition and event coverage.",
+    "Identity aliases are kept separate; no unapproved wafer or lot identity merge is performed.",
+    "Target lot membership is derived only from supplied outcome rows and their declared lot_id/wafer_id relationship; snapshot completeness for that lot is not established."
+  ],
+  "mode": "SYNTHETIC_DEMO",
+  "populations": [
+    {
+      "basis": "Approved event relation names the exact chamber and event time/processing interval overlaps the query window.",
+      "classification": "DEFINITELY_EXPOSED",
+      "count": 1,
+      "wafer_ids": [
+        "W1"
+      ]
+    },
+    {
+      "basis": "Clock uncertainty crosses the window boundary, chamber assignment is missing, or query coverage is incomplete.",
+      "classification": "POSSIBLY_EXPOSED",
+      "count": 0,
+      "wafer_ids": []
+    },
+    {
+      "basis": "Complete declared coverage spans the entire query window and listed population.",
+      "classification": "VERIFIED_UNEXPOSED",
+      "count": 1,
+      "wafer_ids": [
+        "W2"
+      ]
+    }
+  ],
+  "product_id": "p2",
+  "provenance": {
+    "engine_version": "0.2.2",
+    "input_sha256": "0368b0ff6fb3af227513ddd221ae75566ef1f3d61e9d44820439a43f53d0601e",
+    "semantic_catalog_version": "SYNTHETIC-1"
+  },
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "approved_semantic_version": "SYNTHETIC-ORACLE-1",
+      "grain": "one outcome per wafer",
+      "id": "SYN_OUTCOME",
+      "permissions_ref": "SYNTHETIC-ONLY",
+      "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    {
+      "approved_semantic_version": "SYNTHETIC-ORACLE-1",
+      "grain": "one process step instance",
+      "id": "SYN_PROCESS",
+      "permissions_ref": "SYNTHETIC-ONLY",
+      "source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ],
+  "status": "VALID",
+  "transformations": [
+    {
+      "id": "p2-event-time-normalization-v1",
+      "input_grain": "one approved process-step instance",
+      "operation": "Normalize timezone-aware event times to UTC; retain original timestamp in journey.",
+      "output_grain": "one event in one wafer journey"
+    },
+    {
+      "id": "p2-journey-and-route-variants-v1",
+      "journeys": [
+        {
+          "route_conformance": "NO_APPROVED_EXPECTED_ROUTE",
+          "steps": [
+            {
+              "chamber_id": "C1",
+              "identity_relationship_id": null,
+              "lot_id_at_event": null,
+              "operation": "ETCH",
+              "order_uncertain_with": [],
+              "recorded_at": null,
+              "relationship_id": "SYN_REL_WAFER_STEP",
+              "rework_of_step_instance_id": null,
+              "route_id": null,
+              "route_version": null,
+              "source_id": "SYN_PROCESS",
+              "step_instance_id": "S1",
+              "time_uncertainty_seconds": 0,
+              "timestamp": "2026-11-21T01:00:00+00:00",
+              "timestamp_utc": "2026-11-21T01:00:00+00:00",
+              "tool_id": null
+            },
+            {
+              "chamber_id": "M1",
+              "identity_relationship_id": null,
+              "lot_id_at_event": null,
+              "operation": "MET",
+              "order_uncertain_with": [],
+              "recorded_at": null,
+              "relationship_id": "SYN_REL_WAFER_STEP",
+              "rework_of_step_instance_id": null,
+              "route_id": null,
+              "route_version": null,
+              "source_id": "SYN_PROCESS",
+              "step_instance_id": "S3",
+              "time_uncertainty_seconds": 0,
+              "timestamp": "2026-11-21T02:00:00+00:00",
+              "timestamp_utc": "2026-11-21T02:00:00+00:00",
+              "tool_id": null
+            },
+            {
+              "chamber_id": "C1",
+              "identity_relationship_id": null,
+              "lot_id_at_event": null,
+              "operation": "ETCH",
+              "order_uncertain_with": [],
+              "recorded_at": null,
+              "relationship_id": "SYN_REL_WAFER_STEP",
+              "rework_of_step_instance_id": null,
+              "route_id": null,
+              "route_version": null,
+              "source_id": "SYN_PROCESS",
+              "step_instance_id": "S4",
+              "time_uncertainty_seconds": 0,
+              "timestamp": "2026-11-21T05:00:00+00:00",
+              "timestamp_utc": "2026-11-21T05:00:00+00:00",
+              "tool_id": null
+            }
+          ],
+          "wafer_id": "W1"
+        },
+        {
+          "route_conformance": "NO_APPROVED_EXPECTED_ROUTE",
+          "steps": [
+            {
+              "chamber_id": "C2",
+              "identity_relationship_id": null,
+              "lot_id_at_event": null,
+              "operation": "ETCH",
+              "order_uncertain_with": [],
+              "recorded_at": null,
+              "relationship_id": "SYN_REL_WAFER_STEP",
+              "rework_of_step_instance_id": null,
+              "route_id": null,
+              "route_version": null,
+              "source_id": "SYN_PROCESS",
+              "step_instance_id": "S2",
+              "time_uncertainty_seconds": 0,
+              "timestamp": "2026-11-21T01:30:00+00:00",
+              "timestamp_utc": "2026-11-21T01:30:00+00:00",
+              "tool_id": null
+            }
+          ],
+          "wafer_id": "W2"
+        }
+      ],
+      "route_variants": [
+        {
+          "count": 1,
+          "meaning": "Observed event sequence; conformance is reported only against an approved expected route with complete route coverage.",
+          "operations": [
+            "ETCH"
+          ],
+          "order_status": "ORDERED",
+          "route_id_sequence": [
+            null
+          ],
+          "route_version_sequence": [
+            null
+          ],
+          "wafer_ids": [
+            "W2"
+          ]
+        },
+        {
+          "count": 1,
+          "meaning": "Observed event sequence; conformance is reported only against an approved expected route with complete route coverage.",
+          "operations": [
+            "ETCH",
+            "MET",
+            "ETCH"
+          ],
+          "order_status": "ORDERED",
+          "route_id_sequence": [
+            null,
+            null,
+            null
+          ],
+          "route_version_sequence": [
+            null,
+            null,
+            null
+          ],
+          "wafer_ids": [
+            "W1"
+          ]
+        }
+      ]
+    },
+    {
+      "exposure": {
+        "chamber_id": "C1",
+        "coverage_complete": true,
+        "coverage_evidence": {
+          "accepted_for_query": true,
+          "assessment": "Complete declared coverage spans the entire query window and listed population.",
+          "complete_assertion": true,
+          "covered_wafer_ids": [
+            "W1",
+            "W2"
+          ],
+          "record_type": "CALLER_DECLARED_COVERAGE",
+          "source_ids": [
+            "SYN_PROCESS"
+          ],
+          "window_end": "2026-11-21T03:00:00+00:00",
+          "window_start": "2026-11-21T00:00:00+00:00"
+        },
+        "coverage_reason": "Complete declared coverage spans the entire query window and listed population.",
+        "definitely_exposed": [
+          "W1"
+        ],
+        "evidence": [
+          {
+            "classification": "EXACT_CHAMBER_WINDOW_MATCH",
+            "processing_end": null,
+            "processing_start": null,
+            "relationship_id": "SYN_REL_WAFER_STEP",
+            "source_id": "SYN_PROCESS",
+            "step_instance_id": "S1",
+            "timestamp": "2026-11-21T01:00:00+00:00",
+            "timestamp_utc": "2026-11-21T01:00:00+00:00",
+            "wafer_id": "W1"
+          }
+        ],
+        "population": [
+          "W1",
+          "W2"
+        ],
+        "possibly_exposed": [],
+        "verified_unexposed": [
+          "W2"
+        ],
+        "window": {
+          "end": "2026-11-21T03:00:00+00:00",
+          "start": "2026-11-21T00:00:00+00:00"
+        }
+      },
+      "id": "p2-exposure-evidence-v1"
+    }
+  ],
+  "uncertainty": {
+    "causal_identifiability": "NOT_ESTABLISHED",
+    "equal_timestamp_ties": [],
+    "exposure_coverage_complete": true,
+    "order_uncertainty_groups": [],
+    "route_conformance_counts": {
+      "NO_APPROVED_EXPECTED_ROUTE": 2
+    }
+  },
+  "units": {}
+}

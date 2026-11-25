@@ -1,0 +1,48 @@
+{
+  "artifact_integrity": {
+    "cross_run_json_identity": "NOT_GUARANTEED: MCP operation/audit IDs are generated per run; each captured envelope is individually hash-pinned.",
+    "decompresses_to_captured_json_byte_for_byte": true,
+    "gzip_mtime_seconds": 0,
+    "recompression_of_identical_json_is_byte_identical": true
+  },
+  "baseline_comparison": {
+    "configuration_step_reduction_claim": "NOT_MEASURED: frozen baseline has no equivalent executable live onboarding workflow, so manual effort is not reconstructable.",
+    "current_commands_to_investigation": 3,
+    "frozen_baseline_live_onboarding_commands": 0,
+    "frozen_candidate_sha256": "8cd4d26b58cec464e21bebc3a6c4704ea862ed496de5c729568f297970303f5d",
+    "human_engineer_time": "NOT_MEASURED"
+  },
+  "bounded_read_count": 7,
+  "causal_conclusion": "NOT_ESTABLISHED",
+  "condition_label_status": "CALLER_SUPPLIED_UNVERIFIED",
+  "environment": "unseen alternate physical field and source aliases; seven separate roles; official MCP SDK stdio peer",
+  "evidence_json_gzip_path": "qualification/evidence/onboarding-cli-100-alias-evidence.json.gz",
+  "evidence_json_gzip_sha256": "c63fadb4ac685bdae8ce05000f5c71938ffa47e9a40dd7f7feb5f64b2de322ac",
+  "evidence_json_sha256": "773ce79adb47b96aa3549e44d6102f5ef306998e8b872730c3eb463a9e734e3d",
+  "exposure_classification_counts": {
+    "definitely_exposed": 1,
+    "not_observed_exposed": 0,
+    "potentially_exposed": 4,
+    "unknown": 5
+  },
+  "hypothesis_entries": 1,
+  "journey_count": 98,
+  "mapping_decision": "one explicit digest-bound synthetic reviewer record; no automatic approval",
+  "mcp_audit_hashes_match": true,
+  "metadata_source_count": 7,
+  "process_instance_count": 403,
+  "qualification_boundary": "Synthetic descriptors, reviewer decision, permissions and wafer history only. No company authority, mappings, source completeness, manufacturing validation, transfer rights or ROI is established.",
+  "route_variant_count": 6,
+  "schema_version": "p2-synthetic-onboarding-cli-e2e/v1",
+  "source_role_mappings_fixed_answer_pass": true,
+  "stage_elapsed_ms": {
+    "bounded_investigation_ms": 1064.75,
+    "descriptor_discovery_and_mapping_ms": 1148.902,
+    "explicit_synthetic_review_validation_ms": 67.84
+  },
+  "workflow_stages": [
+    "onboard-live",
+    "onboard-review",
+    "investigate-mcp"
+  ]
+}

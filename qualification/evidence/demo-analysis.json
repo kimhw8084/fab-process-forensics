@@ -1,0 +1,1458 @@
+{
+  "artifacts": [
+    {
+      "content_sha256": "36d1b9637cf7b469d04abe43ab7c3ab5f5b42f613cd88cf3c39703aa2ddd1faa",
+      "exposure_analysis": {
+        "chamber_id": "C1",
+        "condition_context": {
+          "condition_type": "UNSPECIFIED",
+          "evidence_status": "NOT_SUPPLIED"
+        },
+        "condition_event_evidence": [],
+        "condition_event_status": "NO_CONDITION_EVENT_RECORDS_SUPPLIED",
+        "coverage_complete": true,
+        "coverage_evidence": {
+          "accepted_for_query": true,
+          "assessment": "Complete source-linked declared coverage spans the entire query window and listed population.",
+          "complete_assertion": true,
+          "covered_source_ids": [
+            "SYN_PROCESS"
+          ],
+          "covered_wafer_ids": [
+            "W1",
+            "W2"
+          ],
+          "missing_record_ids": [],
+          "record_id": "SYN_COVERAGE_RECORD",
+          "record_type": "CALLER_DECLARED_SOURCE_LINKED_COVERAGE",
+          "relationship_id": "SYN_REL_COVERAGE",
+          "source_ids": [
+            "SYN_COVERAGE"
+          ],
+          "window_end": "2026-11-21T03:00:00+00:00",
+          "window_start": "2026-11-21T00:00:00+00:00"
+        },
+        "coverage_reason": "Complete source-linked declared coverage spans the entire query window and listed population.",
+        "definitely_exposed": [
+          "W1"
+        ],
+        "evidence": [
+          {
+            "classification": "EXACT_CHAMBER_WINDOW_MATCH",
+            "processing_end": null,
+            "processing_end_uncertainty_seconds": 0,
+            "processing_start": null,
+            "processing_start_uncertainty_seconds": 0,
+            "relationship_id": "SYN_REL_WAFER_STEP",
+            "scope_id": "C1",
+            "scope_type": "CHAMBER",
+            "source_id": "SYN_PROCESS",
+            "step_instance_id": "S1",
+            "timestamp": "2026-11-21T01:00:00+00:00",
+            "timestamp_utc": "2026-11-21T01:00:00+00:00",
+            "wafer_id": "W1"
+          }
+        ],
+        "not_observed_exposed": [
+          "W2"
+        ],
+        "population": [
+          "W1",
+          "W2"
+        ],
+        "possibly_exposed": [],
+        "potentially_exposed": [],
+        "scope_id": "C1",
+        "scope_type": "CHAMBER",
+        "unknown": [],
+        "verified_unexposed": [
+          "W2"
+        ],
+        "window": {
+          "end": "2026-11-21T03:00:00+00:00",
+          "start": "2026-11-21T00:00:00+00:00"
+        }
+      },
+      "format": "application/json",
+      "journey": {
+        "journeys": [
+          {
+            "history_coverage": {
+              "covered_source_ids": [],
+              "covered_wafer_ids": [],
+              "missing_record_ids": [],
+              "source_references": [],
+              "status": "COVERAGE_UNKNOWN"
+            },
+            "history_flags": [
+              "OBSERVATION_COVERAGE_UNKNOWN"
+            ],
+            "history_status": "COVERAGE_UNKNOWN",
+            "lot_lineage_paths": [],
+            "material_relationships": [],
+            "rework_edges": [],
+            "route_conformance": "NO_APPROVED_EXPECTED_ROUTE",
+            "route_segments": [],
+            "sequence_edges": [
+              {
+                "from_step_instance": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S1"
+                },
+                "meaning": "Derived ordering of adjacent observed records; not a causal or recipe-transition claim.",
+                "ordering_basis": "non-overlapping timezone-normalized event-time uncertainty intervals",
+                "ordering_margin_seconds": 3600.0,
+                "provenance": [
+                  {
+                    "relationship_id": "SYN_REL_WAFER_STEP",
+                    "source_id": "SYN_PROCESS",
+                    "step_instance_id": "S1"
+                  },
+                  {
+                    "relationship_id": "SYN_REL_WAFER_STEP",
+                    "source_id": "SYN_PROCESS",
+                    "step_instance_id": "S3"
+                  }
+                ],
+                "relationship_type": "OBSERVED_CHRONOLOGICAL_ADJACENCY",
+                "to_step_instance": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S3"
+                }
+              },
+              {
+                "from_step_instance": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S3"
+                },
+                "meaning": "Derived ordering of adjacent observed records; not a causal or recipe-transition claim.",
+                "ordering_basis": "non-overlapping timezone-normalized event-time uncertainty intervals",
+                "ordering_margin_seconds": 10800.0,
+                "provenance": [
+                  {
+                    "relationship_id": "SYN_REL_WAFER_STEP",
+                    "source_id": "SYN_PROCESS",
+                    "step_instance_id": "S3"
+                  },
+                  {
+                    "relationship_id": "SYN_REL_WAFER_STEP",
+                    "source_id": "SYN_PROCESS",
+                    "step_instance_id": "S4"
+                  }
+                ],
+                "relationship_type": "OBSERVED_CHRONOLOGICAL_ADJACENCY",
+                "to_step_instance": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S4"
+                }
+              }
+            ],
+            "steps": [
+              {
+                "candidate_time_scoped_lot_ids": [],
+                "chamber_id": "C1",
+                "duplicate_record_copies_collapsed": 0,
+                "identity_relationship_id": null,
+                "lot_id_at_event": null,
+                "lot_lineage": {
+                  "material_relationship_coverage": {
+                    "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                    "company_source_authenticated": false,
+                    "covered_entities": [],
+                    "covered_relationship_types": [],
+                    "covered_source_ids": [],
+                    "missing_record_ids": [],
+                    "record_id": null,
+                    "relationship_id": null,
+                    "status": "NOT_ESTABLISHED"
+                  },
+                  "meaning": "Only source-declared lot-to-lot SPLIT_FROM and MERGED_FROM edges are traversed. LOT_MEMBERSHIP edges do not propagate through sibling wafers.",
+                  "missing_evidence": [
+                    {
+                      "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                      "coverage_status": "NOT_ESTABLISHED",
+                      "reason": "MATERIAL_RELATIONSHIP_COVERAGE_NOT_ESTABLISHED"
+                    }
+                  ],
+                  "paths": [],
+                  "relationship_assessments": [],
+                  "seeds": [],
+                  "status": "NO_VERIFIED_LOT_SEED"
+                },
+                "membership_state": "UNKNOWN",
+                "operation": "ETCH",
+                "operation_definition_id": null,
+                "operation_definition_source_id": null,
+                "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+                "order_uncertain_with": [],
+                "recorded_at": null,
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "rework_of_source_id": null,
+                "rework_of_step_instance_id": null,
+                "route_id": null,
+                "route_version": null,
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S1",
+                "step_instance_ref": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S1"
+                },
+                "time_scoped_lot_lineage_relationship_ids": [],
+                "time_scoped_material_relationship_assessments": [],
+                "time_scoped_material_relationship_ids": [],
+                "time_uncertainty_seconds": 0.0,
+                "timestamp": "2026-11-21T01:00:00+00:00",
+                "timestamp_utc": "2026-11-21T01:00:00+00:00",
+                "tool_id": null
+              },
+              {
+                "candidate_time_scoped_lot_ids": [],
+                "chamber_id": "M1",
+                "duplicate_record_copies_collapsed": 0,
+                "identity_relationship_id": null,
+                "lot_id_at_event": null,
+                "lot_lineage": {
+                  "material_relationship_coverage": {
+                    "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                    "company_source_authenticated": false,
+                    "covered_entities": [],
+                    "covered_relationship_types": [],
+                    "covered_source_ids": [],
+                    "missing_record_ids": [],
+                    "record_id": null,
+                    "relationship_id": null,
+                    "status": "NOT_ESTABLISHED"
+                  },
+                  "meaning": "Only source-declared lot-to-lot SPLIT_FROM and MERGED_FROM edges are traversed. LOT_MEMBERSHIP edges do not propagate through sibling wafers.",
+                  "missing_evidence": [
+                    {
+                      "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                      "coverage_status": "NOT_ESTABLISHED",
+                      "reason": "MATERIAL_RELATIONSHIP_COVERAGE_NOT_ESTABLISHED"
+                    }
+                  ],
+                  "paths": [],
+                  "relationship_assessments": [],
+                  "seeds": [],
+                  "status": "NO_VERIFIED_LOT_SEED"
+                },
+                "membership_state": "UNKNOWN",
+                "operation": "MET",
+                "operation_definition_id": null,
+                "operation_definition_source_id": null,
+                "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+                "order_uncertain_with": [],
+                "recorded_at": null,
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "rework_of_source_id": null,
+                "rework_of_step_instance_id": null,
+                "route_id": null,
+                "route_version": null,
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S3",
+                "step_instance_ref": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S3"
+                },
+                "time_scoped_lot_lineage_relationship_ids": [],
+                "time_scoped_material_relationship_assessments": [],
+                "time_scoped_material_relationship_ids": [],
+                "time_uncertainty_seconds": 0.0,
+                "timestamp": "2026-11-21T02:00:00+00:00",
+                "timestamp_utc": "2026-11-21T02:00:00+00:00",
+                "tool_id": null
+              },
+              {
+                "candidate_time_scoped_lot_ids": [],
+                "chamber_id": "C1",
+                "duplicate_record_copies_collapsed": 0,
+                "identity_relationship_id": null,
+                "lot_id_at_event": null,
+                "lot_lineage": {
+                  "material_relationship_coverage": {
+                    "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                    "company_source_authenticated": false,
+                    "covered_entities": [],
+                    "covered_relationship_types": [],
+                    "covered_source_ids": [],
+                    "missing_record_ids": [],
+                    "record_id": null,
+                    "relationship_id": null,
+                    "status": "NOT_ESTABLISHED"
+                  },
+                  "meaning": "Only source-declared lot-to-lot SPLIT_FROM and MERGED_FROM edges are traversed. LOT_MEMBERSHIP edges do not propagate through sibling wafers.",
+                  "missing_evidence": [
+                    {
+                      "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                      "coverage_status": "NOT_ESTABLISHED",
+                      "reason": "MATERIAL_RELATIONSHIP_COVERAGE_NOT_ESTABLISHED"
+                    }
+                  ],
+                  "paths": [],
+                  "relationship_assessments": [],
+                  "seeds": [],
+                  "status": "NO_VERIFIED_LOT_SEED"
+                },
+                "membership_state": "UNKNOWN",
+                "operation": "ETCH",
+                "operation_definition_id": null,
+                "operation_definition_source_id": null,
+                "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+                "order_uncertain_with": [],
+                "recorded_at": null,
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "rework_of_source_id": null,
+                "rework_of_step_instance_id": null,
+                "route_id": null,
+                "route_version": null,
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S4",
+                "step_instance_ref": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S4"
+                },
+                "time_scoped_lot_lineage_relationship_ids": [],
+                "time_scoped_material_relationship_assessments": [],
+                "time_scoped_material_relationship_ids": [],
+                "time_uncertainty_seconds": 0.0,
+                "timestamp": "2026-11-21T05:00:00+00:00",
+                "timestamp_utc": "2026-11-21T05:00:00+00:00",
+                "tool_id": null
+              }
+            ],
+            "wafer_id": "W1"
+          },
+          {
+            "history_coverage": {
+              "covered_source_ids": [],
+              "covered_wafer_ids": [],
+              "missing_record_ids": [],
+              "source_references": [],
+              "status": "COVERAGE_UNKNOWN"
+            },
+            "history_flags": [
+              "OBSERVATION_COVERAGE_UNKNOWN"
+            ],
+            "history_status": "COVERAGE_UNKNOWN",
+            "lot_lineage_paths": [],
+            "material_relationships": [],
+            "rework_edges": [],
+            "route_conformance": "NO_APPROVED_EXPECTED_ROUTE",
+            "route_segments": [],
+            "sequence_edges": [],
+            "steps": [
+              {
+                "candidate_time_scoped_lot_ids": [],
+                "chamber_id": "C2",
+                "duplicate_record_copies_collapsed": 0,
+                "identity_relationship_id": null,
+                "lot_id_at_event": null,
+                "lot_lineage": {
+                  "material_relationship_coverage": {
+                    "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                    "company_source_authenticated": false,
+                    "covered_entities": [],
+                    "covered_relationship_types": [],
+                    "covered_source_ids": [],
+                    "missing_record_ids": [],
+                    "record_id": null,
+                    "relationship_id": null,
+                    "status": "NOT_ESTABLISHED"
+                  },
+                  "meaning": "Only source-declared lot-to-lot SPLIT_FROM and MERGED_FROM edges are traversed. LOT_MEMBERSHIP edges do not propagate through sibling wafers.",
+                  "missing_evidence": [
+                    {
+                      "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                      "coverage_status": "NOT_ESTABLISHED",
+                      "reason": "MATERIAL_RELATIONSHIP_COVERAGE_NOT_ESTABLISHED"
+                    }
+                  ],
+                  "paths": [],
+                  "relationship_assessments": [],
+                  "seeds": [],
+                  "status": "NO_VERIFIED_LOT_SEED"
+                },
+                "membership_state": "UNKNOWN",
+                "operation": "ETCH",
+                "operation_definition_id": null,
+                "operation_definition_source_id": null,
+                "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+                "order_uncertain_with": [],
+                "recorded_at": null,
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "rework_of_source_id": null,
+                "rework_of_step_instance_id": null,
+                "route_id": null,
+                "route_version": null,
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S2",
+                "step_instance_ref": {
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S2"
+                },
+                "time_scoped_lot_lineage_relationship_ids": [],
+                "time_scoped_material_relationship_assessments": [],
+                "time_scoped_material_relationship_ids": [],
+                "time_uncertainty_seconds": 0.0,
+                "timestamp": "2026-11-21T01:30:00+00:00",
+                "timestamp_utc": "2026-11-21T01:30:00+00:00",
+                "tool_id": null
+              }
+            ],
+            "wafer_id": "W2"
+          }
+        ],
+        "material_relationships": [],
+        "route_population_summary": {
+          "chronology_uncertain_wafer_ids": [],
+          "coverage_assessment": "Route coverage has invalid timezone-aware window bounds.",
+          "coverage_record_id": null,
+          "coverage_status": "COVERAGE_INCOMPLETE_OR_UNKNOWN",
+          "declared_covered_population_count": 0,
+          "declared_covered_wafer_ids": [],
+          "declared_covered_wafer_ids_without_event_rows": [],
+          "meaning": "Route variant counts describe observed event-bearing wafer histories. The ordered denominator excludes chronology-uncertain histories; a caller-declared coverage population is shown separately and remains unauthenticated. No route is inferred for a covered wafer with no submitted event rows.",
+          "missing_record_ids": [],
+          "observed_event_wafer_count": 2,
+          "observed_event_wafer_ids": [
+            "W1",
+            "W2"
+          ],
+          "observed_event_wafer_ids_outside_declared_coverage": [
+            "W1",
+            "W2"
+          ],
+          "ordered_observed_history_denominator": 2,
+          "ordered_observed_history_wafer_ids": [
+            "W1",
+            "W2"
+          ]
+        },
+        "route_variants": [
+          {
+            "count": 1,
+            "count_basis": "Observed event-bearing wafers with determinate chronology; not a yield or full eligible-population rate.",
+            "meaning": "Observed event sequence; conformance is reported only against an approved expected route with complete route coverage.",
+            "operations": [
+              "ETCH"
+            ],
+            "order_status": "ORDERED",
+            "ordered_observed_history_denominator": 2,
+            "route_id_sequence": [
+              null
+            ],
+            "route_version_sequence": [
+              null
+            ],
+            "share_of_ordered_observed_histories": 0.5,
+            "wafer_ids": [
+              "W2"
+            ]
+          },
+          {
+            "count": 1,
+            "count_basis": "Observed event-bearing wafers with determinate chronology; not a yield or full eligible-population rate.",
+            "meaning": "Observed event sequence; conformance is reported only against an approved expected route with complete route coverage.",
+            "operations": [
+              "ETCH",
+              "MET",
+              "ETCH"
+            ],
+            "order_status": "ORDERED",
+            "ordered_observed_history_denominator": 2,
+            "route_id_sequence": [
+              null,
+              null,
+              null
+            ],
+            "route_version_sequence": [
+              null,
+              null,
+              null
+            ],
+            "share_of_ordered_observed_histories": 0.5,
+            "wafer_ids": [
+              "W1"
+            ]
+          }
+        ]
+      },
+      "kind": "investigation_snapshot",
+      "note": "The deterministic envelope itself is the reproducible export.",
+      "scope": {
+        "target_lot_id": null,
+        "target_wafer_ids": [
+          "W1"
+        ]
+      },
+      "source_relationships": [
+        {
+          "cardinality": "one coverage record to an explicitly listed wafer population and time window",
+          "effective_end_utc": "2026-11-22T00:00:00+00:00",
+          "effective_start_utc": "2026-11-20T00:00:00+00:00",
+          "grain": "one exposure coverage record per population and time window",
+          "id": "SYN_REL_COVERAGE",
+          "keys": [
+            "complete",
+            "covered_source_ids",
+            "covered_wafer_ids",
+            "missing_record_ids",
+            "record_id",
+            "window_end",
+            "window_start"
+          ],
+          "source_ids": [
+            "SYN_COVERAGE"
+          ],
+          "status": "CALLER_DECLARED_APPROVED"
+        },
+        {
+          "cardinality": "one outcome to one wafer identity",
+          "effective_end_utc": "2026-11-22T00:00:00+00:00",
+          "effective_start_utc": "2026-11-20T00:00:00+00:00",
+          "grain": "one outcome per wafer",
+          "id": "SYN_REL_OUTCOME_WAFER",
+          "keys": [
+            "lot_id",
+            "timestamp",
+            "wafer_id"
+          ],
+          "source_ids": [
+            "SYN_OUTCOME"
+          ],
+          "status": "CALLER_DECLARED_APPROVED"
+        },
+        {
+          "cardinality": "one process step instance to one wafer identity",
+          "effective_end_utc": "2026-11-22T00:00:00+00:00",
+          "effective_start_utc": "2026-11-20T00:00:00+00:00",
+          "grain": "one process step instance",
+          "id": "SYN_REL_WAFER_STEP",
+          "keys": [
+            "chamber_id",
+            "step_instance_id",
+            "timestamp",
+            "wafer_id"
+          ],
+          "source_ids": [
+            "SYN_PROCESS"
+          ],
+          "status": "CALLER_DECLARED_APPROVED"
+        }
+      ],
+      "target_outcomes": [
+        {
+          "label": "NORMAL",
+          "lot_id": "LOT-A",
+          "relationship_id": "SYN_REL_OUTCOME_WAFER",
+          "source_id": "SYN_OUTCOME",
+          "timestamp": "2026-11-21T06:00:00+00:00",
+          "wafer_id": "W1"
+        }
+      ]
+    }
+  ],
+  "assumptions": [],
+  "claims": [
+    {
+      "category": "DESCRIPTIVE",
+      "certainty": "SUPPORTED",
+      "method": "typed_step_instance_chronology",
+      "source_ids": [
+        "SYN_PROCESS"
+      ],
+      "statement": "Wafer W1 has 3 distinct step instances in the submitted snapshot; repeated operation = True."
+    },
+    {
+      "category": "DESCRIPTIVE",
+      "certainty": "SUPPORTED",
+      "method": "exact_wafer_event_sequence_grouping",
+      "source_ids": [
+        "SYN_PROCESS"
+      ],
+      "statement": "Observed 2 ordered route sequence variant(s) across 2 wafer(s); chronology unresolved for 0 wafer(s)."
+    },
+    {
+      "category": "DESCRIPTIVE",
+      "certainty": "SUPPORTED",
+      "method": "exact_chamber_and_timezone_aware_window_with_coverage_gate",
+      "source_ids": [
+        "SYN_COVERAGE",
+        "SYN_PROCESS"
+      ],
+      "statement": "Observed exact-chamber/window processing matches = ['W1']; potentially exposed from observed missing assignment or clock uncertainty = []; unknown under incomplete coverage = []; not observed exposed under declared complete coverage = ['W2']."
+    },
+    {
+      "category": "DESCRIPTIVE",
+      "certainty": "CONDITIONAL",
+      "method": "descriptive_outcome_exposure_cross_tabulation",
+      "source_ids": [
+        "SYN_COVERAGE",
+        "SYN_OUTCOME",
+        "SYN_PROCESS"
+      ],
+      "statement": "Hypothesis comparison for the suspected exposure: abnormal wafers with exact exposure=[]; normal wafers with exact exposure=['W1']; abnormal wafers not observed exposed=['W2']; normal wafers not observed exposed=[]; unknown exposure=[]; missing outcome=[]."
+    }
+  ],
+  "counterevidence": [
+    {
+      "abnormal_wafers_not_observed_exposed": [
+        "W2"
+      ],
+      "abnormal_wafers_verified_unexposed": [
+        "W2"
+      ],
+      "abnormal_wafers_with_exact_exposure": [],
+      "abnormal_wafers_without_exposure_evidence": [
+        "W2"
+      ],
+      "abnormal_wafers_without_observed_exact_exposure": [
+        "W2"
+      ],
+      "causal_conclusion": {
+        "category": "CAUSAL_CONCLUSION",
+        "reason": "No causal design, intervention, or confounder adjustment has been validated.",
+        "status": "NOT_ESTABLISHED"
+      },
+      "confounders": {
+        "equipment": {
+          "alternative_equipment_hypotheses": [
+            {
+              "abnormal_wafers_with_observed_exact_event": [
+                "W2"
+              ],
+              "abnormal_wafers_without_observed_exact_event": [],
+              "category": "ALTERNATIVE_EQUIPMENT_PATTERN",
+              "causal_conclusion": {
+                "status": "NOT_ESTABLISHED"
+              },
+              "coverage": {
+                "accepted_for_nonmatch_classification": true,
+                "assessment": "Complete source-linked declared coverage spans the entire query window and listed population.",
+                "record_type": "CALLER_DECLARED_SOURCE_LINKED_COVERAGE"
+              },
+              "equipment_field": "chamber_id",
+              "equipment_id": "C2",
+              "equipment_type": "CHAMBER",
+              "meaning": "A separate source-linked equipment co-occurrence pattern inside the same time window; it is not a competing cause or causal finding.",
+              "normal_wafers_with_observed_exact_event": [],
+              "normal_wafers_without_observed_exact_event": [
+                "W1"
+              ],
+              "observation_event_refs": [
+                {
+                  "relationship_id": "SYN_REL_WAFER_STEP",
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S2",
+                  "timestamp_utc": "2026-11-21T01:30:00+00:00",
+                  "wafer_id": "W2"
+                }
+              ],
+              "population_wafers_missing_outcome": [],
+              "potentially_exposed_wafers": [],
+              "statistical_association": {
+                "status": "NOT_COMPUTED"
+              },
+              "status": "DESCRIPTIVE_CANDIDATE_ONLY",
+              "unknown_wafers": []
+            },
+            {
+              "abnormal_wafers_with_observed_exact_event": [],
+              "abnormal_wafers_without_observed_exact_event": [
+                "W2"
+              ],
+              "category": "ALTERNATIVE_EQUIPMENT_PATTERN",
+              "causal_conclusion": {
+                "status": "NOT_ESTABLISHED"
+              },
+              "coverage": {
+                "accepted_for_nonmatch_classification": true,
+                "assessment": "Complete source-linked declared coverage spans the entire query window and listed population.",
+                "record_type": "CALLER_DECLARED_SOURCE_LINKED_COVERAGE"
+              },
+              "equipment_field": "chamber_id",
+              "equipment_id": "M1",
+              "equipment_type": "CHAMBER",
+              "meaning": "A separate source-linked equipment co-occurrence pattern inside the same time window; it is not a competing cause or causal finding.",
+              "normal_wafers_with_observed_exact_event": [
+                "W1"
+              ],
+              "normal_wafers_without_observed_exact_event": [],
+              "observation_event_refs": [
+                {
+                  "relationship_id": "SYN_REL_WAFER_STEP",
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S3",
+                  "timestamp_utc": "2026-11-21T02:00:00+00:00",
+                  "wafer_id": "W1"
+                }
+              ],
+              "population_wafers_missing_outcome": [],
+              "potentially_exposed_wafers": [],
+              "statistical_association": {
+                "status": "NOT_COMPUTED"
+              },
+              "status": "DESCRIPTIVE_CANDIDATE_ONLY",
+              "unknown_wafers": []
+            }
+          ],
+          "equipment_by_outcome": {
+            "ABNORMAL": {
+              "chamber_ids": [
+                "C2"
+              ],
+              "tool_ids": []
+            },
+            "NORMAL": {
+              "chamber_ids": [
+                "C1",
+                "M1"
+              ],
+              "tool_ids": []
+            }
+          },
+          "limitation": "Only equipment fields declared by source relationships and effective across event-time uncertainty during definite window overlap appear in the outcome strata. Other fields remain explicit unverified context; verified co-occurrence is descriptive and does not infer shared chamber membership or an effect.",
+          "status": "SOURCE_LINKED_EVENT_CONTEXT_DESCRIPTIVE_ONLY",
+          "unverified_or_ambiguous_event_fields": []
+        },
+        "product_mix": {
+          "product_ids": [],
+          "status": "NOT_ASSESSED_PRODUCT_FIELD_NOT_VERIFIED",
+          "strata": {}
+        },
+        "route": {
+          "causal_conclusion": {
+            "status": "NOT_ESTABLISHED"
+          },
+          "interpretation": "Route and outcome patterns are descriptive review context. Route mismatch requires an approved effective definition and source-linked route coverage; missing history remains unknown and no route effect or cause is inferred.",
+          "patterns": [
+            {
+              "abnormal_wafer_ids": [
+                "W2"
+              ],
+              "exposed_wafer_ids": [
+                "W1"
+              ],
+              "history_status": "COVERAGE_UNKNOWN",
+              "normal_wafer_ids": [
+                "W1"
+              ],
+              "not_observed_exposed_wafer_ids": [
+                "W2"
+              ],
+              "potentially_exposed_wafer_ids": [],
+              "route_conformance": "NO_APPROVED_EXPECTED_ROUTE",
+              "route_segments": [],
+              "unknown_exposure_wafer_ids": [],
+              "wafer_ids": [
+                "W1",
+                "W2"
+              ],
+              "wafer_ids_missing_outcome": []
+            }
+          ],
+          "population_coverage": {
+            "chronology_uncertain_wafer_ids": [],
+            "coverage_assessment": "Route coverage has invalid timezone-aware window bounds.",
+            "coverage_record_id": null,
+            "coverage_status": "COVERAGE_INCOMPLETE_OR_UNKNOWN",
+            "declared_covered_population_count": 0,
+            "declared_covered_wafer_ids": [],
+            "declared_covered_wafer_ids_without_event_rows": [],
+            "meaning": "Route variant counts describe observed event-bearing wafer histories. The ordered denominator excludes chronology-uncertain histories; a caller-declared coverage population is shown separately and remains unauthenticated. No route is inferred for a covered wafer with no submitted event rows.",
+            "missing_record_ids": [],
+            "observed_event_wafer_count": 2,
+            "observed_event_wafer_ids": [
+              "W1",
+              "W2"
+            ],
+            "observed_event_wafer_ids_outside_declared_coverage": [
+              "W1",
+              "W2"
+            ],
+            "ordered_observed_history_denominator": 2,
+            "ordered_observed_history_wafer_ids": [
+              "W1",
+              "W2"
+            ]
+          },
+          "statistical_association": {
+            "status": "NOT_COMPUTED"
+          },
+          "status": "DESCRIPTIVE_SOURCE_LINKED_ROUTE_CONTEXT",
+          "wafers_without_event_history": []
+        },
+        "selection_and_coverage": {
+          "coverage_assessment": "Complete source-linked declared coverage spans the entire query window and listed population.",
+          "exposure_coverage_complete": true,
+          "missing_outcome_wafer_ids": [],
+          "outcome_count_in_population": 2,
+          "population_count": 2,
+          "status": "CALLER_DECLARED_COVERAGE_ONLY"
+        },
+        "time": {
+          "limitation": "Outcome-day grouping does not adjust for time-varying selection or establish temporal causality.",
+          "status": "OUTCOME_DAY_STRATA_DESCRIPTIVE_ONLY",
+          "utc_day_strata": {
+            "2026-11-21": {
+              "ABNORMAL__NOT_OBSERVED_EXPOSED": [
+                "W2"
+              ],
+              "NORMAL__EXPOSED": [
+                "W1"
+              ]
+            }
+          }
+        }
+      },
+      "contradicting_observations": {
+        "abnormal_wafers_without_observed_exact_exposure": [
+          "W2"
+        ],
+        "normal_wafers_sharing_exact_exposure": [
+          {
+            "process_event_refs": [
+              {
+                "relationship_id": "SYN_REL_WAFER_STEP",
+                "scope_id": "C1",
+                "scope_type": "CHAMBER",
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S1",
+                "timestamp_utc": "2026-11-21T01:00:00+00:00"
+              }
+            ],
+            "wafer_id": "W1"
+          }
+        ]
+      },
+      "interpretation": "This source-linked snapshot reports descriptive support, contradiction, missingness, and confounder context. It does not compute a statistical association or establish a causal conclusion.",
+      "missing_or_ambiguous_evidence": {
+        "condition_event_evidence": [],
+        "condition_event_status": "NO_CONDITION_EVENT_RECORDS_SUPPLIED",
+        "outcomes_missing": [],
+        "population_potential_exposure": [],
+        "population_unknown_exposure": [],
+        "potentially_exposed_outcomes": [],
+        "unknown_exposure_outcomes": []
+      },
+      "next_authorized_verification": {
+        "authorization_status": "MUST_BE_CONFIRMED_BY_THE_CONFIGURED_MCP_SERVER",
+        "logical_operation": "semantics",
+        "purpose": "Verify whether a product-family field exists with an approved meaning and row grain for mix-confounder review."
+      },
+      "normal_wafers_not_observed_exposed": [],
+      "normal_wafers_verified_unexposed": [],
+      "normal_wafers_with_exact_exposure": [
+        "W1"
+      ],
+      "outcome_evidence": [
+        {
+          "exposure_classification": "EXPOSED",
+          "label": "NORMAL",
+          "lot_id": "LOT-A",
+          "relationship_id": "SYN_REL_OUTCOME_WAFER",
+          "source_id": "SYN_OUTCOME",
+          "timestamp": "2026-11-21T06:00:00+00:00",
+          "wafer_id": "W1"
+        },
+        {
+          "exposure_classification": "NOT_OBSERVED_EXPOSED",
+          "label": "ABNORMAL",
+          "lot_id": "LOT-A",
+          "relationship_id": "SYN_REL_OUTCOME_WAFER",
+          "source_id": "SYN_OUTCOME",
+          "timestamp": "2026-11-21T06:00:00+00:00",
+          "wafer_id": "W2"
+        }
+      ],
+      "outcomes_with_potential_exposure": [],
+      "outcomes_with_unknown_exposure": [],
+      "outcomes_with_unknown_exposure_only": [],
+      "population_wafers_missing_outcome": [],
+      "proposed_explanation": {
+        "category": "PROPOSED_EXPLANATION",
+        "evidence_refs": [
+          "SYN_REL_WAFER_STEP"
+        ],
+        "statement": "The selected equipment/time window is a candidate exposure to review against the observed outcome pattern.",
+        "status": "CANDIDATE_FOR_ENGINEER_REVIEW"
+      },
+      "question": "Does the suspected exposure explain the observed outcome?",
+      "statistical_association": {
+        "method": null,
+        "reason": "The output is a deterministic cross-tabulation without a prespecified adjustment design.",
+        "status": "NOT_COMPUTED"
+      },
+      "supporting_observations": []
+    }
+  ],
+  "investigation_id": "SYN-p2-36d1b9637cf7",
+  "limitations": [
+    "Synthetic or caller-supplied evidence is not proof of company data, authorization, or source semantics.",
+    "This descriptive reconstruction does not establish a root cause or intervention effect.",
+    "A complete route or route violation cannot be inferred without an approved expected-route definition and event coverage.",
+    "Identity aliases are kept separate; no unapproved wafer or lot identity merge is performed.",
+    "Wafer history coverage is incomplete or unverified; chronology describes only submitted event records.",
+    "Operation definition records were not supplied; operation labels are retained as event values and are not upgraded to approved operation definitions."
+  ],
+  "mode": "SYNTHETIC_DEMO",
+  "populations": [
+    {
+      "basis": "A source-linked process-step instance names the exact chamber and its time interval overlaps the query window.",
+      "classification": "EXPOSED",
+      "count": 1,
+      "wafer_ids": [
+        "W1"
+      ]
+    },
+    {
+      "basis": "An observed event has missing selected-equipment assignment or time uncertainty that could overlap the query window.",
+      "classification": "POTENTIALLY_EXPOSED",
+      "count": 0,
+      "wafer_ids": []
+    },
+    {
+      "basis": "Coverage is incomplete or the source relationship does not approve the required equipment/time fields.",
+      "classification": "UNKNOWN",
+      "count": 0,
+      "wafer_ids": []
+    },
+    {
+      "basis": "Complete source-linked declared coverage spans the entire query window and listed population.",
+      "classification": "NOT_OBSERVED_EXPOSED",
+      "count": 1,
+      "wafer_ids": [
+        "W2"
+      ]
+    }
+  ],
+  "product_id": "p2",
+  "provenance": {
+    "engine_version": "0.3.0",
+    "input_sha256": "36d1b9637cf7b469d04abe43ab7c3ab5f5b42f613cd88cf3c39703aa2ddd1faa",
+    "semantic_catalog_version": "SYNTHETIC-1"
+  },
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "approved_semantic_version": "SYNTHETIC-ORACLE-1",
+      "grain": "one exposure coverage record per population and time window",
+      "id": "SYN_COVERAGE",
+      "permissions_ref": "SYNTHETIC-ONLY",
+      "source_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    {
+      "approved_semantic_version": "SYNTHETIC-ORACLE-1",
+      "grain": "one outcome per wafer",
+      "id": "SYN_OUTCOME",
+      "permissions_ref": "SYNTHETIC-ONLY",
+      "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    {
+      "approved_semantic_version": "SYNTHETIC-ORACLE-1",
+      "grain": "one process step instance",
+      "id": "SYN_PROCESS",
+      "permissions_ref": "SYNTHETIC-ONLY",
+      "source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ],
+  "status": "VALID",
+  "transformations": [
+    {
+      "id": "p2-event-time-normalization-v1",
+      "input_grain": "one approved process-step instance",
+      "operation": "Normalize timezone-aware event times to UTC; retain original timestamp in journey.",
+      "output_grain": "one event in one wafer journey"
+    },
+    {
+      "id": "p2-journey-and-route-variants-v1",
+      "journeys": [
+        {
+          "history_coverage": {
+            "covered_source_ids": [],
+            "covered_wafer_ids": [],
+            "missing_record_ids": [],
+            "source_references": [],
+            "status": "COVERAGE_UNKNOWN"
+          },
+          "history_flags": [
+            "OBSERVATION_COVERAGE_UNKNOWN"
+          ],
+          "history_status": "COVERAGE_UNKNOWN",
+          "lot_lineage_paths": [],
+          "material_relationships": [],
+          "rework_edges": [],
+          "route_conformance": "NO_APPROVED_EXPECTED_ROUTE",
+          "route_segments": [],
+          "sequence_edges": [
+            {
+              "from_step_instance": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S1"
+              },
+              "meaning": "Derived ordering of adjacent observed records; not a causal or recipe-transition claim.",
+              "ordering_basis": "non-overlapping timezone-normalized event-time uncertainty intervals",
+              "ordering_margin_seconds": 3600.0,
+              "provenance": [
+                {
+                  "relationship_id": "SYN_REL_WAFER_STEP",
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S1"
+                },
+                {
+                  "relationship_id": "SYN_REL_WAFER_STEP",
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S3"
+                }
+              ],
+              "relationship_type": "OBSERVED_CHRONOLOGICAL_ADJACENCY",
+              "to_step_instance": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S3"
+              }
+            },
+            {
+              "from_step_instance": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S3"
+              },
+              "meaning": "Derived ordering of adjacent observed records; not a causal or recipe-transition claim.",
+              "ordering_basis": "non-overlapping timezone-normalized event-time uncertainty intervals",
+              "ordering_margin_seconds": 10800.0,
+              "provenance": [
+                {
+                  "relationship_id": "SYN_REL_WAFER_STEP",
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S3"
+                },
+                {
+                  "relationship_id": "SYN_REL_WAFER_STEP",
+                  "source_id": "SYN_PROCESS",
+                  "step_instance_id": "S4"
+                }
+              ],
+              "relationship_type": "OBSERVED_CHRONOLOGICAL_ADJACENCY",
+              "to_step_instance": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S4"
+              }
+            }
+          ],
+          "steps": [
+            {
+              "candidate_time_scoped_lot_ids": [],
+              "chamber_id": "C1",
+              "duplicate_record_copies_collapsed": 0,
+              "identity_relationship_id": null,
+              "lot_id_at_event": null,
+              "lot_lineage": {
+                "material_relationship_coverage": {
+                  "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                  "company_source_authenticated": false,
+                  "covered_entities": [],
+                  "covered_relationship_types": [],
+                  "covered_source_ids": [],
+                  "missing_record_ids": [],
+                  "record_id": null,
+                  "relationship_id": null,
+                  "status": "NOT_ESTABLISHED"
+                },
+                "meaning": "Only source-declared lot-to-lot SPLIT_FROM and MERGED_FROM edges are traversed. LOT_MEMBERSHIP edges do not propagate through sibling wafers.",
+                "missing_evidence": [
+                  {
+                    "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                    "coverage_status": "NOT_ESTABLISHED",
+                    "reason": "MATERIAL_RELATIONSHIP_COVERAGE_NOT_ESTABLISHED"
+                  }
+                ],
+                "paths": [],
+                "relationship_assessments": [],
+                "seeds": [],
+                "status": "NO_VERIFIED_LOT_SEED"
+              },
+              "membership_state": "UNKNOWN",
+              "operation": "ETCH",
+              "operation_definition_id": null,
+              "operation_definition_source_id": null,
+              "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+              "order_uncertain_with": [],
+              "recorded_at": null,
+              "relationship_id": "SYN_REL_WAFER_STEP",
+              "rework_of_source_id": null,
+              "rework_of_step_instance_id": null,
+              "route_id": null,
+              "route_version": null,
+              "source_id": "SYN_PROCESS",
+              "step_instance_id": "S1",
+              "step_instance_ref": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S1"
+              },
+              "time_scoped_lot_lineage_relationship_ids": [],
+              "time_scoped_material_relationship_assessments": [],
+              "time_scoped_material_relationship_ids": [],
+              "time_uncertainty_seconds": 0.0,
+              "timestamp": "2026-11-21T01:00:00+00:00",
+              "timestamp_utc": "2026-11-21T01:00:00+00:00",
+              "tool_id": null
+            },
+            {
+              "candidate_time_scoped_lot_ids": [],
+              "chamber_id": "M1",
+              "duplicate_record_copies_collapsed": 0,
+              "identity_relationship_id": null,
+              "lot_id_at_event": null,
+              "lot_lineage": {
+                "material_relationship_coverage": {
+                  "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                  "company_source_authenticated": false,
+                  "covered_entities": [],
+                  "covered_relationship_types": [],
+                  "covered_source_ids": [],
+                  "missing_record_ids": [],
+                  "record_id": null,
+                  "relationship_id": null,
+                  "status": "NOT_ESTABLISHED"
+                },
+                "meaning": "Only source-declared lot-to-lot SPLIT_FROM and MERGED_FROM edges are traversed. LOT_MEMBERSHIP edges do not propagate through sibling wafers.",
+                "missing_evidence": [
+                  {
+                    "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                    "coverage_status": "NOT_ESTABLISHED",
+                    "reason": "MATERIAL_RELATIONSHIP_COVERAGE_NOT_ESTABLISHED"
+                  }
+                ],
+                "paths": [],
+                "relationship_assessments": [],
+                "seeds": [],
+                "status": "NO_VERIFIED_LOT_SEED"
+              },
+              "membership_state": "UNKNOWN",
+              "operation": "MET",
+              "operation_definition_id": null,
+              "operation_definition_source_id": null,
+              "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+              "order_uncertain_with": [],
+              "recorded_at": null,
+              "relationship_id": "SYN_REL_WAFER_STEP",
+              "rework_of_source_id": null,
+              "rework_of_step_instance_id": null,
+              "route_id": null,
+              "route_version": null,
+              "source_id": "SYN_PROCESS",
+              "step_instance_id": "S3",
+              "step_instance_ref": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S3"
+              },
+              "time_scoped_lot_lineage_relationship_ids": [],
+              "time_scoped_material_relationship_assessments": [],
+              "time_scoped_material_relationship_ids": [],
+              "time_uncertainty_seconds": 0.0,
+              "timestamp": "2026-11-21T02:00:00+00:00",
+              "timestamp_utc": "2026-11-21T02:00:00+00:00",
+              "tool_id": null
+            },
+            {
+              "candidate_time_scoped_lot_ids": [],
+              "chamber_id": "C1",
+              "duplicate_record_copies_collapsed": 0,
+              "identity_relationship_id": null,
+              "lot_id_at_event": null,
+              "lot_lineage": {
+                "material_relationship_coverage": {
+                  "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                  "company_source_authenticated": false,
+                  "covered_entities": [],
+                  "covered_relationship_types": [],
+                  "covered_source_ids": [],
+                  "missing_record_ids": [],
+                  "record_id": null,
+                  "relationship_id": null,
+                  "status": "NOT_ESTABLISHED"
+                },
+                "meaning": "Only source-declared lot-to-lot SPLIT_FROM and MERGED_FROM edges are traversed. LOT_MEMBERSHIP edges do not propagate through sibling wafers.",
+                "missing_evidence": [
+                  {
+                    "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                    "coverage_status": "NOT_ESTABLISHED",
+                    "reason": "MATERIAL_RELATIONSHIP_COVERAGE_NOT_ESTABLISHED"
+                  }
+                ],
+                "paths": [],
+                "relationship_assessments": [],
+                "seeds": [],
+                "status": "NO_VERIFIED_LOT_SEED"
+              },
+              "membership_state": "UNKNOWN",
+              "operation": "ETCH",
+              "operation_definition_id": null,
+              "operation_definition_source_id": null,
+              "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+              "order_uncertain_with": [],
+              "recorded_at": null,
+              "relationship_id": "SYN_REL_WAFER_STEP",
+              "rework_of_source_id": null,
+              "rework_of_step_instance_id": null,
+              "route_id": null,
+              "route_version": null,
+              "source_id": "SYN_PROCESS",
+              "step_instance_id": "S4",
+              "step_instance_ref": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S4"
+              },
+              "time_scoped_lot_lineage_relationship_ids": [],
+              "time_scoped_material_relationship_assessments": [],
+              "time_scoped_material_relationship_ids": [],
+              "time_uncertainty_seconds": 0.0,
+              "timestamp": "2026-11-21T05:00:00+00:00",
+              "timestamp_utc": "2026-11-21T05:00:00+00:00",
+              "tool_id": null
+            }
+          ],
+          "wafer_id": "W1"
+        },
+        {
+          "history_coverage": {
+            "covered_source_ids": [],
+            "covered_wafer_ids": [],
+            "missing_record_ids": [],
+            "source_references": [],
+            "status": "COVERAGE_UNKNOWN"
+          },
+          "history_flags": [
+            "OBSERVATION_COVERAGE_UNKNOWN"
+          ],
+          "history_status": "COVERAGE_UNKNOWN",
+          "lot_lineage_paths": [],
+          "material_relationships": [],
+          "rework_edges": [],
+          "route_conformance": "NO_APPROVED_EXPECTED_ROUTE",
+          "route_segments": [],
+          "sequence_edges": [],
+          "steps": [
+            {
+              "candidate_time_scoped_lot_ids": [],
+              "chamber_id": "C2",
+              "duplicate_record_copies_collapsed": 0,
+              "identity_relationship_id": null,
+              "lot_id_at_event": null,
+              "lot_lineage": {
+                "material_relationship_coverage": {
+                  "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                  "company_source_authenticated": false,
+                  "covered_entities": [],
+                  "covered_relationship_types": [],
+                  "covered_source_ids": [],
+                  "missing_record_ids": [],
+                  "record_id": null,
+                  "relationship_id": null,
+                  "status": "NOT_ESTABLISHED"
+                },
+                "meaning": "Only source-declared lot-to-lot SPLIT_FROM and MERGED_FROM edges are traversed. LOT_MEMBERSHIP edges do not propagate through sibling wafers.",
+                "missing_evidence": [
+                  {
+                    "assessment": "No material coverage record and verified lot seed jointly establish graph completeness for this event.",
+                    "coverage_status": "NOT_ESTABLISHED",
+                    "reason": "MATERIAL_RELATIONSHIP_COVERAGE_NOT_ESTABLISHED"
+                  }
+                ],
+                "paths": [],
+                "relationship_assessments": [],
+                "seeds": [],
+                "status": "NO_VERIFIED_LOT_SEED"
+              },
+              "membership_state": "UNKNOWN",
+              "operation": "ETCH",
+              "operation_definition_id": null,
+              "operation_definition_source_id": null,
+              "operation_definition_status": "DEFINITION_NOT_PROVIDED",
+              "order_uncertain_with": [],
+              "recorded_at": null,
+              "relationship_id": "SYN_REL_WAFER_STEP",
+              "rework_of_source_id": null,
+              "rework_of_step_instance_id": null,
+              "route_id": null,
+              "route_version": null,
+              "source_id": "SYN_PROCESS",
+              "step_instance_id": "S2",
+              "step_instance_ref": {
+                "source_id": "SYN_PROCESS",
+                "step_instance_id": "S2"
+              },
+              "time_scoped_lot_lineage_relationship_ids": [],
+              "time_scoped_material_relationship_assessments": [],
+              "time_scoped_material_relationship_ids": [],
+              "time_uncertainty_seconds": 0.0,
+              "timestamp": "2026-11-21T01:30:00+00:00",
+              "timestamp_utc": "2026-11-21T01:30:00+00:00",
+              "tool_id": null
+            }
+          ],
+          "wafer_id": "W2"
+        }
+      ],
+      "material_relationships": [],
+      "route_population_summary": {
+        "chronology_uncertain_wafer_ids": [],
+        "coverage_assessment": "Route coverage has invalid timezone-aware window bounds.",
+        "coverage_record_id": null,
+        "coverage_status": "COVERAGE_INCOMPLETE_OR_UNKNOWN",
+        "declared_covered_population_count": 0,
+        "declared_covered_wafer_ids": [],
+        "declared_covered_wafer_ids_without_event_rows": [],
+        "meaning": "Route variant counts describe observed event-bearing wafer histories. The ordered denominator excludes chronology-uncertain histories; a caller-declared coverage population is shown separately and remains unauthenticated. No route is inferred for a covered wafer with no submitted event rows.",
+        "missing_record_ids": [],
+        "observed_event_wafer_count": 2,
+        "observed_event_wafer_ids": [
+          "W1",
+          "W2"
+        ],
+        "observed_event_wafer_ids_outside_declared_coverage": [
+          "W1",
+          "W2"
+        ],
+        "ordered_observed_history_denominator": 2,
+        "ordered_observed_history_wafer_ids": [
+          "W1",
+          "W2"
+        ]
+      },
+      "route_variants": [
+        {
+          "count": 1,
+          "count_basis": "Observed event-bearing wafers with determinate chronology; not a yield or full eligible-population rate.",
+          "meaning": "Observed event sequence; conformance is reported only against an approved expected route with complete route coverage.",
+          "operations": [
+            "ETCH"
+          ],
+          "order_status": "ORDERED",
+          "ordered_observed_history_denominator": 2,
+          "route_id_sequence": [
+            null
+          ],
+          "route_version_sequence": [
+            null
+          ],
+          "share_of_ordered_observed_histories": 0.5,
+          "wafer_ids": [
+            "W2"
+          ]
+        },
+        {
+          "count": 1,
+          "count_basis": "Observed event-bearing wafers with determinate chronology; not a yield or full eligible-population rate.",
+          "meaning": "Observed event sequence; conformance is reported only against an approved expected route with complete route coverage.",
+          "operations": [
+            "ETCH",
+            "MET",
+            "ETCH"
+          ],
+          "order_status": "ORDERED",
+          "ordered_observed_history_denominator": 2,
+          "route_id_sequence": [
+            null,
+            null,
+            null
+          ],
+          "route_version_sequence": [
+            null,
+            null,
+            null
+          ],
+          "share_of_ordered_observed_histories": 0.5,
+          "wafer_ids": [
+            "W1"
+          ]
+        }
+      ]
+    },
+    {
+      "exposure": {
+        "chamber_id": "C1",
+        "condition_context": {
+          "condition_type": "UNSPECIFIED",
+          "evidence_status": "NOT_SUPPLIED"
+        },
+        "condition_event_evidence": [],
+        "condition_event_status": "NO_CONDITION_EVENT_RECORDS_SUPPLIED",
+        "coverage_complete": true,
+        "coverage_evidence": {
+          "accepted_for_query": true,
+          "assessment": "Complete source-linked declared coverage spans the entire query window and listed population.",
+          "complete_assertion": true,
+          "covered_source_ids": [
+            "SYN_PROCESS"
+          ],
+          "covered_wafer_ids": [
+            "W1",
+            "W2"
+          ],
+          "missing_record_ids": [],
+          "record_id": "SYN_COVERAGE_RECORD",
+          "record_type": "CALLER_DECLARED_SOURCE_LINKED_COVERAGE",
+          "relationship_id": "SYN_REL_COVERAGE",
+          "source_ids": [
+            "SYN_COVERAGE"
+          ],
+          "window_end": "2026-11-21T03:00:00+00:00",
+          "window_start": "2026-11-21T00:00:00+00:00"
+        },
+        "coverage_reason": "Complete source-linked declared coverage spans the entire query window and listed population.",
+        "definitely_exposed": [
+          "W1"
+        ],
+        "evidence": [
+          {
+            "classification": "EXACT_CHAMBER_WINDOW_MATCH",
+            "processing_end": null,
+            "processing_end_uncertainty_seconds": 0,
+            "processing_start": null,
+            "processing_start_uncertainty_seconds": 0,
+            "relationship_id": "SYN_REL_WAFER_STEP",
+            "scope_id": "C1",
+            "scope_type": "CHAMBER",
+            "source_id": "SYN_PROCESS",
+            "step_instance_id": "S1",
+            "timestamp": "2026-11-21T01:00:00+00:00",
+            "timestamp_utc": "2026-11-21T01:00:00+00:00",
+            "wafer_id": "W1"
+          }
+        ],
+        "not_observed_exposed": [
+          "W2"
+        ],
+        "population": [
+          "W1",
+          "W2"
+        ],
+        "possibly_exposed": [],
+        "potentially_exposed": [],
+        "scope_id": "C1",
+        "scope_type": "CHAMBER",
+        "unknown": [],
+        "verified_unexposed": [
+          "W2"
+        ],
+        "window": {
+          "end": "2026-11-21T03:00:00+00:00",
+          "start": "2026-11-21T00:00:00+00:00"
+        }
+      },
+      "id": "p2-exposure-evidence-v1"
+    }
+  ],
+  "uncertainty": {
+    "causal_identifiability": "NOT_ESTABLISHED",
+    "collapsed_duplicate_source_records": 0,
+    "equal_timestamp_ties": [],
+    "exposure_coverage_complete": true,
+    "history_coverage_status": "COVERAGE_UNKNOWN",
+    "order_uncertainty_groups": [],
+    "route_conformance_counts": {
+      "NO_APPROVED_EXPECTED_ROUTE": 2
+    }
+  },
+  "units": {}
+}

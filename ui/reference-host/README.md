@@ -1,0 +1,7 @@
+# Product-neutral React reference host
+
+This product-neutral local runner mounts the versioned P2 React contribution so the complete synthetic MCP-to-evidence workflow can be operated without another product's shell. It reuses the P2 module, existing local styles, native form controls, React, and the existing loopback Python host. It is a qualification runner, not a second product shell or shared suite framework.
+
+From the repository root, install the pinned Python MCP SDK with `python release/install_offline.py --with-mcp` if it is not already available. Build the browser assets with `cd ui/p2-react && npm ci --offline --ignore-scripts && npm run host:build`, return to the repository root, and start `python -m fabintel serve --host 127.0.0.1 --port 8765`. Open `http://127.0.0.1:8765/reference/`. After build, the host serves compiled local assets; Node/npm are not needed at runtime and the page does not use a CDN.
+
+The option lists are discovered through the official MCP SDK against the local synthetic peer. Running an investigation performs six independently bounded reads with audit verification, then displays the resulting P2 evidence envelope across the journey, exposure, route, hypothesis, and source-evidence panels. Synthetic coverage claims remain `ASSERTED_UNVERIFIED`; they cannot establish negative evidence or comparator status. The host visibly distinguishes exact exposure, possible exposure, unknown, and only asserted nonmatches.

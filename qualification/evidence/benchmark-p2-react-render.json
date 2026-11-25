@@ -1,0 +1,41 @@
+{
+  "status": "PASS_P2_REACT_SYNTHETIC_RENDER_PROXY",
+  "p2_module_version": "1.0.0",
+  "scenarios": [
+    {
+      "synthetic_wafers": 100,
+      "input_step_instances": 800,
+      "rendered_timeline_step_instances": 200,
+      "rendered_table_rows": 218,
+      "render_ms": 60.82,
+      "heap_delta_bytes": 34771936,
+      "html_bytes": 310079,
+      "render_basis": "P2 React module + JSDOM DOM reconciliation; not a native browser benchmark"
+    },
+    {
+      "synthetic_wafers": 500,
+      "input_step_instances": 4000,
+      "rendered_timeline_step_instances": 200,
+      "rendered_table_rows": 218,
+      "render_ms": 81.93,
+      "heap_delta_bytes": 46025344,
+      "html_bytes": 565685,
+      "render_basis": "P2 React module + JSDOM DOM reconciliation; not a native browser benchmark"
+    },
+    {
+      "synthetic_wafers": 1000,
+      "input_step_instances": 8000,
+      "rendered_timeline_step_instances": 200,
+      "rendered_table_rows": 218,
+      "render_ms": 130.07,
+      "heap_delta_bytes": 50217808,
+      "html_bytes": 885192,
+      "render_basis": "P2 React module + JSDOM DOM reconciliation; not a native browser benchmark"
+    }
+  ],
+  "limitations": [
+    "Rows are synthetic repetitions derived from source-linked fixture shapes.",
+    "JSDOM timing is not a native browser or target-device performance result.",
+    "The benchmark measures panel rendering, not MCP retrieval or analysis execution."
+  ]
+}

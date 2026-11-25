@@ -1,0 +1,457 @@
+{
+  "environments": [
+    {
+      "actual_ranked_top_source_ids": {
+        "coverage": "SITE_COVERAGE_ALIAS",
+        "events": "SITE_EVENTS_ALIAS",
+        "history_coverage": "SITE_HISTORY_ALIAS",
+        "material_relationships": "SITE_MATERIAL_ALIAS",
+        "outcomes": "SITE_OUTCOMES_ALIAS",
+        "route_coverage": "SITE_ROUTE_COVERAGE_ALIAS",
+        "route_definitions": "SITE_ROUTE_DEFINITION_ALIAS"
+      },
+      "actual_states": {
+        "coverage": "UNIQUE_REVIEW_REQUIRED",
+        "events": "UNIQUE_REVIEW_REQUIRED",
+        "history_coverage": "UNIQUE_REVIEW_REQUIRED",
+        "material_relationships": "UNIQUE_REVIEW_REQUIRED",
+        "outcomes": "UNIQUE_REVIEW_REQUIRED",
+        "route_coverage": "UNIQUE_REVIEW_REQUIRED",
+        "route_definitions": "UNIQUE_REVIEW_REQUIRED"
+      },
+      "automated_scan_ms": 0.442,
+      "candidate_pairs_requiring_review": 7,
+      "correct_abstention": true,
+      "descriptors_examined": 7,
+      "environment": "separate_explicit_semantics",
+      "expected_states": {
+        "coverage": "UNIQUE_REVIEW_REQUIRED",
+        "events": "UNIQUE_REVIEW_REQUIRED",
+        "history_coverage": "UNIQUE_REVIEW_REQUIRED",
+        "material_relationships": "UNIQUE_REVIEW_REQUIRED",
+        "outcomes": "UNIQUE_REVIEW_REQUIRED",
+        "route_coverage": "UNIQUE_REVIEW_REQUIRED",
+        "route_definitions": "UNIQUE_REVIEW_REQUIRED"
+      },
+      "expected_top_source_ids": {
+        "coverage": "SITE_COVERAGE_ALIAS",
+        "events": "SITE_EVENTS_ALIAS",
+        "history_coverage": "SITE_HISTORY_ALIAS",
+        "material_relationships": "SITE_MATERIAL_ALIAS",
+        "outcomes": "SITE_OUTCOMES_ALIAS",
+        "route_coverage": "SITE_ROUTE_COVERAGE_ALIAS",
+        "route_definitions": "SITE_ROUTE_DEFINITION_ALIAS"
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 5,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "coverage": "ENV2_COVERAGE_ALIAS",
+        "events": "ENV2_EVENTS_ALIAS",
+        "history_coverage": "ENV2_HISTORY_ALIAS",
+        "material_relationships": "ENV2_MATERIAL_ALIAS",
+        "outcomes": "ENV2_OUTCOMES_ALIAS",
+        "route_coverage": "ENV2_ROUTE_COVERAGE_ALIAS",
+        "route_definitions": "ENV2_ROUTE_DEFINITION_ALIAS"
+      },
+      "actual_states": {
+        "coverage": "UNIQUE_REVIEW_REQUIRED",
+        "events": "UNIQUE_REVIEW_REQUIRED",
+        "history_coverage": "UNIQUE_REVIEW_REQUIRED",
+        "material_relationships": "UNIQUE_REVIEW_REQUIRED",
+        "outcomes": "UNIQUE_REVIEW_REQUIRED",
+        "route_coverage": "UNIQUE_REVIEW_REQUIRED",
+        "route_definitions": "UNIQUE_REVIEW_REQUIRED"
+      },
+      "automated_scan_ms": 0.375,
+      "candidate_pairs_requiring_review": 7,
+      "correct_abstention": true,
+      "descriptors_examined": 7,
+      "environment": "renamed_fields_and_source_conventions",
+      "expected_states": {
+        "coverage": "UNIQUE_REVIEW_REQUIRED",
+        "events": "UNIQUE_REVIEW_REQUIRED",
+        "history_coverage": "UNIQUE_REVIEW_REQUIRED",
+        "material_relationships": "UNIQUE_REVIEW_REQUIRED",
+        "outcomes": "UNIQUE_REVIEW_REQUIRED",
+        "route_coverage": "UNIQUE_REVIEW_REQUIRED",
+        "route_definitions": "UNIQUE_REVIEW_REQUIRED"
+      },
+      "expected_top_source_ids": {
+        "coverage": "ENV2_COVERAGE_ALIAS",
+        "events": "ENV2_EVENTS_ALIAS",
+        "history_coverage": "ENV2_HISTORY_ALIAS",
+        "material_relationships": "ENV2_MATERIAL_ALIAS",
+        "outcomes": "ENV2_OUTCOMES_ALIAS",
+        "route_coverage": "ENV2_ROUTE_COVERAGE_ALIAS",
+        "route_definitions": "ENV2_ROUTE_DEFINITION_ALIAS"
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 5,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "events": null
+      },
+      "actual_states": {
+        "events": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "automated_scan_ms": 0.338,
+      "candidate_pairs_requiring_review": 6,
+      "correct_abstention": true,
+      "descriptors_examined": 7,
+      "environment": "two_process_event_time_fields",
+      "expected_states": {
+        "events": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "expected_top_source_ids": {
+        "events": null
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 5,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "material_relationships": "SITE_MATERIAL_ALIAS"
+      },
+      "actual_states": {
+        "material_relationships": "UNIQUE_REVIEW_REQUIRED"
+      },
+      "automated_scan_ms": 0.345,
+      "candidate_pairs_requiring_review": 7,
+      "correct_abstention": true,
+      "descriptors_examined": 7,
+      "environment": "membership_with_split_merge_edges",
+      "expected_states": {
+        "material_relationships": "UNIQUE_REVIEW_REQUIRED"
+      },
+      "expected_top_source_ids": {
+        "material_relationships": "SITE_MATERIAL_ALIAS"
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 5,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "events": null
+      },
+      "actual_states": {
+        "events": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "automated_scan_ms": 0.316,
+      "candidate_pairs_requiring_review": 6,
+      "correct_abstention": true,
+      "descriptors_examined": 7,
+      "environment": "process_record_time_decoy",
+      "expected_states": {
+        "events": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "expected_top_source_ids": {
+        "events": null
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 5,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "events": "SITE_EVENTS_ALIAS"
+      },
+      "actual_states": {
+        "events": "UNIQUE_REVIEW_REQUIRED"
+      },
+      "automated_scan_ms": 0.318,
+      "candidate_pairs_requiring_review": 7,
+      "correct_abstention": true,
+      "descriptors_examined": 7,
+      "environment": "equipment_group_without_chamber",
+      "expected_states": {
+        "events": "UNIQUE_REVIEW_REQUIRED"
+      },
+      "expected_top_source_ids": {
+        "events": "SITE_EVENTS_ALIAS"
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 5,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "material_relationships": null
+      },
+      "actual_states": {
+        "material_relationships": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "automated_scan_ms": 0.316,
+      "candidate_pairs_requiring_review": 6,
+      "correct_abstention": true,
+      "descriptors_examined": 7,
+      "environment": "static_membership_no_history",
+      "expected_states": {
+        "material_relationships": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "expected_top_source_ids": {
+        "material_relationships": null
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 6,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "events": null
+      },
+      "actual_states": {
+        "events": "AMBIGUOUS"
+      },
+      "automated_scan_ms": 0.357,
+      "candidate_pairs_requiring_review": 8,
+      "correct_abstention": true,
+      "descriptors_examined": 8,
+      "environment": "two_active_versioned_event_sources",
+      "expected_states": {
+        "events": "AMBIGUOUS"
+      },
+      "expected_top_source_ids": {
+        "events": null
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 7,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "events": null
+      },
+      "actual_states": {
+        "events": "AMBIGUOUS"
+      },
+      "automated_scan_ms": 0.357,
+      "candidate_pairs_requiring_review": 8,
+      "correct_abstention": true,
+      "descriptors_examined": 8,
+      "environment": "conflicting_event_source_authorities",
+      "expected_states": {
+        "events": "AMBIGUOUS"
+      },
+      "expected_top_source_ids": {
+        "events": null
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 7,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {},
+      "actual_states": {},
+      "automated_scan_ms": 0.343,
+      "candidate_pairs_requiring_review": 7,
+      "correct_abstention": true,
+      "descriptors_examined": 7,
+      "environment": "duplicate_read_tool_description",
+      "expected_states": {},
+      "expected_top_source_ids": {},
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 6,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "events": null
+      },
+      "actual_states": {
+        "events": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "automated_scan_ms": 0.292,
+      "candidate_pairs_requiring_review": 6,
+      "correct_abstention": true,
+      "descriptors_examined": 7,
+      "environment": "misleading_combined_table_name",
+      "expected_states": {
+        "events": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "expected_top_source_ids": {
+        "events": null
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 5,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "material_relationships": null
+      },
+      "actual_states": {
+        "material_relationships": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "automated_scan_ms": 0.319,
+      "candidate_pairs_requiring_review": 6,
+      "correct_abstention": true,
+      "descriptors_examined": 7,
+      "environment": "split_relationship_not_membership",
+      "expected_states": {
+        "material_relationships": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "expected_top_source_ids": {
+        "material_relationships": null
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 6,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "outcomes": null
+      },
+      "actual_states": {
+        "outcomes": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "automated_scan_ms": 0.297,
+      "candidate_pairs_requiring_review": 6,
+      "correct_abstention": true,
+      "descriptors_examined": 6,
+      "environment": "outcome_role_missing",
+      "expected_states": {
+        "outcomes": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "expected_top_source_ids": {
+        "outcomes": null
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 6,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "events": null
+      },
+      "actual_states": {
+        "events": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "automated_scan_ms": 0.294,
+      "candidate_pairs_requiring_review": 6,
+      "correct_abstention": true,
+      "descriptors_examined": 7,
+      "environment": "permission_restricted_descriptor",
+      "expected_states": {
+        "events": "NO_STRUCTURALLY_COMPATIBLE_SOURCE"
+      },
+      "expected_top_source_ids": {
+        "events": null
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 5,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "events": "SITE_EVENTS_ALIAS"
+      },
+      "actual_states": {
+        "events": "UNIQUE_REVIEW_REQUIRED"
+      },
+      "automated_scan_ms": 0.324,
+      "candidate_pairs_requiring_review": 7,
+      "correct_abstention": true,
+      "descriptors_examined": 8,
+      "environment": "semantic_decoy_named_like_event_log",
+      "expected_states": {
+        "events": "UNIQUE_REVIEW_REQUIRED"
+      },
+      "expected_top_source_ids": {
+        "events": "SITE_EVENTS_ALIAS"
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 5,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    },
+    {
+      "actual_ranked_top_source_ids": {
+        "coverage": "SITE_COVERAGE_ALIAS",
+        "events": "SITE_EVENTS_ALIAS",
+        "history_coverage": "SITE_HISTORY_ALIAS",
+        "material_relationships": "SITE_MATERIAL_ALIAS",
+        "outcomes": "SITE_OUTCOMES_ALIAS",
+        "route_coverage": "SITE_ROUTE_COVERAGE_ALIAS",
+        "route_definitions": "SITE_ROUTE_DEFINITION_ALIAS"
+      },
+      "actual_states": {
+        "coverage": "UNIQUE_REVIEW_REQUIRED",
+        "events": "UNIQUE_REVIEW_REQUIRED",
+        "history_coverage": "UNIQUE_REVIEW_REQUIRED",
+        "material_relationships": "UNIQUE_REVIEW_REQUIRED",
+        "outcomes": "UNIQUE_REVIEW_REQUIRED",
+        "route_coverage": "UNIQUE_REVIEW_REQUIRED",
+        "route_definitions": "UNIQUE_REVIEW_REQUIRED"
+      },
+      "automated_scan_ms": 16.442,
+      "candidate_pairs_requiring_review": 7,
+      "correct_abstention": true,
+      "descriptors_examined": 13008,
+      "environment": "catalog_13008_descriptors",
+      "expected_states": {
+        "coverage": "UNIQUE_REVIEW_REQUIRED",
+        "events": "UNIQUE_REVIEW_REQUIRED",
+        "history_coverage": "UNIQUE_REVIEW_REQUIRED",
+        "material_relationships": "UNIQUE_REVIEW_REQUIRED",
+        "outcomes": "UNIQUE_REVIEW_REQUIRED",
+        "route_coverage": "UNIQUE_REVIEW_REQUIRED",
+        "route_definitions": "UNIQUE_REVIEW_REQUIRED"
+      },
+      "expected_top_source_ids": {
+        "coverage": "SITE_COVERAGE_ALIAS",
+        "events": "SITE_EVENTS_ALIAS",
+        "history_coverage": "SITE_HISTORY_ALIAS",
+        "material_relationships": "SITE_MATERIAL_ALIAS",
+        "outcomes": "SITE_OUTCOMES_ALIAS",
+        "route_coverage": "SITE_ROUTE_COVERAGE_ALIAS",
+        "route_definitions": "SITE_ROUTE_DEFINITION_ALIAS"
+      },
+      "fixed_answer_pass": true,
+      "manual_decisions_required": 5,
+      "mapping_auto_approved": false,
+      "source_rows_read": false
+    }
+  ],
+  "interpretation": "Cases are synthetic structural compatibility tests. Correct source meaning, authority, permissions, and company usefulness require authorized engineer review.",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.11.7",
+  "qualification": "ADVERSARIAL_SYNTHETIC_DESCRIPTOR_ONBOARDING",
+  "summary": {
+    "automatic_wrong_mapping_acceptances": 0,
+    "correct_top_ranked_sources": 16,
+    "environments": 16,
+    "fixed_answer_failures": [],
+    "fixed_answer_passes": 16,
+    "human_review_time": "NOT_MEASURED",
+    "manual_decisions_required_range": [
+      5,
+      7
+    ],
+    "mean_scan_ms": 1.342,
+    "role_state_expectations_checked": 33,
+    "scale_case_descriptors": 13008,
+    "source_mapping_authorized_automatically": false,
+    "successful_investigations": "See official-SDK integration acceptance; not counted as human onboarding effort."
+  }
+}

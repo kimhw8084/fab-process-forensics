@@ -1,0 +1,17 @@
+P2 engineering-phase final Python regression — 2026-11-24
+
+SDK-enabled command:
+rtk env P2_TEST_SDK_PATH=/tmp/p2-mcp-sdk-2.3 python -c 'import sys; sys.path.insert(0, "/tmp/p2-mcp-sdk-2.3"); import pytest; raise SystemExit(pytest.main(["tests", "-q", "--tb=short"]))'
+Result: 197 discovered, 197 executed, 197 passed, 0 failed, 0 errored, 0 skipped; 55.17 s.
+The pinned MCP-SDK-dependent stdio, onboarding, CLI, reference-host, cancellation, and audit integration cases executed in this environment.
+
+Core command:
+rtk python -m pytest tests -q --tb=short
+Result: 197 discovered, 161 executed and passed, 0 failed, 0 errored, 36 skipped; 5.62 s.
+All 36 skips are optional official-MCP-SDK-dependent integration cases. Their protocol paths are exercised by the SDK-enabled run above; skips are not counted as passes.
+
+Targeted final cross-boundary checks:
+- tests/test_onboarding_pipeline.py::LiveSyntheticDiscoveryTests::test_official_sdk_batches_13008_source_catalog_without_mapping_decoys — passed; metadata discovery, digest-bound synthetic review, seven bounded reads, B01/B02/B03/B05 and B05 proposal.
+- tests/test_reference_workflow.py::ReferenceWorkflowTests::test_13k_unseen_catalog_runs_through_standalone_host_investigation_contract — passed; 13k catalog through the standalone host, denied and explicitly authorized follow-up, audit hashes, refreshed three-record ambiguity.
+
+Scope: synthetic source catalog and local loopback mock only. Does not qualify company mappings, permissions, manufacturing semantics, production scale, transfer rights, or ROI.

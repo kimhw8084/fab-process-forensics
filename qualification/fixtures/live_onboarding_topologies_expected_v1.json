@@ -1,0 +1,39 @@
+{
+  "schema_version": "p2-live-onboarding-topology-oracle/v1",
+  "expectations_authored_before_mapper_run": true,
+  "environments": [
+    {
+      "topology": "standard",
+      "expected_roles": {
+        "events": {"state": "UNIQUE_REVIEW_REQUIRED", "source_ids": ["SYN_PROCESS"], "candidate_state": "STRUCTURALLY_COMPATIBLE_REVIEW_REQUIRED"},
+        "material_relationships": {"state": "UNIQUE_REVIEW_REQUIRED", "source_ids": ["SYN_MATERIAL"], "candidate_state": "STRUCTURALLY_COMPATIBLE_REVIEW_REQUIRED"}
+      }
+    },
+    {
+      "topology": "arrival-time-only",
+      "expected_roles": {"events": {"state": "NO_STRUCTURALLY_COMPATIBLE_SOURCE", "source_ids": [], "diagnostic": "EVENT_TIME_NOT_ESTABLISHED"}}
+    },
+    {
+      "topology": "static-membership",
+      "expected_roles": {"material_relationships": {"state": "NO_STRUCTURALLY_COMPATIBLE_SOURCE", "source_ids": [], "diagnostic": "TIME_SCOPED_MEMBERSHIP_NOT_ESTABLISHED"}}
+    },
+    {
+      "topology": "missing-event-relationship-key",
+      "expected_roles": {"events": {"state": "NO_STRUCTURALLY_COMPATIBLE_SOURCE", "source_ids": []}}
+    },
+    {
+      "topology": "equipment-group-only",
+      "expected_roles": {"events": {"state": "UNIQUE_REVIEW_REQUIRED", "source_ids": ["SYN_PROCESS"], "candidate_state": "STRUCTURALLY_PARTIAL_REVIEW_REQUIRED", "missing_field": "chamber_id", "diagnostic": "EXACT_CHAMBER_NOT_ESTABLISHED"}}
+    },
+    {
+      "topology": "duplicate-event-version",
+      "expected_roles": {"events": {"state": "AMBIGUOUS", "source_ids": ["SYN_PROCESS", "SYN_PROCESS_OLDER_SEMANTICS"], "preferred_source_id": null}}
+    },
+    {
+      "topology": "combined-untyped-process-outcome",
+      "expected_roles": {"events": {"state": "NO_STRUCTURALLY_COMPATIBLE_SOURCE", "source_ids": []}},
+      "misleading_source_name": "COMPLETE_PROCESS_AND_WAFER_OUTCOME_HISTORY"
+    }
+  ],
+  "policy": "Expected source roles and abstentions are fixed independently of mapper output. A unique structural match still requires explicit review and server authorization."
+}

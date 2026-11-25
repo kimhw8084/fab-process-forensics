@@ -1,0 +1,24 @@
+{
+  "scan_date_utc": "2026-11-24",
+  "python_mcp_lock": {
+    "tool": "pip-audit 2.10.1",
+    "vulnerability_service": "OSV API",
+    "command": "pip-audit -r vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock --no-deps --disable-pip --vulnerability-service osv --format json",
+    "lock_sha256": "91bb6e70d813a23f630db5b3956e2755558dbd5c1b25ca6a17dcc5382fd84de7",
+    "raw_report": "qualification/evidence/mcp-dependency-vulnerability-scan-2026-11-24.json",
+    "raw_report_sha256": "e334a0b2ecd58638d207f9b041900538147b6fe217d0588af8cecc5233b21bcc",
+    "packages_scanned": 28,
+    "known_vulnerabilities": 0,
+    "dependency_install_or_resolution": "DISABLED; fully pinned lock treated as the complete closure"
+  },
+  "react_lock": {
+    "tool": "npm 11.20.0",
+    "command": "npm audit --package-lock-only --json --no-fund --no-progress",
+    "lock_sha256": "bf454b30d7442d82b3318073490d15f76a75d6c650e3325ae6759ef6fb13ad38",
+    "raw_report": "qualification/evidence/p2-react-npm-audit-2026-11-24.json",
+    "raw_report_sha256": "50b8db7d4b05a600144d16cd198f725894292f4963dead7a0a6bf5b3c375edcd",
+    "lockfile_dependencies_reported": 99,
+    "known_vulnerabilities": 0
+  },
+  "interpretation": "Zero known advisories in these two locked graphs as reported by the live advisory services on the scan date. This does not qualify OS/runtime security, target-company policy, source ownership, transfer rights, company permissions, or manufacturing validity; release state remains PARTIAL."
+}

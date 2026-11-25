@@ -1,0 +1,52 @@
+{
+  "browser": "Codex in-app browser",
+  "tested_url": "http://127.0.0.1:8771/",
+  "status": "PASS_LOCAL_SYNTHETIC_ENGINEER_WORKFLOW",
+  "synthetic_only": true,
+  "external_service_contacted": false,
+  "visible_actions": [
+    "Load synthetic example",
+    "Run preflight",
+    "Run deterministic analysis"
+  ],
+  "analysis": {
+    "status": "VALID",
+    "investigation_id": "SYN-p2-006c21a7c117",
+    "wafer_history": {
+      "wafer_id": "W1",
+      "step_instance_ids": ["S1", "S3", "S4"],
+      "operations": ["ETCH", "MET", "ETCH"],
+      "repeated_operation": true,
+      "chronology_uncertain_wafers": 0
+    },
+    "route_variants": 2,
+    "route_population": {
+      "coverage_status": "COVERAGE_INCOMPLETE_OR_UNKNOWN",
+      "declared_covered_population": 0,
+      "observed_event_histories": 2,
+      "ordered_observed_denominator": 2,
+      "chronology_uncertain": 0,
+      "observed_outside_declared_coverage": ["W1", "W2"],
+      "no_row_members_are_not_assigned_a_route": true
+    },
+    "exposure": {
+      "scope": {"type": "CHAMBER", "id": "C1"},
+      "EXPOSED": ["W1"],
+      "POTENTIALLY_EXPOSED": [],
+      "UNKNOWN": [],
+      "NOT_OBSERVED_EXPOSED": ["W2"]
+    },
+    "counterevidence": {
+      "normal_wafers_sharing_exact_exposure": ["W1"],
+      "abnormal_wafers_without_observed_exact_exposure": ["W2"],
+      "statistical_association": "NOT_COMPUTED",
+      "causal_conclusion": "NOT_ESTABLISHED",
+      "source_verified_alternative_equipment_pattern_visible": "CHAMBER C2"
+    }
+  },
+  "limitations": [
+    "The browser workflow used caller-supplied synthetic snapshot records and did not contact a company service.",
+    "History and route population completeness remain unknown in this snapshot; caller labels and temporal context do not establish a condition event or cause.",
+    "This replay tests the local P2 module, not P1 shell integration, company authorization, target accessibility acceptance, or company engineering review."
+  ]
+}

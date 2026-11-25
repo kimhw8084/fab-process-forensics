@@ -1,0 +1,102 @@
+{
+  "dependencies": "Python standard library and the local P2 engine only; no package installed or fetched.",
+  "host": {
+    "architecture": "arm64",
+    "os": "Darwin",
+    "python": "3.11.7 (main, Dec 15 2023, 12:09:56) [Clang 14.0.6 ]",
+    "release": "25.6.0"
+  },
+  "limitations": [
+    "Synthetic rows do not establish fab-scale or metrology-volume performance.",
+    "The workload uses one process source and one outcome source; it does not measure live catalog discovery or source selection quality.",
+    "No engineer time study, target-host threshold, or external OSS graph/process-mining comparison was performed.",
+    "The 100,000-event point measures the local engine's declared row ceiling; compact JSON size is reported separately against the 25 MiB request limit."
+  ],
+  "measurement": {
+    "expected_oracle": "100 ordered journeys, one route variant, exact C1 exposure for 50 normal wafers, not-observed-exposed for 50 abnormal wafers under caller-declared source-linked coverage, zero unknown/missing outcomes.",
+    "payload_limit_bytes": 26214400,
+    "percentile_method": "Nearest rank; p95 of seven measurements is the maximum observed sample.",
+    "runs_per_workload": 7,
+    "timed_operation": "Complete products.p2.engine.analyze() call after one untimed warm-up."
+  },
+  "network_used": false,
+  "protocol": "docs/ANALYSIS_SCALING_BENCHMARK_PROTOCOL.md",
+  "status": "PASS_SYNTHETIC_ANALYSIS_SCALING",
+  "workloads": [
+    {
+      "analysis_p50_ms": 1.9359588623046875,
+      "analysis_p95_ms": 2.122708596289158,
+      "analysis_peak_traced_bytes_one_run": 754924,
+      "compact_json_bytes": 50481,
+      "compact_json_within_25_mib_limit": true,
+      "event_count": 100,
+      "oracle_status": "PASS",
+      "outcome_count": 100,
+      "p50_ratio_vs_100_events": 1.0,
+      "p95_ratio_vs_100_events": 1.0,
+      "runs": 7,
+      "steps_per_wafer": 1,
+      "wafer_count": 100
+    },
+    {
+      "analysis_p50_ms": 11.602208018302917,
+      "analysis_p95_ms": 13.569416478276253,
+      "analysis_peak_traced_bytes_one_run": 5514720,
+      "compact_json_bytes": 268581,
+      "compact_json_within_25_mib_limit": true,
+      "event_count": 1000,
+      "oracle_status": "PASS",
+      "outcome_count": 100,
+      "p50_ratio_vs_100_events": 5.993003386699508,
+      "p95_ratio_vs_100_events": 6.392500836901407,
+      "runs": 7,
+      "steps_per_wafer": 10,
+      "wafer_count": 100
+    },
+    {
+      "analysis_p50_ms": 137.59770803153515,
+      "analysis_p95_ms": 141.75450056791306,
+      "analysis_peak_traced_bytes_one_run": 43877414,
+      "compact_json_bytes": 2449581,
+      "compact_json_within_25_mib_limit": true,
+      "event_count": 10000,
+      "oracle_status": "PASS",
+      "outcome_count": 100,
+      "p50_ratio_vs_100_events": 71.07470655018473,
+      "p95_ratio_vs_100_events": 66.78000966111087,
+      "runs": 7,
+      "steps_per_wafer": 100,
+      "wafer_count": 100
+    },
+    {
+      "analysis_p50_ms": 974.6180828660727,
+      "analysis_p95_ms": 1142.4223333597183,
+      "analysis_peak_traced_bytes_one_run": 214058737,
+      "compact_json_bytes": 12142881,
+      "compact_json_within_25_mib_limit": true,
+      "event_count": 50000,
+      "oracle_status": "PASS",
+      "outcome_count": 100,
+      "p50_ratio_vs_100_events": 503.42912850215515,
+      "p95_ratio_vs_100_events": 538.1908451102802,
+      "runs": 7,
+      "steps_per_wafer": 500,
+      "wafer_count": 100
+    },
+    {
+      "analysis_p50_ms": 2001.391832716763,
+      "analysis_p95_ms": 2380.7732090353966,
+      "analysis_peak_traced_bytes_one_run": 427930494,
+      "compact_json_bytes": 24259581,
+      "compact_json_within_25_mib_limit": true,
+      "event_count": 100000,
+      "oracle_status": "PASS",
+      "outcome_count": 100,
+      "p50_ratio_vs_100_events": 1033.7987400900554,
+      "p95_ratio_vs_100_events": 1121.5732640822098,
+      "runs": 7,
+      "steps_per_wafer": 1000,
+      "wafer_count": 100
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "positive_status": "PARTIAL",
+  "claim_contains": "exact-chamber/window processing matches = ['W1']",
+  "negative_status": "REFUSED",
+  "repeated_operation": true
+}

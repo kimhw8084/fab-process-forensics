@@ -1,0 +1,75 @@
+{
+  "browser": "Codex in-app browser",
+  "captured_on": "2026-11-23",
+  "tested_url": "http://127.0.0.1:8785/reference/",
+  "status": "PASS_LOCAL_SYNTHETIC_P2_MCP_BROWSER_WORKFLOW",
+  "synthetic_only": true,
+  "external_service_contacted": false,
+  "workflow": {
+    "source_selection": "Loaded abnormal wafer options and cohort members through the configured read-only MCP peer.",
+    "selected_abnormal_targets": ["SYN-W1", "SYN-W3"],
+    "selected_cohort": ["SYN-W1", "SYN-W2", "SYN-W3", "SYN-W4"],
+    "suspected_equipment_scope": {"type": "CHAMBER", "id": "SYN-C1"},
+    "selected_local_timezone": "America/Chicago",
+    "selected_window_utc": {
+      "start": "2026-11-21T03:00:00+00:00",
+      "end": "2026-11-21T06:00:00+00:00"
+    },
+    "source_reads": {
+      "protocol": "Official MCP Python SDK against the synthetic local peer",
+      "read_roles": ["events", "outcomes", "coverage", "history_coverage", "route_definitions", "route_coverage"],
+      "bounded_and_audited": true,
+      "evidence_status": "PARTIAL"
+    },
+    "journeys": {
+      "wafer_count": 4,
+      "chronology_basis": "Verified source relationship plus timezone-normalized event timestamps",
+      "repeated_processing": {"wafer_id": "SYN-W2", "step_instance_ids": ["SYN-S3", "SYN-S4"], "operation": "ETCH"},
+      "coverage_evidence_level": "ASSERTED_UNVERIFIED",
+      "route_conformance": "COVERAGE_INCOMPLETE"
+    },
+    "exposure": {
+      "definitely_exposed": ["SYN-W1", "SYN-W2"],
+      "potentially_exposed": [],
+      "unknown": ["SYN-W3", "SYN-W4"],
+      "verified_unexposed": [],
+      "coverage_evidence_level": "ASSERTED_UNVERIFIED",
+      "interpretation": "No observed match under the fixture assertion is not a verified unaffected comparator."
+    },
+    "hypothesis_review": {
+      "counterevidence_items": 1,
+      "normal_wafers_with_exact_exposure": ["SYN-W2"],
+      "abnormal_wafers_without_observed_exact_exposure": ["SYN-W3"],
+      "statistical_association": "NOT_COMPUTED",
+      "causal_conclusion": "NOT_ESTABLISHED"
+    },
+    "provenance_inspection": {
+      "selected_record_id": "SYN-S1",
+      "source_id": "SYN_PROCESS",
+      "relationship_id": "SYN_REL_WAFER_STEP",
+      "record_details_opened": true
+    },
+    "keyboard_interaction": {
+      "tab_key_moved_focus_from_target_selection_to_cohort_selection": true,
+      "full_screen_reader_or_accessibility_conformance_audit": false
+    },
+    "cancellation_and_recovery": {
+      "mock_delay_ms": 300,
+      "cancel_result": "CANCELLED_WITHOUT_PARTIAL_EVIDENCE",
+      "retry_completed_all_six_reads": true
+    }
+  },
+  "evidence_export": {
+    "path": "qualification/evidence/browser-p2-reference-export.json",
+    "sha256": "a73887d1a89242768db1ff3478fc30740d97cca6ada7e3263d9c555a3e0abb89",
+    "input_sha256": "e5e9f37fbbc90b4fc1396bc862fcc1d10a66351d467400f2d8ee9066e56d8372",
+    "schema_validation": "PASS",
+    "journey_count": 4,
+    "audit_linked_source_roles": 6
+  },
+  "limitations": [
+    "The workflow used only synthetic fixture sources and a local mock service; no company service or manufacturing data was contacted.",
+    "Coverage remains ASSERTED_UNVERIFIED, so the run does not establish complete histories, route conformance, or unaffected comparators.",
+    "Keyboard focus transfer was observed, but screen-reader, target-browser accessibility, large-population performance, P1/shared-suite integration, and engineer acceptance were not qualified."
+  ]
+}

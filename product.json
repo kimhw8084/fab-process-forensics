@@ -1,0 +1,46 @@
+{
+  "contract_version": "1.0.0",
+  "product_id": "p2",
+  "title": "FAB Process Forensics",
+  "entrypoints": {
+    "cli": "python -m fabintel",
+    "ui_route": "/fab-intelligence/p2",
+    "local_ui": "python -m fabintel serve --host 127.0.0.1",
+    "local_reference_host": "http://127.0.0.1:8765/reference/ (after python -m fabintel serve --host 127.0.0.1 --port 8765)",
+    "reference_host_bundle": "ui/reference-host/dist/ (built by cd ui/p2-react && npm run host:build)",
+    "analysis": "products.p2.engine:analyze",
+    "mcp_investigation": "fabintel.mcp_workflow:investigate_with_mcp",
+    "mcp_onboarding_proposal": "python -m fabintel onboard --descriptors <local-descriptor-capture.json> --output <review-proposal.json>",
+    "mock_mcp_evidence_run": "python qualification/run_mock_mcp_workflow.py",
+    "headless_panels": "ui/p2-panels.js:renderP2Contribution",
+    "panel_models": "ui/p2-panels.js:buildP2PanelModels",
+    "react_panels": "ui/p2-react/dist/index.js:P2ProcessForensicsPanels",
+    "react_panel_types": "ui/p2-react/dist/index.d.ts",
+    "react_panel_package": "ui/p2-react/package.json@1.0.0",
+    "ui_contribution": "ui/contribution.manifest.json",
+    "evidence_contract": "contracts/evidence.v1.schema.json",
+    "mcp_adapter": "fabintel.mcp_adapter:ConfiguredMCPAdapter",
+    "offline_install": "python release/install_offline.py",
+    "offline_install_with_mcp": "python release/install_offline.py --with-mcp (macOS arm64 CPython 3.11 wheelhouse only)",
+    "internal_preflight": "python -m fabintel preflight --capabilities <authorized-local-capture.json>"
+  },
+  "capabilities": [
+    "B01",
+    "B02",
+    "B03",
+    "B05",
+    "headless-panel-interop-adapter",
+    "typed-react-process-forensics-panel-module",
+    "synthetic-mock-read-only-mcp-transports",
+    "non-authorizing-mcp-onboarding-proposals",
+    "reproducible-evidence-export",
+    "standalone-synthetic-reference-host"
+  ],
+  "dependencies": [
+    "p2-core: Python 3.10+ standard library",
+    "optional-read-only-MCP-transport: official Python SDK 2.3.0; local offline wheelhouse tested only on macOS arm64 CPython 3.11",
+    "p2-react-panel: module 1.0.0; React host peer >=18.2.0 <20; no other module runtime dependency",
+    "reference-host: compiled React static assets bundle React 19.3.1; browser runtime needs no Node/npm or network; Python host and optional pinned MCP SDK are required"
+  ],
+  "release_state": "CANDIDATE"
+}

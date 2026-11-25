@@ -1,0 +1,25 @@
+{
+  "authorization_or_company_approval": "NOT_ESTABLISHED",
+  "automated_scan_elapsed_ms": 90.249,
+  "catalog_descriptors_examined": 13008,
+  "human_setup_time": "NOT_MEASURED",
+  "incorrect_semantic_decoys_rejected": true,
+  "logical_tool_mapping_accuracy": {
+    "expected_operations": 6,
+    "unique_versioned_candidates": 6
+  },
+  "meaning": "Scan time and mapping counts are synthetic harness measurements; they do not estimate company onboarding time or source correctness.",
+  "network_calls": 0,
+  "peak_traced_memory_bytes": 735345,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python_version": "3.11.7",
+  "qualification": "SYNTHETIC_DESCRIPTOR_SCAN_ONLY",
+  "query_plan_proposals": 7,
+  "reads_executed": false,
+  "review_decision_count": 5,
+  "source_role_mapping_accuracy": {
+    "correct_unique_candidates": 7,
+    "expected_roles": 7,
+    "false_positive_candidates": 0
+  }
+}

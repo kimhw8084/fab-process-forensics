@@ -1,0 +1,57 @@
+{
+  "additional_traced_index_setup_bytes": 30710784,
+  "correctness": "PASS: exhaustive scan and interval index match the fixture-derived oracle for every query.",
+  "decision_rule": "Retain only with exact oracle agreement and at least 1.25x median end-to-end speedup.",
+  "dependencies": "Python standard library and the local P2 engine only.",
+  "end_to_end_speedup": 1.6672224811370238,
+  "exhaustive_scan": {
+    "build_median_ms": 88.285542,
+    "end_to_end_median_ms": 577.2985,
+    "end_to_end_samples_ms": [
+      577.298,
+      585.784,
+      559.634
+    ],
+    "peak_traced_setup_bytes": 21055304,
+    "possible_edge_count_across_trials": 57000,
+    "query_median_ms": 488.615208,
+    "result_count_across_trials": 327000,
+    "trials": 3
+  },
+  "host": {
+    "architecture": "arm64",
+    "os": "Darwin",
+    "python": "3.11.7 (main, Dec 15 2023, 12:09:56) [Clang 14.0.6 ]",
+    "release": "25.6.0"
+  },
+  "interval_index": {
+    "build_median_ms": 263.722041,
+    "end_to_end_median_ms": 346.263625,
+    "end_to_end_samples_ms": [
+      346.264,
+      433.793,
+      316.509
+    ],
+    "peak_traced_setup_bytes": 51766088,
+    "possible_edge_count_across_trials": 57000,
+    "query_median_ms": 87.63825,
+    "result_count_across_trials": 327000,
+    "trials": 3
+  },
+  "limitations": [
+    "Regular synthetic membership intervals do not represent fab data or split/merge frequency.",
+    "This measures material-edge lookup only, not full analysis, source discovery, or engineer task time.",
+    "No fab-scale or target-host performance claim is made."
+  ],
+  "network_used": false,
+  "protocol": "docs/MATERIAL_EDGE_INDEX_BENCHMARK_PROTOCOL.md",
+  "status": "PASS_SYNTHETIC_MATERIAL_EDGE_INDEX",
+  "synthetic_only": true,
+  "workload": {
+    "boundary_uncertainty_queries": 10000,
+    "event_time_queries": 100000,
+    "membership_edge_count": 100000,
+    "oracle_result_count_per_trial": 109000,
+    "wafer_count": 1000
+  }
+}

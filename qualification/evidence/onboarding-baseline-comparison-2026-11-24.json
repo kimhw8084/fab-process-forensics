@@ -1,0 +1,62 @@
+{
+  "comparison_basis": "Executable source and deterministic synthetic acceptance; not a human-time study.",
+  "comparison_date": "2026-11-24",
+  "engineering_phase": {
+    "ambiguous_environment_manual_decisions": "5-7 across the 16-environment synthetic benchmark; decisions are never auto-authorized.",
+    "cli_commands": [
+      "doctor",
+      "demo",
+      "preflight",
+      "onboard",
+      "onboard-live",
+      "onboard-review",
+      "investigate-mcp",
+      "catalog",
+      "analyze",
+      "serve"
+    ],
+    "invocations_from_configured_transport_to_first_investigation": 3,
+    "live_onboarding_commands": [
+      "onboard-live",
+      "onboard-review",
+      "investigate-mcp"
+    ],
+    "onboarding_skill_present": true,
+    "review_artifact_for_unique_mapping": "One explicit, proposal-digest-bound decision file; this does not establish server permission."
+  },
+  "frozen_baseline": {
+    "archive_sha256": "8cd4d26b58cec464e21bebc3a6c4704ea862ed496de5c729568f297970303f5d",
+    "cli_commands": [
+      "doctor",
+      "demo",
+      "preflight",
+      "catalog",
+      "analyze",
+      "serve"
+    ],
+    "interpretation": "The baseline exposes no executable live discovery, review-materialization, or MCP investigation command. Manual source-configuration time and step count are not reconstructable from that interface.",
+    "live_onboarding_commands": [],
+    "onboarding_skill_present": false
+  },
+  "not_measured": [
+    "Human setup time",
+    "Company-side engineering hours saved",
+    "Actual engineer interaction time",
+    "Manufacturing ROI"
+  ],
+  "qualification_boundary": "Synthetic-only. Simulated review and permissions do not establish company authorization, data semantics, or transfer rights.",
+  "schema_version": "p2-onboarding-effort-proxy/v1",
+  "synthetic_validation": {
+    "adversarial_environments": 16,
+    "automatic_wrong_mapping_acceptances": 0,
+    "end_to_end_investigation": "Both variants complete official-SDK discovery, deterministic source mapping, digest-bound synthetic review, bounded MCP reads, and B01/B02/B03/B05 evidence analysis. The second variant also completes the CLI workflow.",
+    "end_to_end_mcp_schema_variants": [
+      "FABX aliases",
+      "alternate source and physical-field aliases"
+    ],
+    "fixed_answer_passes": 16,
+    "large_catalog_descriptors": 13008,
+    "role_expectations_checked": 33,
+    "source_mapping_authorized_automatically": false
+  }
+}

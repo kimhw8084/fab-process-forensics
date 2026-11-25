@@ -1,0 +1,446 @@
+{
+  "bundled_reference_host_runtime": [
+    {
+      "license": "MIT",
+      "name": "react",
+      "version": "19.3.1"
+    },
+    {
+      "license": "MIT",
+      "name": "react-dom",
+      "version": "19.3.1"
+    },
+    {
+      "license": "MIT",
+      "name": "scheduler",
+      "version": "0.28.0"
+    }
+  ],
+  "direct_development_dependencies": {
+    "@types/react": {
+      "installed_version": "19.3.0",
+      "license": "MIT",
+      "pinned_version": "19.3.0"
+    },
+    "@types/react-dom": {
+      "installed_version": "19.2.2",
+      "license": "MIT",
+      "pinned_version": "19.2.2"
+    },
+    "jsdom": {
+      "installed_version": "31.0.1",
+      "license": "MIT",
+      "pinned_version": "31.0.1"
+    },
+    "react": {
+      "installed_version": "19.3.1",
+      "license": "MIT",
+      "pinned_version": "19.3.1"
+    },
+    "react-dom": {
+      "installed_version": "19.3.1",
+      "license": "MIT",
+      "pinned_version": "19.3.1"
+    },
+    "typescript": {
+      "installed_version": "5.9.3",
+      "license": "Apache-2.0",
+      "pinned_version": "5.9.3"
+    },
+    "vite": {
+      "installed_version": "7.3.8",
+      "license": "MIT",
+      "pinned_version": "7.3.8"
+    }
+  },
+  "installed_locked_package_count": 49,
+  "license_ids_observed": [
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "BlueOak-1.0.0",
+    "ISC",
+    "MIT"
+  ],
+  "limitations": [
+    "npm audit covers the locked npm test/tool dependency graph at capture time; it is not a full source-code security review.",
+    "Test/build tools remain development-only; the React, React DOM, and Scheduler packages named in bundled_reference_host_runtime are embedded in the local reference-host assets.",
+    "This report records upstream license identifiers and does not grant redistribution rights or company approval."
+  ],
+  "lockfile_sha256": "bf454b30d7442d82b3318073490d15f76a75d6c650e3325ae6759ef6fb13ad38",
+  "missing_license_or_install_records": [],
+  "module": "@fab-intelligence/p2-process-forensics-panels",
+  "module_source_license": "UNLICENSED",
+  "module_version": "1.0.0",
+  "npm_audit": {
+    "audit_report_version": 2,
+    "dependency_counts": {
+      "dev": 99,
+      "optional": 53,
+      "peer": 0,
+      "peerOptional": 0,
+      "prod": 1,
+      "total": 99
+    },
+    "vulnerabilities": {
+      "critical": 0,
+      "high": 0,
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "total": 0
+    }
+  },
+  "optional_locked_package_count": 53,
+  "packages": [
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "@esbuild/darwin-arm64",
+      "version": "0.28.2"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "@exodus/bytes",
+      "version": "1.16.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "@rollup/rollup-darwin-arm64",
+      "version": "4.68.8"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "@types/estree",
+      "version": "1.0.10"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "@types/react",
+      "version": "19.3.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "@types/react-dom",
+      "version": "19.2.2"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "bcp-47",
+      "version": "2.1.2"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "bcp-47-match",
+      "version": "2.0.3"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "csstype",
+      "version": "3.2.4"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "data-urls",
+      "version": "8.0.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "decimal.js",
+      "version": "10.6.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "BSD-2-Clause",
+      "name": "entities",
+      "version": "9.0.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "esbuild",
+      "version": "0.28.2"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "fdir",
+      "version": "6.5.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "fsevents",
+      "version": "2.3.3"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "html-encoding-sniffer",
+      "version": "7.0.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "is-alphabetical",
+      "version": "2.0.1"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "is-alphanumerical",
+      "version": "2.0.1"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "is-decimal",
+      "version": "2.0.1"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "is-potential-custom-element-name",
+      "version": "1.0.1"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "jsdom",
+      "version": "31.0.1"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "BlueOak-1.0.0",
+      "name": "lru-cache",
+      "version": "11.5.3"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "nanoid",
+      "version": "3.3.20"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "parse5",
+      "version": "8.1.1"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "parse5-parser-stream",
+      "version": "8.1.1"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "ISC",
+      "name": "picocolors",
+      "version": "1.1.1"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "picomatch",
+      "version": "4.0.7"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "postcss",
+      "version": "8.5.33"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "punycode",
+      "version": "2.3.1"
+    },
+    {
+      "bundled_reference_host_runtime": true,
+      "development_only": false,
+      "license": "MIT",
+      "name": "react",
+      "version": "19.3.1"
+    },
+    {
+      "bundled_reference_host_runtime": true,
+      "development_only": false,
+      "license": "MIT",
+      "name": "react-dom",
+      "version": "19.3.1"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "rollup",
+      "version": "4.68.8"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "ISC",
+      "name": "saxes",
+      "version": "6.0.0"
+    },
+    {
+      "bundled_reference_host_runtime": true,
+      "development_only": false,
+      "license": "MIT",
+      "name": "scheduler",
+      "version": "0.28.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "BSD-3-Clause",
+      "name": "source-map-js",
+      "version": "1.2.4"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "tinyglobby",
+      "version": "0.2.17"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "tldts",
+      "version": "7.5.5"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "tldts-core",
+      "version": "7.5.5"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "BSD-3-Clause",
+      "name": "tough-cookie",
+      "version": "6.1.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "tr46",
+      "version": "7.0.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "Apache-2.0",
+      "name": "typescript",
+      "version": "5.9.3"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "undici",
+      "version": "8.13.1"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "vite",
+      "version": "7.3.8"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "w3c-xmlserializer",
+      "version": "6.0.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "BSD-2-Clause",
+      "name": "webidl-conversions",
+      "version": "8.0.1"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "whatwg-mimetype",
+      "version": "5.0.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "whatwg-url",
+      "version": "17.3.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "Apache-2.0",
+      "name": "xml-name-validator",
+      "version": "5.0.0"
+    },
+    {
+      "bundled_reference_host_runtime": false,
+      "development_only": true,
+      "license": "MIT",
+      "name": "xmlchars",
+      "version": "2.2.0"
+    }
+  ],
+  "runtime_dependencies": {},
+  "runtime_peer_dependencies": {
+    "react": ">=18.2.0 <20"
+  },
+  "source_redistribution_status": "NOT_GRANTED_OR_INFERRED_BY_THIS_AUDIT",
+  "status": "PASS_LOCAL_NPM_AND_LICENSE_AUDIT"
+}

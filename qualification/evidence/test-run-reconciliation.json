@@ -1,0 +1,75 @@
+{
+  "limitations": {
+    "archive_mode": "Only release/verify_bundle.py on the final immutable archive copy can qualify extraction and package integrity.",
+    "core_mode": "SDK-dependent tests do not execute without P2_TEST_SDK_PATH; skipped tests are not passes."
+  },
+  "protocol_path_qualification": {
+    "core": "Full standard-library suite completed; optional MCP SDK cases are skipped and reported separately, never counted as passes.",
+    "fresh_extraction": "This source-run reconciliation does not claim archive qualification. The hash-bound final archive result is recorded beside the final candidate.",
+    "pinned_sdk": "Full SDK-enabled suite completed with zero skips, including MCP protocol, discovery, authorization-bound review, and workflow tests."
+  },
+  "runs": {
+    "core": {
+      "actually_executed": 169,
+      "errored": 0,
+      "failed": 0,
+      "log": "qualification/evidence/test-suite-core.log",
+      "passed": 169,
+      "runtime": "Core environment without optional MCP SDK",
+      "skipped": 36,
+      "skipped_capability": "Optional pinned MCP SDK protocol and source workflow cases; skipped tests are not passes.",
+      "skipped_test_ids": [
+        "test_cli_onboarding.LiveOnboardingCLITests.test_second_schema_variant_completes_cli_discovery_review_and_investigation",
+        "test_cli_onboarding.LiveOnboardingCLITests.test_unique_proposal_flows_from_metadata_review_to_bounded_investigation",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_cancellation_is_confirmed_and_session_recovers",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_dataset_role_must_match_verified_source_record_kind",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_duplicate_source_semantics_records_are_rejected",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_each_typed_row_is_included_in_response_relationships_and_time_semantics",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_effective_time_and_source_relationship_provenance_are_checked",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_engineer_workflow_traces_six_source_roles_through_counterevidence_and_provenance",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_follow_up_filters_are_pair_scoped_and_server_returns_only_the_target_memberships",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_mock_peer_read_runs_journey_exposure_and_evidence_pipeline",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_multigrain_workflow_cancellation_returns_no_partial_result_and_recovers",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_real_stdio_transport_negotiates_and_completes_all_logical_operations",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_real_streamable_http_transport_completes_all_logical_operations",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_relationship_ids_and_join_keys_are_unambiguous_and_source_declared",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_result_and_audit_hashes_and_response_bytes_are_checked",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_row_grain_time_and_relationship_are_independently_checked",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_server_enforces_query_row_limit_even_if_client_check_is_bypassed",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_server_enforces_source_and_permission_denial",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_server_query_timeout_does_not_poison_next_request",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_server_truncates_to_the_full_bounded_response_byte_limit",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_streamable_http_denial_bounds_cancellation_and_recovery",
+        "test_mcp_adapter.MCPAdapterProtocolTests.test_unapproved_relationship_is_never_promoted_for_a_read",
+        "test_onboarding_pipeline.LiveSyntheticDiscoveryTests.test_official_sdk_batches_13008_source_catalog_without_mapping_decoys",
+        "test_onboarding_pipeline.LiveSyntheticDiscoveryTests.test_official_sdk_discovers_metadata_without_executing_rows",
+        "test_onboarding_pipeline.LiveSyntheticDiscoveryTests.test_reviewed_config_runs_six_source_mcp_to_evidence_pipeline",
+        "test_reference_workflow.ReferenceWorkflowTests.test_100_wafer_mcp_browser_contract_uses_valid_defaults_and_preserves_searchable_history",
+        "test_reference_workflow.ReferenceWorkflowTests.test_13k_unseen_catalog_runs_through_standalone_host_investigation_contract",
+        "test_reference_workflow.ReferenceWorkflowTests.test_authorized_follow_up_can_be_cancelled_without_partial_refresh_and_retried",
+        "test_reference_workflow.ReferenceWorkflowTests.test_browser_module_assets_are_built_and_session_bound_option_reads_work",
+        "test_reference_workflow.ReferenceWorkflowTests.test_cancellation_aborts_mock_mcp_reads_and_allows_a_fresh_request",
+        "test_reference_workflow.ReferenceWorkflowTests.test_complete_seven_source_engineer_workflow_preserves_counterevidence_and_lineage",
+        "test_reference_workflow.ReferenceWorkflowTests.test_invalid_targets_fail_before_a_partial_evidence_envelope",
+        "test_reference_workflow.ReferenceWorkflowTests.test_membership_conflict_follow_up_requires_explicit_authorization_and_refreshes_mcp_evidence",
+        "test_reference_workflow.ReferenceWorkflowTests.test_mismatched_or_timezone_naive_exposure_scope_is_refused",
+        "test_reference_workflow.ReferenceWorkflowTests.test_second_mcp_schema_variant_completes_reviewed_100_wafer_investigation",
+        "test_reference_workflow.ReferenceWorkflowTests.test_unseen_alias_schema_onboards_then_runs_100_wafer_browser_workflow"
+      ],
+      "total_discovered": 205
+    },
+    "pinned_sdk": {
+      "actually_executed": 205,
+      "errored": 0,
+      "failed": 0,
+      "log": "qualification/evidence/test-suite-pinned.log",
+      "passed": 205,
+      "runtime": "Pinned offline MCP SDK venv",
+      "skipped": 0,
+      "skipped_capability": null,
+      "skipped_test_ids": [],
+      "total_discovered": 205
+    }
+  },
+  "status": "PASS_RECONCILED"
+}

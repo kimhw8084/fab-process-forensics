@@ -1,0 +1,21 @@
+{
+  "schema_version": "p2-evidence-capture-repeatability/v1",
+  "command": "rtk env P2_TEST_SDK_PATH=/tmp/p2-mcp-sdk-2.3 python qualification/execute_synthetic_onboarding_cli.py",
+  "scenario": "same 100-wafer alternate-schema synthetic MCP peer and same bounded CLI workflow, invoked twice",
+  "runs": [
+    {
+      "run": 1,
+      "evidence_json_sha256": "04b0f5ff238e4b44e00afa7e821c226b87ede8da2aebbcb7661fe35239929e72"
+    },
+    {
+      "run": 2,
+      "evidence_json_sha256": "773ce79adb47b96aa3549e44d6102f5ef306998e8b872730c3eb463a9e734e3d",
+      "evidence_json_gzip_sha256": "c63fadb4ac685bdae8ce05000f5c71938ffa47e9a40dd7f7feb5f64b2de322ac"
+    }
+  ],
+  "cross_run_json_byte_identical": false,
+  "run_2_gzip_round_trip_sha256_verified": "773ce79adb47b96aa3549e44d6102f5ef306998e8b872730c3eb463a9e734e3d",
+  "gzip_recompression_for_identical_captured_json": "BYTE_IDENTICAL with gzip mtime=0",
+  "interpretation": "Each captured evidence envelope is individually immutable by its recorded SHA-256. Full envelope bytes differ between separate investigations because read operations carry per-run identifiers. Do not claim cross-run byte reproducibility; preserve the exact source fixture, proposal/config digests, request/audit IDs, and captured-envelope digest for reproducibility of a particular investigation.",
+  "scope": "synthetic only; no company permission, data, source mappings, or manufacturing validation"
+}

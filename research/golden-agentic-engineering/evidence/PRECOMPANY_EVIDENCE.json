@@ -1,0 +1,287 @@
+{
+  "schema": "golden-precompany-evidence/v1",
+  "status": "PRE_QUALIFICATION",
+  "evidence_date": "2026-11-21",
+  "repository": {
+    "url": "https://github.com/kimhw8084/golden-agentic-engineering",
+    "branch": "main",
+    "visibility": "public",
+    "implementation_base_commit": "b957a1739517027aeae5fbc7c9df3aedd32b4348"
+  },
+  "tests": {
+    "python_unit_suite": {
+      "command": "python -m unittest discover -s tests -q",
+      "status": "PASS",
+      "tests_run": 168,
+      "tests_passed": 167,
+      "tests_skipped": 1,
+      "tests_failed": 0,
+      "note": "Latest one-command readiness run: 168 tests, 167 passed, one optional SDK test skipped, and zero failures. The dedicated offline MCP SDK fixture is separately recorded below."
+    },
+    "manifest_validation": {
+      "command": "python scripts/validate_manifests.py",
+      "status": "PASS",
+      "summary": "19 rules; 64 source candidates; 12 workflows; 5 agents; 12 skills; 7 commands; 35 typed capability candidates; 18 task decisions; 3 supplemental React notices; 1 unresolved license gap."
+    },
+    "tracked_content_hashes": {
+      "command": "python scripts/verify_contents.py",
+      "status": "PASS",
+      "checked": 235,
+      "missing": 0,
+      "altered": 0,
+      "unlisted": 0
+    },
+    "local_fixture_harness": {
+      "command": "python benchmarks/run_local_fixtures.py --out /private/tmp/golden-local-fixtures-20261121.json --include-react --include-nicegui-ui",
+      "status": "PASS",
+      "committed_evidence": "verification/2026-11-21/local-fixtures-current.json",
+      "react": "PASS: offline npm ci, typecheck, 6 tests, and build",
+      "nicegui_ui": "PASS: 1 user-simulation test; logic fixture has 1 optional skip",
+      "python_api_incident_manufacturing_mcp_proof_routing": "PASS",
+      "browser": "NOT_RUN_PLAYWRIGHT_ASSETS_NOT_STAGED",
+      "scope": "Deterministic synthetic fixtures only; not an OpenCode agent benchmark."
+    },
+    "sampling_accuracy_lab": {
+      "command": "python examples/scenarios/manufacturing/sampling_accuracy_lab.py",
+      "status": "PASS_SYNTHETIC_METHOD_COMPARISON_ONLY",
+      "evidence": "verification/2026-11-21/sampling-accuracy-lab.json",
+      "training_days": 84,
+      "held_out_days": 28,
+      "methods": [
+        "exact known-WIP sampling rule",
+        "empirical arrival-lead baseline",
+        "ridge regression tabular baseline",
+        "seasonal-naive forecast",
+        "seeded Poisson simulation",
+        "training-residual conformal interval"
+      ],
+      "real_fab_accuracy_claim": false
+    },
+    "network_attempt_monitor": {
+      "command": "python scripts/network_attempt_monitor.py",
+      "status": "PASS",
+      "evidence": "One Python loopback socket.connect was observed and rejected before the socket operation.",
+      "limitation": "This audit hook is not an OS firewall and does not monitor OpenCode, Node, browsers, or arbitrary child processes."
+    },
+    "mcp_sdk_candidate_archives": {
+      "command": "python scripts/mcp_candidate_bundle.py verify <each of three candidate archives>",
+      "status": "PASS_CANDIDATE_INTEGRITY_ONLY",
+      "targets": [
+        "macos-arm64-cp311",
+        "windows-amd64-cp311",
+        "linux-x86_64-glibc217-cp311"
+      ],
+      "native_install_scope": "macOS arm64 only; Windows and Linux native installation not run",
+      "archive_hashes": {
+        "macos-arm64-cp311": "5a78a99f2e8775d320d7595862060f351c2645f6dad1df0e0ac1570f021ed794",
+        "windows-amd64-cp311": "b8cf24e8c8d3ce94ea813aba59dc5a733aea808f53db1d8c9ea589ebb43c2145",
+        "linux-x86_64-glibc217-cp311": "596087fb092476b1663fdff7ddc0bfdb441036ae0d6d413d6551bae0fe4f57b7"
+      },
+      "license_and_company_approval": "Metadata and embedded license files inventoried; company OSS/security approval not obtained."
+    },
+    "official_mcp_sdk_fixture": {
+      "command": "<offline MCP SDK CPython 3.11 venv>/bin/python -m unittest tests.test_mcp_sdk_fixture -v",
+      "status": "PASS",
+      "tests_run": 1,
+      "host_target": "macOS arm64",
+      "behavior": "SDK stdio discovery and fixed-sample call pass; out-of-scope ID returns MCP is_error."
+    },
+    "secret_pattern_scan": {
+      "command": "python scripts/security_scan.py --repo . --history",
+      "status": "PASS",
+      "current_files_scanned": 238,
+      "reachable_git_blobs_scanned": 857,
+      "limitation": "High-confidence pattern scan only; it does not establish absence of all proprietary information.",
+      "scan_worktree_head": "39ee6ddbaafa86fe91cad3c227fb2c2388960894"
+    },
+    "golden_full_release_checks": [
+      {
+        "project": "examples/python-app",
+        "evidence": "verification/2026-11-21/python-full-current.json",
+        "status": "NOT_QUALIFIED",
+        "blocking_rule_ids": [
+          "AI-001",
+          "API-001",
+          "DATA-001",
+          "DB-001",
+          "JOBS-001",
+          "MCP-001",
+          "OPS-001",
+          "PY-003",
+          "REL-001",
+          "SEC-001"
+        ]
+      },
+      {
+        "project": "examples/react-app",
+        "evidence": "verification/2026-11-21/react-full-current.json",
+        "status": "NOT_QUALIFIED",
+        "blocking_rule_ids": [
+          "AI-001",
+          "API-001",
+          "DATA-001",
+          "DB-001",
+          "JOBS-001",
+          "MCP-001",
+          "OPS-001",
+          "REL-001",
+          "SEC-001",
+          "UI-002"
+        ]
+      },
+      {
+        "project": "examples/nicegui-app",
+        "evidence": "verification/2026-11-21/nicegui-full-current.json",
+        "status": "NOT_QUALIFIED",
+        "blocking_rule_ids": [
+          "AI-001",
+          "API-001",
+          "DATA-001",
+          "DB-001",
+          "JOBS-001",
+          "MCP-001",
+          "OPS-001",
+          "PY-003",
+          "REL-001",
+          "SEC-001",
+          "UI-002"
+        ]
+      }
+    ],
+    "react_dependency_update": {
+      "active_lock": {
+        "path": "examples/react-app/package-lock.json",
+        "sha256": "cee6aec396c6eb2a5fe41343b5fd0114f69ae442d3607f1be461201f652718e1",
+        "vite": "7.3.8",
+        "vitest": "4.1.12",
+        "npm_audit": "PASS_ZERO_FINDINGS_ON_2026-11-21",
+        "lock_install_typecheck_tests_build": "PASS_MACOS_ARM64_NODE_26.13.0"
+      },
+      "candidate": {
+        "path": "research/react-vitest-5.1.1-candidate/package-lock.json",
+        "sha256": "c14223e751f5b533448bc13ec42d7efd6a33dc804a479f1cefc846cfe0cad01e",
+        "vite": "7.3.8",
+        "vitest": "5.1.1",
+        "node_engine": "^22.12.0 || ^24.0.0 || >=26.0.0",
+        "npm_audit": "PASS_ZERO_FINDINGS_ON_2026-11-21",
+        "offline_install_typecheck_tests_build": "PASS_MACOS_ARM64_NODE_26.13.0",
+        "status": "NOT_SELECTED_COMPANY_NODE_UNKNOWN"
+      },
+      "hosted_windows_linux_matrix": "PASS_4_OF_4_GITHUB_ACTIONS_JOBS; https://github.com/kimhw8084/golden-agentic-engineering/actions/runs/44930658112",
+      "company_oss_clearance": "NOT_OBTAINED"
+    },
+    "github_hosted_ci": {
+      "source_qualification": {
+        "run": 68,
+        "status": "PASS",
+        "commit": "39ee6ddbaafa86fe91cad3c227fb2c2388960894",
+        "jobs": "6/6 Ubuntu/Windows × Python 3.10/3.11/3.14",
+        "url": "https://github.com/kimhw8084/golden-agentic-engineering/actions/runs/44940583531"
+      },
+      "react_dependency_matrix": {
+        "run": 1,
+        "status": "PASS",
+        "commit": "abc38d3bc2ef30e98b35904d7cd077033a21e571",
+        "jobs": "4/4 Ubuntu/Windows × active Node 20.19.0 and candidate Node 22.12.0",
+        "url": "https://github.com/kimhw8084/golden-agentic-engineering/actions/runs/44930658112"
+      },
+      "limitation": "GitHub-hosted runners validate the recorded OS/runtime combinations only; no company-managed host, internal network, license approval, or air-gap qualification is implied.",
+      "previous_source_qualification": {
+        "run": 63,
+        "status": "PASS",
+        "commit": "c1e13579c1c9c51c888d4047fa16ffab430d95d3",
+        "jobs": "6/6 Ubuntu/Windows × Python 3.10/3.11/3.14",
+        "url": "https://github.com/kimhw8084/golden-agentic-engineering/actions/runs/44935668774"
+      }
+    },
+    "precompany_readiness": {
+      "command": "python scripts/precompany_readiness.py --out <external-json> --report <external-markdown>",
+      "status": "PASS_LOCAL_CHECKS; PRE_QUALIFICATION",
+      "source_commit": "39ee6ddbaafa86fe91cad3c227fb2c2388960894",
+      "generated_at_utc": "2026-11-21T19:24:04.339831+00:00",
+      "local_checks_passed": "9/9",
+      "python_tests": {
+        "run": 168,
+        "passed": 167,
+        "skipped": 1,
+        "failed": 0
+      },
+      "bootstrap_rollback_tests": 36,
+      "manifest_validation": "PASS",
+      "tracked_content_hashes": "PASS",
+      "secret_scan": {
+        "status": "PASS",
+        "scanned_files": 236,
+        "reachable_git_blobs": 857
+      },
+      "offline_fixture_summary": {
+        "status": "PASS",
+        "cases": 8,
+        "python_tests": 76,
+        "react_tests": 6,
+        "nicegui_ui_tests": 1
+      },
+      "json": "verification/2026-11-21/precompany-readiness-39ee6dd.json",
+      "json_sha256": "fd37143ec707fb34cb1e19ca197cbb0ebe983912721e5f460e1458af4db5a845",
+      "report": "verification/2026-11-21/precompany-readiness-39ee6dd.md",
+      "report_sha256": "13ad88ab908bd9dda1a8b895665ebe5a03206b5faa1a91fc868030509d45a5e9",
+      "limitations": "All three Golden FULL checks remain NOT_QUALIFIED; this does not qualify a company host, internal runtime, air-gap, OSS approval, or productivity uplift."
+    },
+    "previous_precompany_readiness": {
+      "command": "python scripts/precompany_readiness.py --out <external-json> --report <external-markdown>",
+      "status": "PASS_LOCAL_CHECKS; PRE_QUALIFICATION",
+      "source_commit": "3d122d495e3c27e846fb32b944973d82649e81c6",
+      "local_checks_passed": "9/9",
+      "json": "verification/2026-11-21/precompany-readiness.json",
+      "json_sha256": "c1e6b40ffde1438df815b1ffdd3ecc3b57f8918a767f6faeb90ee45fdb9bdec0",
+      "report": "verification/2026-11-21/precompany-readiness.md",
+      "report_sha256": "a0eb7e3d7f6b37d7766b4ea8f75de8475db0a218e444e1d902ac5c5c03c9e8f5",
+      "limitations": "All three synthetic Golden FULL checks remain NOT_QUALIFIED; Windows/Linux company hosts, internal OpenCode/model, offline assets, OSS clearance and no-public-egress monitor remain company-owned blockers."
+    }
+  },
+  "runtime_probe": {
+    "host_scope": "Local macOS test host only; not company runtime.",
+    "open_code_version": "1.3.9",
+    "public_catalog": "The older local V1 probe logged a models.dev fetch attempt. A separately checksum-verified public OpenCode V2.2.7 probe showed an attempted GET to models.opencode.ai without OPENCODE_DISABLE_MODELS_FETCH=1; Seatbelt denied non-loopback networking. With the variable set, no catalog-fetch log event appeared. Logs are not packet capture or endpoint-monitor evidence.",
+    "repo_v2_config_on_local_v1": "INCOMPATIBLE: the local V1 CLI rejected the V2 mcp.servers configuration.",
+    "temporary_v1_config": "A temporary V1-compatible config reached a local synthetic OpenAI-compatible provider and exposed a skill tool. Its scripted skill call did not complete because the hosted sandbox denied spawning rg.",
+    "evidence": "verification/2026-11-21/opencode-local-runtime-probe.json",
+    "v2_candidate_probe": "verification/2026-11-21/opencode-v2-mcp-runtime-probe.json",
+    "v2_probe_results": {
+      "native_skill_call": "PASS_LOCAL_SCRIPTED_SKILL",
+      "public_web_tools": "DENIED_BY_PROJECT_CONFIG",
+      "models_fetch_disable_setting": "NO_CATALOG_FETCH_LOG_EVENT_OBSERVED; no packet capture",
+      "autoupdate_disable_setting": "SET_IN_PROBE_ENVIRONMENT_NOT_INDEPENDENTLY_MONITORED",
+      "official_sdk_mcp": "PASS_LOCAL_SYNTHETIC_CALL; SDK discovery and read-only call with pinned 2026-07-28 and auto modes, 20000 ms timeout",
+      "standard_fixture_mcp": "PASS_LOCAL_SYNTHETIC_CALL; auto discovery fell back to legacy 2025-11-25 and completed read-only call",
+      "provider_and_injection_scope": "SCRIPTED_PROVIDER; tool and skill calls observed, but model reasoning and injection resistance NOT_EVALUATED",
+      "authentic_model_quality_tokens_latency": "NOT_MEASURED"
+    },
+    "authentic_company_model_or_mcp_calls": "NOT_RUN",
+    "company_runtime_benchmark": "BLOCKED_COMPANY_RUNTIME"
+  },
+  "privacy_review": {
+    "high_confidence_secret_scan": "PASS: zero detected patterns; no match values were emitted.",
+    "reachable_git_history": "815 blobs scanned; source worktree had 227 files scanned.",
+    "absolute_user_paths": 0,
+    "private_ipv4_addresses": 0,
+    "machine_user_path_scan": "PASS: zero hits in current files or reachable Git blobs; ignored local demo evidence was changed to a repository-relative path before release.",
+    "attached_fab_archive_scan": "PASS: all 14 archive files checked for high-confidence secret patterns, absolute user paths, RFC1918 addresses and email patterns; zero findings.",
+    "email_address_matches": "4 files: three invalid-domain test fixtures and one public upstream license attribution; no company email was identified in the earlier scan. New changes contain no company identity or runtime detail.",
+    "limitation": "Pattern-based scan only; this does not prove the absence of all proprietary information."
+  },
+  "assets": {
+    "manifest": "offline/assets-manifest.json",
+    "status": "SOURCE_ONLY_NOT_OFFLINE_EXECUTABLE",
+    "required_asset_groups": 6,
+    "staged_asset_groups": 0,
+    "fab_repository_candidates": 38,
+    "fab_repository_sources_staged": 0
+  },
+  "qualification": {
+    "overall": "PRE_QUALIFICATION",
+    "company_approval": "NOT_OBTAINED",
+    "production_deployment": "NOT_AUTHORIZED",
+    "performance_uplift_claim": "NONE"
+  }
+}

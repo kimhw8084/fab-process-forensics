@@ -1,0 +1,136 @@
+{
+  "status": "PASS_BROWSER_KEYBOARD_WORKFLOW_HISTORIC_UI_REVISION",
+  "date": "2026-11-22",
+  "url": "http://127.0.0.1:8767/",
+  "browser": "Codex in-app browser (iab)",
+  "fixture": "fixtures/case_positive.json (synthetic, local only)",
+  "current_workflow": {
+    "start_mode": "Abnormal lot and outcome",
+    "keyboard_selected_mode_and_applied_scope": true,
+    "target_lot_id": "LOT-A",
+    "target_wafer_ids": ["W1", "W2"],
+    "outcome_relationship_id": "SYN_REL_OUTCOME_WAFER",
+    "outcome_relationship_keys": ["wafer_id", "lot_id"],
+    "outcome_rows": ["W1:NORMAL", "W2:ABNORMAL"],
+    "preflight_status": "READY_FOR_LOCAL_ANALYSIS",
+    "preflight_reports_lot_completeness_unknown": true,
+    "preflight_external_service_contacted": false,
+    "focus_after_preflight": "Run deterministic analysis button",
+    "analysis_status": "VALID",
+    "journeys_visible": ["W1", "W2"],
+    "counterevidence_visible": {
+      "normal_wafers_with_exact_exposure": ["W1"],
+      "abnormal_wafers_verified_unexposed": ["W2"]
+    },
+    "focus_after_analysis": "Findings and scope summary",
+    "evidence_view_shows_target_lot_and_outcome_rows": true,
+    "analysis_external_service_contacted": false
+  },
+  "keyboard_coverage": {
+    "start_modes_selected_by_keyboard": [
+      "Abnormal wafer cohort and outcome",
+      "Abnormal lot and outcome",
+      "Process/chamber exposure interval"
+    ],
+    "initial_exposure_form_tab_order": [
+      "starting-point",
+      "exposure-chamber",
+      "exposure-start",
+      "exposure-end",
+      "apply-scope",
+      "load-demo",
+      "file-input",
+      "input-json",
+      "preflight"
+    ],
+    "post_analysis_lot_form_tab_order": [
+      "affected-lot",
+      "apply-scope",
+      "load-demo",
+      "file-input",
+      "input-json",
+      "preflight",
+      "run",
+      "download"
+    ],
+    "keyboard_actions_verified": [
+      "change start mode with Space, arrow keys, and Enter",
+      "enter a lot ID",
+      "apply the selected lot scope",
+      "review the snapshot",
+      "run deterministic analysis",
+      "reach and activate the enabled evidence-download control",
+      "open the local snapshot picker by keyboard and load the bundled fixture",
+      "submit malformed JSON, observe refusal, and recover by reloading and rerunning the example"
+    ],
+    "enabled_export_control_reachable": true,
+    "export_download_completed": true
+  },
+  "file_picker": {
+    "control_reached_by_keyboard": true,
+    "picker_activated_by_enter": true,
+    "selected_file": "fixtures/case_positive.json",
+    "selection_method": "Browser filechooser.setFiles using a file already in the launchkit folder",
+    "loaded_status": "Local file loaded. Review its sources and limits before analysis.",
+    "external_service_contacted": false
+  },
+  "keyboard_error_recovery": {
+    "malformed_input": "{",
+    "failure_status": "Invalid JSON: Expected property name or '}' in JSON at position 1 (line 1 column 2)",
+    "focus_after_failure": "Review source relationships and limits button",
+    "analysis_and_export_disabled_on_failure": true,
+    "recovery_steps": [
+      "Shift+Tab to local snapshot editor and file control, then Load synthetic example",
+      "Tab to Review source relationships and limits, then Enter",
+      "Enter on Run deterministic analysis"
+    ],
+    "recovered_status": "VALID",
+    "focus_after_recovery": "Findings and scope summary"
+  },
+  "accessibility_observations": {
+    "named_form_controls": [
+      "Start from",
+      "Lot ID with caller-supplied outcome rows",
+      "Bounded evidence snapshot (JSON)",
+      "Review source relationships and limits",
+      "Run deterministic analysis",
+      "Download evidence JSON"
+    ],
+    "heading_outline_observed": [
+      "one page h1",
+      "Investigation request h2",
+      "Findings and scope h2",
+      "Wafer journey and route variants h2",
+      "Exposure populations h2",
+      "Counterevidence h2",
+      "Evidence, uncertainty, and limitations h2"
+    ],
+    "tables_exposed_with_headers": [
+      "snapshot relationship review",
+      "wafer journey events",
+      "exposure event evidence",
+      "outcome counterevidence"
+    ],
+    "polite_status_regions_observed": [
+      "snapshot provenance and limit review",
+      "request and analysis status"
+    ],
+    "visible_focus_outline_observed": true,
+    "method": "Browser accessibility tree, DOM labels/roles, and screenshot observation",
+    "not_a_screen_reader_audit": true
+  },
+  "export_download": {
+    "trigger": "Enter while the enabled download button had keyboard focus",
+    "output_file": "qualification/evidence/browser-keyboard-export.json",
+    "payload_status": "VALID",
+    "target_lot_id": "LOT-A",
+    "valid_json": true,
+    "sha256": "03838028fa050da023c8783151e747f09846bed90825a079dfd0e3aea2b8f715"
+  },
+  "interaction_method": "Browser Tab/Shift+Tab, Space, arrow, Enter, and text-entry events through the CUA browser bridge; read-only DOM state and accessibility-tree observations verified focus and outcomes.",
+  "screenshot": "Captured and visually inspected in the CUA session; no separate screenshot file is included.",
+  "observed_app_script_sha256": "9d7fe9de07e512c6933ab70d70ba1c4d6cabee4828512e5d3fd1a8d2d6b793ab",
+  "observed_page_sha256": "303fd410c677e72198179fb7bf803e8e038ad5ad89cb1d6cb4dc5a67e731ba37",
+  "local_dom_state_smoke": "qualification/evidence/ui-state-smoke.json",
+  "scope": "This local-browser observation predates the exact-tool scope UI and remains evidence only for the lot-start, keyboard, export, file-picker, malformed-JSON recovery, and visible accessibility semantics recorded above. Current exact-chamber and exact-tool selection behavior is covered by the local DOM state smoke. The fixture was selected through the browser filechooser API rather than native keyboard selection. Screen-reader review, accessibility acceptance, authorized MCP operation, and target-host usability remain unqualified."
+}

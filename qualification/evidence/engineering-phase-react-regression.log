@@ -1,0 +1,30 @@
+
+> @fab-intelligence/p2-process-forensics-panels@1.0.0 test
+> npm run build && node --test test/*.test.mjs
+
+
+> @fab-intelligence/p2-process-forensics-panels@1.0.0 build
+> tsc -p tsconfig.json
+
+✔ typed models preserve evidence references and do not mutate the source envelope (1.003291ms)
+✔ P1 host adapters mount all five evidence panels with accessible tables and provenance drill-down (32.289958ms)
+✔ the headless fallback remains keyboard and table accessible when P1 adapters are not injected (10.446833ms)
+✔ React journey chronology surfaces conflicting lot evidence and the material record (9.073375ms)
+✔ large fallback histories page journey and table rows without dropping export evidence (66.757416ms)
+✔ large route variants summarize member IDs and preserve the full set in collapsed evidence details (21.856667ms)
+✔ host request controls delegate cancel, retry, and new investigation actions (0.984917ms)
+✔ empty, error, and refused states stay explicit and never assert a cause (1.920417ms)
+✔ invalid contract envelopes are rejected before rendering (0.213208ms)
+✔ standalone panels summarize first, paginate journeys, search by wafer, and preserve evidence (20.61725ms)
+✔ journey chronology makes conflicting event-row and time-scoped lot evidence explicit (3.392417ms)
+✔ exposure and next-check panels keep uncertainty explicit and population lists inspectable (1.901125ms)
+✔ large evidence tables are paged and route population membership stays collapsed (10.3685ms)
+✔ competing equipment table samples populations while retaining full membership in collapsed evidence (0.639084ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 562.581958

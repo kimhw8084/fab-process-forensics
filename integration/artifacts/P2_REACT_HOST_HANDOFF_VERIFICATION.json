@@ -1,0 +1,30 @@
+{
+  "archive": "integration/artifacts/P2_REACT_HOST_HANDOFF.zip",
+  "archive_sha256": "9df253c2781b2d20b4cb501a4e7ba748760bd730d398d0fc67f3a0c2bd197caf",
+  "member_count": 25,
+  "mock_evidence": {
+    "exposure_coverage": "ASSERTED_UNVERIFIED",
+    "mode": "SYNTHETIC_DEMO",
+    "read_roles": [
+      "events",
+      "outcomes",
+      "coverage",
+      "history_coverage",
+      "route_definitions",
+      "route_coverage"
+    ],
+    "route_coverage": "ASSERTED_UNVERIFIED",
+    "status": "PARTIAL",
+    "verified_unexposed": []
+  },
+  "mounted_panel_tests": {
+    "failed": 0,
+    "passed": 7,
+    "skipped": 0,
+    "total": 7
+  },
+  "offline_npm_install": "PASS_USING_HOST_LOCAL_NPM_CACHE",
+  "p1_host_integration": "NOT_RUN_P1_HOST_UNAVAILABLE",
+  "source_transfer_status": "NOT_GRANTED_OR_INFERRED; local handoff only",
+  "status": "PASS_FRESH_EXTRACTION_OFFLINE_REACT_HOST_TESTS"
+}

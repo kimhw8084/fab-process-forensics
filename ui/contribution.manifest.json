@@ -1,0 +1,35 @@
+{
+  "product_id": "p2",
+  "route": "/fab-intelligence/p2",
+  "title": "FAB Process Forensics",
+  "capabilities": [
+    "wafer-journey",
+    "exact-equipment-exposure",
+    "route-and-rework-variants",
+    "evidence-and-counterevidence",
+    "reproducible-evidence-export"
+  ],
+  "required_data": [
+    "source-linked process step instances",
+    "effective-dated relationship records",
+    "timezone-aware event times and optional clock uncertainty",
+    "time-scoped material relationships and explicit history coverage when available",
+    "source-linked exposure coverage and outcomes when supplied"
+  ],
+  "analysis_entrypoint": "products.p2.engine:analyze",
+  "panel_entrypoint": "ui/p2-react/dist/index.js:P2ProcessForensicsPanels",
+  "panel_types_entrypoint": "ui/p2-react/dist/index.d.ts",
+  "panel_module_version": "1.0.0",
+  "legacy_dom_panel_entrypoint": "ui/p2-panels.js:renderP2Contribution",
+  "evidence_schema_version": "1.0.0",
+  "integration_mode": "react-host-module",
+  "reference_host": {
+    "version": "1.0.0",
+    "route": "/reference/",
+    "bundle_entrypoint": "ui/reference-host/dist/index.html",
+    "build_command": "cd ui/p2-react && npm run host:build",
+    "runtime_network": "loopback-only"
+  },
+  "host_adapters": ["accessible table adapter", "chronological journey adapter"],
+  "host_owned_lifecycle": ["source selection", "permissions", "request lifecycle", "cancellation", "navigation", "evidence export"]
+}

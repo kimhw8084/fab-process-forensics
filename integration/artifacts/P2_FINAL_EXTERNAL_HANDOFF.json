@@ -1,0 +1,535 @@
+{
+  "acceptance": {
+    "browser_workflow": {
+      "evidence": [
+        "qualification/evidence/browser-p2-reference-workflow.json",
+        "qualification/evidence/browser-p2-reference-export.json"
+      ],
+      "status": "PASS_LOCAL_BROWSER_WORKFLOW"
+    },
+    "exact_module_handoff_command": "rtk proxy python3 integration/verify_p2_react_handoff.py",
+    "full_frozen_candidate_command": "rtk proxy /tmp/fabintel-p2-sdk/bin/python release/verify_bundle.py",
+    "full_frozen_candidate_result": "PASS; clean extraction, source-integrity check, pinned offline MCP SDK installation, 162/162 SDK-enabled tests, six-source MCP-to-evidence workflow, offline React test/typecheck/build, demo, and rollback.",
+    "limitations": [
+      "Fresh-extraction protocol suite is qualified only with the pinned macOS arm64 CPython 3.11 MCP wheelhouse.",
+      "Host browser tests use synthetic fixtures; no P1/shared-suite browser integration is claimed.",
+      "Package security checks are time- and dependency-graph-scoped; see security/license review."
+    ],
+    "result": "PASS_FRESH_EXTRACTION_OFFLINE_REACT_HOST_TESTS; 7/7 passed, zero skips; offline install and six source roles checked.",
+    "test_reconciliation": {
+      "core_without_optional_sdk": {
+        "discovered": 162,
+        "errored": 0,
+        "executed": 138,
+        "failed": 0,
+        "passed": 138,
+        "skip_semantics": "skips are not counted as passes; see qualification/evidence/test-run-reconciliation.json",
+        "skipped": 24
+      },
+      "sdk_enabled": {
+        "discovered": 162,
+        "errored": 0,
+        "executed": 162,
+        "failed": 0,
+        "passed": 162,
+        "skipped": 0
+      }
+    }
+  },
+  "actual_remaining_dependencies": [
+    {
+      "dependency": "A supported shared FAB host checkout and its actual product registry, request contract, and table/journey/evidence-inspector APIs; host adapter and combined browser acceptance remain to be run.",
+      "state": "PENDING_SHARED_HOST"
+    },
+    {
+      "dependency": "Project ownership/license and redistribution authorization. The React package is UNLICENSED; local handoff is not transfer permission.",
+      "state": "TRANSFER_PENDING"
+    },
+    {
+      "dependency": "Company-issued MCP authorization and source mappings, approved completeness authority, actual manufacturing validation, target environment/security review, and company approvals.",
+      "state": "PENDING_INTERNAL"
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "B01",
+      "name": "wafer/lot journey",
+      "panel": "journey"
+    },
+    {
+      "id": "B02",
+      "name": "verified equipment/chamber exposure and comparator coverage",
+      "panel": "exposure"
+    },
+    {
+      "id": "B03",
+      "name": "route variants, conformance, and rework",
+      "panel": "route"
+    },
+    {
+      "id": "B05",
+      "name": "competing hypotheses and counterevidence",
+      "panel": "counterevidence"
+    },
+    {
+      "id": "evidence",
+      "name": "source provenance, uncertainty, refusal, and reproducible export",
+      "panel": "evidence"
+    }
+  ],
+  "contracts": {
+    "coverage_evidence_levels": [
+      "SOURCE_VERIFIED",
+      "ASSERTED_UNVERIFIED",
+      "PARTIAL",
+      "UNKNOWN",
+      "CONTRADICTORY"
+    ],
+    "evidence_schema": "contracts/evidence.v1.schema.json (schema v1.0.0)",
+    "exported": [
+      "P2ProcessForensicsPanels",
+      "buildP2PanelModels",
+      "P2EvidenceEnvelope",
+      "P2SourceReference",
+      "P2EvidenceReference",
+      "P2CoverageEvidence",
+      "P2CoverageEvidenceLevel",
+      "P2Journey",
+      "P2ProcessStep",
+      "P2RouteVariant",
+      "P2Population",
+      "P2PanelModels",
+      "P2HostComponents",
+      "P2TableProps",
+      "P2JourneyTimelineProps",
+      "P2ProcessForensicsProps"
+    ],
+    "mcp_logical_operations": "contracts/adapter-operations.v1.json",
+    "product_manifest_schema": "contracts/product-manifest.v1.schema.json (v1.0.0)",
+    "request_states": [
+      "idle",
+      "loading",
+      "ready",
+      "error",
+      "cancelled"
+    ],
+    "source_request_and_permission_configuration": "contracts/p2-mcp-client-config.v1.schema.json",
+    "typed_module_interfaces": "ui/p2-react/src/types.ts and ui/p2-react/dist/index.d.ts"
+  },
+  "created_at_utc": "2026-11-23T19:37:08.667074+00:00",
+  "entrypoints": {
+    "backend_analysis": "products.p2.engine:analyze",
+    "capability_manifest": "ui/contribution.manifest.json",
+    "panel_models": "ui/p2-react/dist/index.js:buildP2PanelModels",
+    "react_module": "ui/p2-react/dist/index.js:P2ProcessForensicsPanels",
+    "react_types": "ui/p2-react/dist/index.d.ts",
+    "read_only_mcp_adapter": "fabintel.mcp_adapter:ConfiguredMCPAdapter",
+    "six_source_mcp_workflow": "fabintel.mcp_workflow:investigate_with_mcp"
+  },
+  "files": {
+    "independent_scientific_challenges": [
+      {
+        "bytes": 8758,
+        "path": "tests/test_coverage_authority_boundary.py",
+        "sha256": "7808558f1b047e73f16978b7db9303dbbfe0d1dc77a84fbbdd22f9df42deb68f"
+      },
+      {
+        "bytes": 78085,
+        "path": "tests/test_heldout_adversarial.py",
+        "sha256": "b773502a98e7838363306033a0ffe6dc8036abf533ea92b6a1a9a8021b93b6a9"
+      },
+      {
+        "bytes": 29449,
+        "path": "tests/test_mcp_adapter.py",
+        "sha256": "514fe74515f33720a30f2604b744383d5c8cb0cec3338ed15c9a485cff85a05e"
+      },
+      {
+        "bytes": 8451,
+        "path": "tests/test_reference_workflow.py",
+        "sha256": "319a74e35f61c5ca498704a95dbd52cbab8b77271363ce2020c095413c1dd867"
+      },
+      {
+        "bytes": 60368,
+        "path": "tests/test_p2_challenges.py",
+        "sha256": "79027c5e431e7ebd435b1c250d6487febb3cc239ea96c4869ec19d01b3605361"
+      },
+      {
+        "bytes": 1553,
+        "path": "tests/test_scientific_baseline.py",
+        "sha256": "abc1cd4d78e9beac2d6b4b9287de27d0609c59cf57580dcd356c0fee51cc6c8b"
+      }
+    ],
+    "mcp_and_scientific_engine": [
+      {
+        "bytes": 35915,
+        "path": "fabintel/mcp_adapter.py",
+        "sha256": "9316d97024720b7d045b7a40f79fc88ebe0112ccf5638161d5f0b773c47686af"
+      },
+      {
+        "bytes": 16750,
+        "path": "fabintel/mcp_workflow.py",
+        "sha256": "fae7f9c4f52208e0ce74ba52d5c96841f7b61f6f2f793717d028cc98ea41ca05"
+      },
+      {
+        "bytes": 1482,
+        "path": "fabintel/mock_mcp.py",
+        "sha256": "e72fe85913b9f87d138f5fe0b480b6eaff1d289b099a9600c4f823eed2d46f2e"
+      },
+      {
+        "bytes": 32805,
+        "path": "fabintel/synthetic_mcp_server.py",
+        "sha256": "cd43acffefe63cb5a910db92ff8ab197d3daecc686515d11369264f772bb6788"
+      },
+      {
+        "bytes": 3766,
+        "path": "qualification/run_mock_mcp_workflow.py",
+        "sha256": "d14c2b7c19d3cba8d3fbd97e86bd68cde9aac6a9dc4a6c4659f9734855465314"
+      },
+      {
+        "bytes": 5756,
+        "path": "contracts/SHARED_ARCHITECTURE.md",
+        "sha256": "bd88276779573435164831bcf5d2036cc3d09a3d641635b0df8f95186ec18382"
+      }
+    ],
+    "offline_security_license_and_rollback": [
+      {
+        "bytes": 140590,
+        "path": "release/SBOM.spdx.json",
+        "sha256": "c4cac0503dcbf66e90db133920526c47a3d5a94c5f764d29188c9fd7af4afeee"
+      },
+      {
+        "bytes": 4907,
+        "path": "release/SECURITY_AND_LICENSE_REVIEW.md",
+        "sha256": "05865710e16febfe82928019e53a3ffecff992aa02b4fbcf725dea091e2455f2"
+      },
+      {
+        "bytes": 3066,
+        "path": "release/RUNBOOK_ROLLBACK_KILL_SWITCH.md",
+        "sha256": "9a0df53dfbb0e88cfab1f20adb921c2033f21370770b3fec1ede925b289e3ee2"
+      },
+      {
+        "bytes": 9238,
+        "path": "release/CURRENT_HOST_QUALIFICATION.md",
+        "sha256": "ff07f34ffa46b966638599175c091a042d202de6fbaee931dcc41115b205885e"
+      },
+      {
+        "bytes": 11118,
+        "path": "qualification/evidence/p2-react-dependency-audit.json",
+        "sha256": "9bd74436b1cb36038caf5fc2b78ba3f8e834a8de0b70edfc5300cde68717e237"
+      },
+      {
+        "bytes": 361,
+        "path": "qualification/evidence/p2-react-npm-audit.json",
+        "sha256": "50b8db7d4b05a600144d16cd198f725894292f4963dead7a0a6bf5b3c375edcd"
+      },
+      {
+        "bytes": 3312,
+        "path": "qualification/evidence/mcp-dependency-vulnerability-scan.json",
+        "sha256": "8ab658ae7d1a86eff30004f03eb7eaa2bdbf19d6ab58440b4f3b866db7d6bc48"
+      },
+      {
+        "bytes": 2731,
+        "path": "vendor/mcp-sdk-2.3.0/macos-arm64-cp311/requirements.lock",
+        "sha256": "91bb6e70d813a23f630db5b3956e2755558dbd5c1b25ca6a17dcc5382fd84de7"
+      },
+      {
+        "bytes": 40175,
+        "path": "vendor/mcp-sdk-2.3.0/macos-arm64-cp311/license-inventory.json",
+        "sha256": "f1c827911f14f02f9eedc662e90360f709bd68ec12c6c42de1f73623c23c050f"
+      },
+      {
+        "bytes": 44348,
+        "path": "vendor/mcp-sdk-2.3.0/macos-arm64-cp311/cyclonedx.cdx.json",
+        "sha256": "690db79fe6e457b7decf668287b6532e253425479b72d5688de814e0fdd6ed3b"
+      }
+    ],
+    "product_and_registration": [
+      {
+        "bytes": 2236,
+        "path": "product.json",
+        "sha256": "3d58195749579c22c33aad8546ec616712d3a59371b5bb9886f900a064b132e2"
+      },
+      {
+        "bytes": 1444,
+        "path": "ui/contribution.manifest.json",
+        "sha256": "6792e15825216e3ba1057458fc23b6b5cdb8e36f8d1f7850de23704b1bd13c72"
+      },
+      {
+        "bytes": 939,
+        "path": "contracts/product-manifest.v1.schema.json",
+        "sha256": "6c9758be247756afb0c80316b361412687c643e947418e2b598ccc148ba7d4d3"
+      },
+      {
+        "bytes": 4016,
+        "path": "contracts/evidence.v1.schema.json",
+        "sha256": "9c77d5239687396ddd978b89e67bbee4aa9187c6aeb031cecc8b5d22a307a4a8"
+      },
+      {
+        "bytes": 1451,
+        "path": "contracts/adapter-operations.v1.json",
+        "sha256": "546ffe9a3a04d1d039c112908b684e72de258408c18ca5d51e60787a02e2210c"
+      },
+      {
+        "bytes": 2221,
+        "path": "contracts/p2-mcp-client-config.v1.schema.json",
+        "sha256": "eb25e7afcbe67d8f9fb8c5425e15910503c3e11a6c064d1506cce4a36ca0e6a6"
+      }
+    ],
+    "react_module": [
+      {
+        "bytes": 1014,
+        "path": "ui/p2-react/package.json",
+        "sha256": "e279ace7fc83ab334e874973240ed8d83d9add5c168822e306fef40066ee91fb"
+      },
+      {
+        "bytes": 50880,
+        "path": "ui/p2-react/package-lock.json",
+        "sha256": "bf454b30d7442d82b3318073490d15f76a75d6c650e3325ae6759ef6fb13ad38"
+      },
+      {
+        "bytes": 23570,
+        "path": "ui/p2-react/src/index.tsx",
+        "sha256": "71dc6ce8d14417dae5dc1e3483fe191ca9aaf5186dd36d14219608ac09fee8cc"
+      },
+      {
+        "bytes": 5588,
+        "path": "ui/p2-react/src/model.ts",
+        "sha256": "2ae130ec43ee638f0d7dfb199053f26cc283aef23d48185d547371137a491942"
+      },
+      {
+        "bytes": 6669,
+        "path": "ui/p2-react/src/types.ts",
+        "sha256": "e92495d9df27c529eaad78f3a5fa6f775bb8e438d41fd48b9feb4c14685af5bc"
+      },
+      {
+        "bytes": 23871,
+        "path": "ui/p2-react/dist/index.js",
+        "sha256": "965215762299ca3ec5598808237272e04cc694d901db884c7201ea7e9845c64e"
+      },
+      {
+        "bytes": 252,
+        "path": "ui/p2-react/dist/index.d.ts",
+        "sha256": "c0c7a213ec9c11c5265f061928428b3805e6e77385e506a57305cf429c89ab2a"
+      },
+      {
+        "bytes": 5338,
+        "path": "ui/p2-react/dist/model.js",
+        "sha256": "43f0760e720600c2a36ffb8b9eb47c90733846a8aabe8c7e343c22ace533d708"
+      },
+      {
+        "bytes": 210,
+        "path": "ui/p2-react/dist/model.d.ts",
+        "sha256": "d48b75fa05fc2a0110e756bd2e91e5de8f057c94bbf9390591fb76e26c34d326"
+      },
+      {
+        "bytes": 6967,
+        "path": "ui/p2-react/dist/types.d.ts",
+        "sha256": "7f7a0d4821989404db8145b9e589c587df2dd7c83c0f959432e7e1f4c35a6cb4"
+      },
+      {
+        "bytes": 14282,
+        "path": "ui/p2-react/test/p2-host.integration.test.mjs",
+        "sha256": "bd503e69ee5a3a9c09828d482b97f593c46c36760f40fd0566e3dff8d95d9613"
+      },
+      {
+        "bytes": 2426,
+        "path": "ui/p2-react/README.md",
+        "sha256": "a156f3290835950017e3e71a98957f1dede0eb64718d28ad026712c485c17387"
+      },
+      {
+        "bytes": 2406,
+        "path": "integration/P2_REACT_HOST_HANDOFF.md",
+        "sha256": "862909a58235e500c50c6704710289a6f3d17501a55ab9a637dae6826cf438b2"
+      },
+      {
+        "bytes": 5520,
+        "path": "ui/P1_HOST_INTEGRATION_PROPOSAL.md",
+        "sha256": "18435fb5ab4c6cd1a34964725e0a1380b380b1681d4dd748541cf0dce31d88f4"
+      }
+    ],
+    "reference_cases_and_browser_evidence": [
+      {
+        "bytes": 157130,
+        "path": "qualification/evidence/mcp-end-to-end-workflow.json",
+        "sha256": "c76a209ed85409f83b761ef468b563d80fe914b0eb1f0ae0e1818d377d398e3d"
+      },
+      {
+        "bytes": 3456,
+        "path": "qualification/evidence/browser-p2-reference-workflow.json",
+        "sha256": "4f88bce0dd1b158e77d9c59192b81a96601fa3b9ccda8bfded36ff2f85a8ca24"
+      },
+      {
+        "bytes": 157072,
+        "path": "qualification/evidence/browser-p2-reference-export.json",
+        "sha256": "a73887d1a89242768db1ff3478fc30740d97cca6ada7e3263d9c555a3e0abb89"
+      },
+      {
+        "bytes": 1565,
+        "path": "qualification/evidence/react-host-compatibility.json",
+        "sha256": "0d9484e5ec0620b314b3fa6c12058b027d55c4bed354fde5822ccfb3d5e44354"
+      },
+      {
+        "bytes": 6247,
+        "path": "qualification/evidence/test-run-reconciliation.json",
+        "sha256": "395670e43d2eb79c0e6b6b178e3d61ec72ccc65562eb1eeffa4afaefaa01ca0a"
+      },
+      {
+        "bytes": 138058,
+        "path": "qualification/evidence/bundle-verification.log",
+        "sha256": "cf3838356b9051f41673ede10ef35004b1bc576f977e5ea0439760c40a6912c0"
+      }
+    ],
+    "release_and_integrity_records": [
+      {
+        "bytes": 28768,
+        "path": "release/BOOTSTRAP_MANIFEST.sha256",
+        "sha256": "dbfe462fa80ae9117a8541d9b6c75b7747c42d4683aee538d925babe8ccfcf88"
+      },
+      {
+        "bytes": 105,
+        "path": "release/BUNDLE_SHA256SUMS.txt",
+        "sha256": "85e1bb9d65a9e5ecfbfc42b397c44272791c3568498f379a487fd3ec12006874"
+      },
+      {
+        "bytes": 4612,
+        "path": "release/RELEASE_RECEIPT.json",
+        "sha256": "2032c127ba1e3526266b7bab9834ebe42d5425da81717312e61b34751d5bec95"
+      },
+      {
+        "bytes": 14023,
+        "path": "release/GATE_REPORT.json",
+        "sha256": "c1833de6ed6ea643f50c4fa3661091a3c92fdeab24918489fa1eb2073382d392"
+      },
+      {
+        "bytes": 61191,
+        "path": "integration/artifacts/P2_REACT_HOST_HANDOFF.zip",
+        "sha256": "9df253c2781b2d20b4cb501a4e7ba748760bd730d398d0fc67f3a0c2bd197caf"
+      },
+      {
+        "bytes": 92,
+        "path": "integration/artifacts/P2_REACT_HOST_HANDOFF.sha256",
+        "sha256": "f60751d9c7e8e51ab7bdd3551b93bf8b276cd1047353e3e66085b9d34955cb91"
+      },
+      {
+        "bytes": 887,
+        "path": "integration/artifacts/P2_REACT_HOST_HANDOFF_VERIFICATION.json",
+        "sha256": "666ecbe4b1e5101804120b9ef6cc7e6d9e76e50fcdd02513e47879bad8c8cde4"
+      },
+      {
+        "bytes": 4338,
+        "path": "integration/verify_p2_react_handoff.py",
+        "sha256": "3d8a9409c948151b680a0172929bc078cfccf751e11230a49585d6ec2b7524ff"
+      }
+    ]
+  },
+  "freeze": {
+    "candidate_archive": {
+      "bytes": 9446549,
+      "path": "release/FAB_PROCESS_FORENSICS_P2_CANDIDATE.zip",
+      "sha256": "8cd4d26b58cec464e21bebc3a6c4704ea862ed496de5c729568f297970303f5d"
+    },
+    "candidate_checksum_sidecar": {
+      "path": "release/BUNDLE_SHA256SUMS.txt",
+      "sha256": "85e1bb9d65a9e5ecfbfc42b397c44272791c3568498f379a487fd3ec12006874"
+    },
+    "git_commit": null,
+    "git_note": "No Git repository is present in this launchkit; use the content-addressed source manifest and archive as the immutable identifiers.",
+    "product_contract_version": "1.0.0",
+    "product_id": "p2",
+    "react_module_version": "1.0.0",
+    "release_state": "CANDIDATE",
+    "source_manifest": {
+      "embedded_copy_matches": true,
+      "embedded_path": "FAB_PROCESS_FORENSICS_P2/release/BOOTSTRAP_MANIFEST.sha256",
+      "path": "release/BOOTSTRAP_MANIFEST.sha256",
+      "sha256": "dbfe462fa80ae9117a8541d9b6c75b7747c42d4683aee538d925babe8ccfcf88"
+    },
+    "source_snapshot_id": "sha256:dbfe462fa80ae9117a8541d9b6c75b7747c42d4683aee538d925babe8ccfcf88"
+  },
+  "handoff_manifest_version": "1.0.0",
+  "host_interface_requirements": {
+    "host_callbacks": [
+      "onStartInvestigation",
+      "onCancel",
+      "onRetry",
+      "onInspectEvidence",
+      "onExportEvidence"
+    ],
+    "host_components": {
+      "JourneyTimeline": "Optional adapter implements P2JourneyTimelineProps; chronological table remains available.",
+      "Table": "Optional adapter implements P2TableProps; default accessible table remains available."
+    },
+    "host_owned": [
+      "route/navigation",
+      "source selection",
+      "authentication/permissions",
+      "MCP request lifecycle",
+      "cancellation/retry",
+      "evidence inspector navigation",
+      "export/signing/download"
+    ],
+    "mounting": [
+      "Register product p2 and route /fab-intelligence/p2 from ui/contribution.manifest.json in the host product registry.",
+      "Validate the host response against contracts/evidence.v1.schema.json before supplying evidence.",
+      "Import P2ProcessForensicsPanels and the exported P2 types from @fab-intelligence/p2-process-forensics-panels (or mount the frozen local dist entry after the host approves a local dependency mechanism).",
+      "Render <P2ProcessForensicsPanels state={request.state} evidence={request.evidence} components={{Table: HostTableAdapter, JourneyTimeline: HostJourneyAdapter}} onCancel={request.cancel} onRetry={request.retry} onStartInvestigation={request.start} onInspectEvidence={request.inspectEvidence} onExportEvidence={request.exportEvidence} />.",
+      "Map HostTableAdapter and HostJourneyAdapter to the shared host table/timeline while preserving P2 row IDs and evidence references; keep the default chronological table accessible as fallback.",
+      "Have the host manage source selection, authorization, request execution, cancellation/retry, navigation, evidence drill-down, and export; do not add host lifecycle behavior inside P2.",
+      "Run the module acceptance command, then execute the same synthetic abnormal-wafer workflow through the combined host and its browser acceptance suite."
+    ],
+    "p2_module_boundary": "Presentation and typed evidence only; no P1 imports, reference-host imports, fetch/network client, credentials, or authorization decision in module source.",
+    "react_peer": ">=18.2.0 <20",
+    "request_state_and_validated_evidence": "Host supplies P2RequestState and validated P2EvidenceEnvelope; evidence is rendered only while state=ready."
+  },
+  "integration_module_archive": {
+    "bytes": 61191,
+    "fresh_extraction_verification": "integration/artifacts/P2_REACT_HOST_HANDOFF_VERIFICATION.json",
+    "path": "integration/artifacts/P2_REACT_HOST_HANDOFF.zip",
+    "sha256": "9df253c2781b2d20b4cb501a4e7ba748760bd730d398d0fc67f3a0c2bd197caf"
+  },
+  "offline_security_license_and_rollback": {
+    "license_review": "release/SECURITY_AND_LICENSE_REVIEW.md",
+    "mcp_dependency_scan": "qualification/evidence/mcp-dependency-vulnerability-scan.json (28 locked packages; zero known findings at scan time)",
+    "npm_audit": "qualification/evidence/p2-react-npm-audit.json (locked npm dependency graph: zero findings at scan time)",
+    "react_dependency_audit": "qualification/evidence/p2-react-dependency-audit.json",
+    "redistribution": "NOT_AUTHORIZED_OR_QUALIFIED: module package license is UNLICENSED; source ownership is NOASSERTION.",
+    "rollback": "release/RUNBOOK_ROLLBACK_KILL_SWITCH.md; fresh extraction verified managed-environment removal.",
+    "sbom": "release/SBOM.spdx.json"
+  },
+  "purpose": "Frozen P2 external integration handoff. This JSON sidecar is intentionally outside the frozen candidate archive and does not change its bytes.",
+  "react_and_runtime_versions": {
+    "compatibility_evidence": "React/React DOM 18.3.1 and 19.3.1; seven mounted module tests for each qualified version; TypeScript host declaration checks.",
+    "core_python": "Python >=3.10 standard library only",
+    "frozen_bundle_verification_runtime": "macOS arm64 CPython 3.11.7; core-mode verification separately used host CPython 3.14.5.",
+    "locked_development_dependencies": {
+      "@types/react": "19.3.0",
+      "@types/react-dom": "19.2.2",
+      "jsdom": "31.0.1",
+      "react": "19.3.1",
+      "react-dom": "19.3.1",
+      "typescript": "5.9.3",
+      "vite": "7.3.8"
+    },
+    "lockfile_version": 3,
+    "module_runtime_dependencies": {
+      "other_runtime_dependencies": [],
+      "react_peer": ">=18.2.0 <20"
+    },
+    "offline_asset_note": "Browser runtime uses compiled local React assets; no Node/npm or network is needed at runtime. Offline npm lock/cache is used for build/test.",
+    "protocol_transport": "Official Python MCP SDK 2.3.0; optional offline wheelhouse tested on macOS arm64 CPython 3.11.7 only."
+  },
+  "reference_cases": {
+    "coverage_authority_boundary": "tests/test_coverage_authority_boundary.py: W-EXPOSED on C-1; W-NO-ROW observed only on C-2 remains unknown. Caller-added SOURCE_VERIFIED fields and joined tables do not grant authority. Exact out-of-band scoped test authority is separately exercised.",
+    "exact_chamber": "qualification/evidence/mcp-end-to-end-workflow.json: synthetic CHAMBER SYN-C1; SYN-W1 and SYN-W2 have source-linked definite exact-chamber window matches.",
+    "scope": "All named identities and source permissions in these cases are synthetic only; neither mock approvals nor caller labels are company authorization.",
+    "unknown_population": "Same evidence: SYN-W3 and SYN-W4 are unknown/potentially exposed under ASSERTED_UNVERIFIED coverage; verified_unexposed is empty."
+  },
+  "states": {
+    "EXTERNAL_TRANSFER_READY": "NOT_QUALIFIED",
+    "INTERNAL_QUALIFICATION_PENDING": "PENDING_INTERNAL",
+    "P2_EXTERNALLY_IMPLEMENTED": "COMPLETE_FOR_SYNTHETIC_EXTERNAL_CONTRACTS",
+    "P2_STANDALONE_WORKFLOW_VERIFIED": "PASS_LOCAL_BROWSER_WORKFLOW",
+    "SHARED_SUITE_COMPATIBILITY_READY": "READY_VERSIONED_REACT_CONTRIBUTION",
+    "SHARED_SUITE_INTEGRATION_PENDING": "PENDING_SHARED_HOST"
+  }
+}

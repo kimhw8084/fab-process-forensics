@@ -1,0 +1,72 @@
+{
+  "schema_version": "p2-browser-five-run-onboarding/v1",
+  "measurement_date": "2026-11-24",
+  "environment": {
+    "application": "P2 standalone React reference host",
+    "url": "http://127.0.0.1:8773/reference/",
+    "synthetic_environment": "engineer-100-alt-alias-13k",
+    "source_catalog_descriptors": 13008,
+    "protocol": "official MCP SDK over local synthetic stdio peer",
+    "permission_boundary": "synthetic exact-proposal review only; no company permission or qualification"
+  },
+  "browser_measurement": {
+    "measure": "browser click to the accessible completed-investigation status",
+    "includes": ["browser automation action and status observation", "MCP source discovery/semantics/relationships and bounded workflow", "B01/B02/B03/B05 result rendering"],
+    "excludes": ["human setup time", "isolated server, analysis, or paint latency"],
+    "runs": [
+      {"run": 1, "elapsed_ms": 3364, "investigation_id": "SYN-p2-cb397660e17b", "completed": true},
+      {"run": 2, "elapsed_ms": 3388, "investigation_id": "SYN-p2-cb397660e17b", "completed": true, "input_sha256": "cb397660e17bd96eff48c162b6e8084e8339ac7ca198951c75453ec990ed51b5"},
+      {"run": 3, "elapsed_ms": 3131, "investigation_id": "SYN-p2-cb397660e17b", "completed": true, "input_sha256": "cb397660e17bd96eff48c162b6e8084e8339ac7ca198951c75453ec990ed51b5"},
+      {"run": 4, "elapsed_ms": 3178, "investigation_id": "SYN-p2-cb397660e17b", "completed": true, "input_sha256": "cb397660e17bd96eff48c162b6e8084e8339ac7ca198951c75453ec990ed51b5"},
+      {"run": 5, "elapsed_ms": 3132, "investigation_id": "SYN-p2-cb397660e17b", "completed": true, "input_sha256": "cb397660e17bd96eff48c162b6e8084e8339ac7ca198951c75453ec990ed51b5"}
+    ],
+    "median_ms": 3178,
+    "range_ms": {"min": 3131, "max": 3388, "width": 257},
+    "scientific_consistency": {
+      "same_investigation_id_all_runs": true,
+      "input_sha256_observed_same_on_runs_2_to_5_and_export": true,
+      "all_five_runs_reached_completed_status": true,
+      "representative_export_checked": true,
+      "limitation": "The first run's input digest was not separately sampled; its completed result used the same investigation ID as all subsequent runs. Timing values include browser automation and render-observation overhead."
+    }
+  },
+  "representative_browser_export": {
+    "artifact_gzip": "qualification/evidence/browser-five-run-alt-alias-13k-export.json.gz",
+    "raw_sha256": "f1b2a592f6cab1dbcae1a39f53e11d74a04c87b3e75fc4c62e29e70ffc98d808",
+    "raw_bytes": 5639007,
+    "gzip_sha256": "0a7d919b1be4b81892176da05948435a0deae3c767e1d580050998f9aeefd501",
+    "gzip_bytes": 125730,
+    "round_trip_verified": true,
+    "evidence_claims": 14,
+    "source_relationships": 7,
+    "mcp_audit_id": "SYN-AUDIT-c953b896-49fa-56c4-b960-9e201b0a3502",
+    "onboarding_proposal_sha256": "d4a00a36adf2428b3297c3ec3c5b6f5f5b60ced4be2907d13a03f59048138610",
+    "synthetic_reviewer": "SYNTHETIC_ACCEPTANCE_REVIEWER_ONLY",
+    "company_qualified": false
+  },
+  "scientific_result": {
+    "journeys": 98,
+    "actual_step_instances": 403,
+    "route_variant_records": 6,
+    "exposure_counts": {"verified_exact": 24, "potential": 25, "unknown": 49, "verified_unexposed": 0},
+    "coverage": "CONTRADICTORY",
+    "causal_conclusion": "NOT_ESTABLISHED",
+    "membership_conflict_search": "SYN-EW-010 filter retained five chronological instances and conflicting lot membership with source record provenance",
+    "follow_up": "specific bounded membership read remains proposal-only until the reviewer takes a separate authorization action"
+  },
+  "onboarding_effort_comparison": {
+    "working_revision": {
+      "commands_from_transport_to_first_investigation": 3,
+      "unique_complete_mapping_review_decisions": 1,
+      "ambiguous_synthetic_environment_decisions": "5-7 across the existing 16-environment benchmark",
+      "authorization_automatic": false
+    },
+    "frozen_baseline": {
+      "live_onboarding_commands": 0,
+      "onboarding_skill_present": false,
+      "manual_configuration_steps": "not reconstructable from baseline artifacts"
+    },
+    "interpretation": "The current revision has a working three-command onboarding path; baseline manual configuration effort and human time cannot be compared from the frozen archive. No engineer-time or ROI savings are claimed."
+  },
+  "source_scope_note": "All records, semantic mappings, approvals, permissions, populations, and times in this report are synthetic."
+}

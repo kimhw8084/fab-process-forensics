@@ -1,0 +1,19 @@
+{
+  "capture": "LOCAL_SYNTHETIC_MCP_REVIEW_AND_FOLLOW_UP",
+  "causal_conclusion": "NOT_ESTABLISHED",
+  "company_authorization_verified": false,
+  "compressed_artifact": "qualification/evidence/engineer-100-follow-up-refreshed.json.gz",
+  "compressed_sha256": "7b3d0c4878c7b5df0ad9b53240df548d0de4a486f2a542e28c5bf8e9a187ce11",
+  "denial_audit_id": "41ef3688-1192-4dcc-bb0f-4ad22ab25da8",
+  "denied_read_executed": false,
+  "follow_up_audit_hashes_match": true,
+  "follow_up_correlation_id": "45382719-6dc9-44f0-b3f2-4078171f588c",
+  "follow_up_roles": [
+    "events",
+    "material_relationships"
+  ],
+  "follow_up_status": "AUTHORIZED_SYNTHETIC_READ_COMPLETED",
+  "initial_investigation_id": "SYN-p2-1f3c8ee6861d",
+  "raw_envelope_sha256": "fe6fcc2385393846cece72fe800852783c2fd3d0cf4d1149870bf6e783acfcaa",
+  "refreshed_investigation_id": "SYN-p2-a4146b4476ec"
+}

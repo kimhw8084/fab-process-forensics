@@ -1,0 +1,33 @@
+{
+  "status": "PASS_LOCAL_UI_STATE_SMOKE",
+  "node_version": "v26.13.0",
+  "app_script_sha256": "c3f924bc09c323126aa203a8f15fcbfa88bd967bbeb6699fb16fefbd0385d2e6",
+  "fixture_variant": "Local test harness adds a second synthetic ABNORMAL wafer and explicit lot-keyed outcome relationships.",
+  "checks": [
+    "affected-wafer cohort validates every caller-declared ABNORMAL outcome",
+    "lot start derives a cohort only from outcome rows whose declared relationship keys include lot_id and wafer_id",
+    "lot start refuses a relationship that does not declare lot membership",
+    "suspected-exposure start applies an exact chamber and timezone-aware window",
+    "suspected-exposure start applies an exact tool and timezone-aware window",
+    "visible Open JSON file action activates the hidden file input",
+    "ready preflight enables analysis",
+    "ready preflight announces a concise screen-reader summary",
+    "ready preflight moves focus to the analysis action",
+    "successful analysis enables export",
+    "export activates a JSON download with the complete validated envelope and deterministic filename",
+    "export cleanup is deferred and the user receives a download-start status",
+    "evidence view displays selected lot and outcome scope",
+    "journey view displays source-declared lot lineage paths and provenance identifiers",
+    "journey view displays material-edge coverage uncertainty",
+    "route view reports declared, observed, ordered, uncertain, and no-row denominators separately",
+    "hypothesis view displays field-verified alternative equipment patterns and counterexamples",
+    "exposure view displays the selected equipment scope and time window",
+    "exposure view labels maintenance context as operator supplied and unverified",
+    "successful analysis moves focus to findings",
+    "input edit invalidates review and clears findings/export",
+    "input edit during analysis prevents stale result rendering",
+    "analysis requests carry cancellation IDs and edits request cancellation",
+    "operator cancellation restores retry control without partial findings or export"
+  ],
+  "scope": "Executes bundled client JavaScript with a local DOM/fetch stub; it is not a real-browser, keyboard, screen-reader, or host-authentication test."
+}

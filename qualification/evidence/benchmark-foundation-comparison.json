@@ -1,0 +1,42 @@
+{
+  "adoption_screen": "FAIL_KEEP_DICTIONARY_BASELINE",
+  "catalog_table_count": 13000,
+  "decision": "SQLite is not adopted unless exact oracle equivalence holds, lookup p95 is at least 25% lower, and build plus 1,000-lookups median time is no slower. This remains a synthetic catalog-only screen.",
+  "dictionary": {
+    "batch_p50_ms": 0.49516744911670685,
+    "build_p50_ms": 1.7609577625989914,
+    "build_p95_ms": 1.9076252356171608,
+    "build_plus_batch_p50_ms": 2.2561252117156982,
+    "lookup_p50_ms": 0.00045821070671081543,
+    "lookup_p95_ms": 0.0007925555109977722
+  },
+  "foundation": "SQLite via the already-installed Python standard-library sqlite3 binding; no package was installed or bundled.",
+  "host": {
+    "architecture": "arm64",
+    "os": "Darwin",
+    "python": "3.11.7 (main, Dec 15 2023, 12:09:56) [Clang 14.0.6 ]",
+    "release": "25.6.0",
+    "sqlite_runtime": "3.41.2"
+  },
+  "network_used": false,
+  "oracle": {
+    "misses_or_false_joins": 0,
+    "queries_false": 442,
+    "queries_true": 558,
+    "query_results_identical": true
+  },
+  "protocol": "docs/OSS_CATALOG_BENCHMARK_PROTOCOL.md",
+  "query_count_per_run": 1000,
+  "relationship_count": 13000,
+  "runs_per_measurement": 15,
+  "sqlite": {
+    "batch_p50_ms": 3.1594168394804,
+    "build_p50_ms": 82.99029245972633,
+    "build_p95_ms": 85.35695914179087,
+    "build_plus_batch_p50_ms": 86.14970929920673,
+    "in_memory_database_bytes": 9166848,
+    "lookup_p50_ms": 0.003541819751262665,
+    "lookup_p95_ms": 0.00487547367811203
+  },
+  "status": "PASS_COMPARISON"
+}

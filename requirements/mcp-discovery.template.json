@@ -1,0 +1,25 @@
+{
+  "contract_version": "1.0.0",
+  "semantic_version": "",
+  "permission_scope": {
+    "read_only": null,
+    "source_scopes": []
+  },
+  "operations": {
+    "discover": "",
+    "semantics": "",
+    "relationships": "",
+    "read_bounded": "",
+    "cancel": "",
+    "audit": ""
+  },
+  "tool_versions": {},
+  "limits": {
+    "max_rows": null,
+    "max_bytes": null,
+    "timeout_seconds": null
+  },
+  "auth_scope": "",
+  "audit_supported": null,
+  "cancel_supported": null
+}

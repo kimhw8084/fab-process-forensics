@@ -1,0 +1,46 @@
+{
+  "browser": "Codex in-app browser",
+  "status": "HISTORICAL_ONLY_SUPERSEDED_BY_COVERAGE_PROVENANCE_HARDENING",
+  "recorded_status_before_supersession": "PASS_LOCAL_ANALYSIS_EXPORT_CAPTURE_NOT_VERIFIED",
+  "current_browser_replay": "NOT_RUN_AFTER_COVERAGE_RELATIONSHIP_REQUIREMENT",
+  "supersession_note": "This recorded run used caller-declared coverage without an approved coverage-record relationship. Its NOT_OBSERVED_EXPOSED classification is not current evidence. Current source-linked coverage behavior is challenged by the seeded and held-out suites; a fresh browser replay and captured download remain pending.",
+  "tested_url": "http://127.0.0.1:8767/",
+  "synthetic_only": true,
+  "workflow": {
+    "start_mode": "ABNORMAL_LOT_AND_OUTCOME",
+    "target_lot_id": "LOT-A",
+    "target_wafer_ids": ["W1", "W2"],
+    "lot_membership_basis": "SYN_REL_OUTCOME_WAFER declares lot_id and wafer_id keys",
+    "lot_completeness": "NOT_ESTABLISHED",
+    "preflight": "READY_FOR_LOCAL_ANALYSIS",
+    "result_status": "VALID",
+    "investigation_id": "SYN-p2-32d3217ad848",
+    "input_sha256": "32d3217ad848a826c8107b64a3d3ea0b648f3c17423974dbb246d2533f317e1c",
+    "observed_route_variants": [
+      {"wafer_id": "W1", "operations": ["ETCH", "MET", "ETCH"], "step_instances": ["S1", "S3", "S4"]},
+      {"wafer_id": "W2", "operations": ["ETCH"], "step_instances": ["S2"]}
+    ],
+    "exposure": {
+      "scope": "exact chamber C1",
+      "window": "[2026-11-21T00:00:00+00:00, 2026-11-21T03:00:00+00:00)",
+      "EXPOSED": ["W1"],
+      "POTENTIALLY_EXPOSED": [],
+      "UNKNOWN": [],
+      "NOT_OBSERVED_EXPOSED": ["W2"],
+      "coverage_basis": "caller-declared complete synthetic coverage"
+    },
+    "counterevidence": {
+      "normal_sharing_exact_exposure": ["W1"],
+      "abnormal_without_observed_exact_exposure": ["W2"],
+      "statistical_association": "NOT_COMPUTED",
+      "causal_conclusion": "NOT_ESTABLISHED"
+    },
+    "provenance_drilldown": "source IDs, relationship IDs, effective times, and history coverage rendered in the evidence panels"
+  },
+  "export_action": {
+    "button_activated": true,
+    "visible_status": "Evidence JSON download started · SYN-p2-32d3217ad848.json",
+    "download_artifact_captured_from_this_run": false,
+    "limitation": "No matching file appeared in the host Downloads directory after activation in the Codex in-app browser. The earlier validated browser export remains at qualification/evidence/browser-keyboard-export.json."
+  }
+}

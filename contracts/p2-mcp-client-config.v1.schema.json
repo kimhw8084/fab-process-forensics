@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fab-intelligence:p2-mcp-client-config:v1",
+  "title": "P2 configurable logical MCP client configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "transport", "tools", "request_timeout_seconds", "max_response_bytes"],
+  "properties": {
+    "schema_version": {"const": "p2-mcp-client-config/v1"},
+    "transport": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "command"],
+          "properties": {
+            "kind": {"const": "stdio"},
+            "command": {"type": "string", "minLength": 1},
+            "args": {"type": "array", "items": {"type": "string"}},
+            "cwd": {"type": "string", "minLength": 1},
+            "environment": {
+              "type": "object",
+              "additionalProperties": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"}
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "url"],
+          "properties": {
+            "kind": {"const": "streamable_http"},
+            "url": {"type": "string", "format": "uri"},
+            "headers_from_environment": {
+              "type": "object",
+              "additionalProperties": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"}
+            }
+          }
+        }
+      ]
+    },
+    "tools": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["discover", "semantics", "relationships", "read_bounded", "cancel", "audit"],
+      "properties": {
+        "discover": {"type": "string", "minLength": 1},
+        "semantics": {"type": "string", "minLength": 1},
+        "relationships": {"type": "string", "minLength": 1},
+        "read_bounded": {"type": "string", "minLength": 1},
+        "cancel": {"type": "string", "minLength": 1},
+        "audit": {"type": "string", "minLength": 1}
+      }
+    },
+    "request_timeout_seconds": {"type": "number", "exclusiveMinimum": 0, "maximum": 300},
+    "max_response_bytes": {"type": "integer", "minimum": 1024, "maximum": 104857600}
+  }
+}

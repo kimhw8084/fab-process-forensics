@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="fabintel-local-token" content="__LOCAL_TOKEN__">
+  <title>FAB Process Forensics · P2</title>
+  <link rel="stylesheet" href="/ui/styles.css">
+</head>
+<body>
+  <header>
+    <div><small>FAB INTELLIGENCE · P2 · CONTRACT 1.0.0</small><h1>FAB Process Forensics</h1><p>Wafer journey · chamber exposure · route variants · counterevidence</p></div>
+  </header>
+  <main class="wrap">
+    <div class="banner" role="status"><strong>SYNTHETIC / LOCAL SNAPSHOT MODE</strong><br>This build analyzes caller-supplied JSON in a loopback-only local process. It is not connected to Fab Insight MCP and cannot establish real authorization, company source semantics, or production findings.</div>
+    <div class="grid">
+      <section aria-labelledby="request-title" class="panel">
+        <h2 id="request-title">1. Investigation request</h2>
+        <p class="muted">Load a local snapshot. Every event and outcome needs a source record and effective-dated relationship record; caller approval flags alone are insufficient. No database query is issued.</p>
+        <fieldset class="scope-picker">
+          <legend>Choose a local investigation start</legend>
+          <label for="starting-point">Start from</label>
+          <select id="starting-point">
+            <option value="affected-wafer">Abnormal wafer cohort and outcome</option>
+            <option value="affected-lot">Abnormal lot and outcome</option>
+            <option value="suspected-exposure">Process/maintenance/change interval</option>
+          </select>
+          <div id="affected-wafer-fields">
+            <details id="affected-wafer-details">
+              <summary id="affected-wafer-summary">Review or edit selected abnormal wafer IDs</summary>
+              <label for="affected-wafer">Wafer IDs with declared ABNORMAL outcomes</label>
+              <input id="affected-wafer" type="text" autocomplete="off" placeholder="W2, W3">
+              <p class="muted">Enter one or more comma-separated IDs from caller-supplied ABNORMAL outcomes. Existing comparison cohort members are retained.</p>
+            </details>
+          </div>
+          <div id="affected-lot-fields" hidden>
+            <label for="affected-lot">Lot ID with caller-supplied outcome rows</label>
+            <input id="affected-lot" type="text" autocomplete="off" placeholder="LOT-7">
+            <p class="muted">The lot cohort includes only outcome rows whose declared relationship keys include both lot_id and wafer_id, with at least one ABNORMAL outcome. The snapshot may omit lot members.</p>
+          </div>
+          <div id="suspected-exposure-fields" hidden>
+            <label for="exposure-condition-type">Suspected interval context (operator supplied)</label>
+            <select id="exposure-condition-type">
+              <option value="PROCESS">Process interval</option>
+              <option value="MAINTENANCE">Maintenance interval</option>
+              <option value="CHANGE">Change interval</option>
+            </select>
+            <p class="muted">This context label is not source evidence that a maintenance or change event occurred.</p>
+            <label for="exposure-scope-type">Equipment scope</label>
+            <select id="exposure-scope-type">
+              <option value="chamber">Exact chamber</option>
+              <option value="tool">Exact tool</option>
+            </select>
+            <div id="exposure-chamber-fields">
+              <label for="exposure-chamber">Exact chamber ID</label>
+              <input id="exposure-chamber" type="text" autocomplete="off" placeholder="C1">
+            </div>
+            <div id="exposure-tool-fields" hidden>
+              <label for="exposure-tool">Exact tool ID</label>
+              <input id="exposure-tool" type="text" autocomplete="off" placeholder="T1">
+            </div>
+            <label for="exposure-start">Window start (ISO-8601 with timezone)</label>
+            <input id="exposure-start" type="text" autocomplete="off" placeholder="2026-11-21T00:00:00+00:00">
+            <label for="exposure-end">Window end (ISO-8601 with timezone)</label>
+            <input id="exposure-end" type="text" autocomplete="off" placeholder="2026-11-21T03:00:00+00:00">
+            <p class="muted">Time bounds use a half-open interval [start, end). Tool exposure matches the exact tool ID; chamber membership is never inferred from a tool or group.</p>
+          </div>
+          <button id="apply-scope" type="button">Apply start to local snapshot</button>
+        </fieldset>
+        <div class="actions">
+          <button id="load-demo" type="button">Load synthetic example</button>
+          <button id="open-file" type="button">Open JSON file</button>
+          <input class="file-input" id="file-input" type="file" accept="application/json,.json" hidden>
+        </div>
+        <details id="snapshot-editor">
+          <summary id="snapshot-summary">Inspect or edit the bounded evidence snapshot (JSON)</summary>
+          <label for="input-json">Bounded evidence snapshot (JSON)</label>
+          <textarea id="input-json" spellcheck="false" aria-describedby="input-help"></textarea>
+        </details>
+        <p id="input-help" class="muted">Maximum request size: 25 MB and 100,000 event rows. Review declared sources and relationships before analysis. Step instances stay distinct; wafer aliases are never merged.</p>
+        <div class="actions"><button id="preflight" type="button">Review source relationships and limits</button><button id="run" class="primary" type="button" disabled>Run deterministic analysis</button><button id="download" type="button" disabled>Download evidence JSON</button></div>
+        <section id="snapshot-review" class="status" aria-label="Snapshot provenance and limit review">Review the local snapshot before analysis.</section>
+        <p id="snapshot-review-announcement" class="sr-only" role="status" aria-live="polite">Review the local snapshot before analysis.</p>
+        <div id="request-status" class="status" role="status" aria-live="polite">Load a snapshot to begin.</div>
+      </section>
+      <div>
+        <section class="panel" aria-labelledby="summary-title">
+          <h2 id="summary-title">2. Findings and scope</h2>
+          <div id="summary" class="empty" role="region" aria-labelledby="summary-title" tabindex="-1">No analysis has been run.</div>
+        </section>
+        <section class="panel" aria-labelledby="journey-title">
+          <h2 id="journey-title" tabindex="-1">Wafer journey and route variants</h2>
+          <div id="journeys" class="empty">Journey details appear here.</div>
+        </section>
+        <section class="panel" aria-labelledby="exposure-title">
+          <h2 id="exposure-title" tabindex="-1">Exposure populations</h2>
+          <div id="populations" class="empty">Exposure details appear here when an equipment window is supplied.</div>
+        </section>
+        <section class="panel" aria-labelledby="counter-title">
+          <h2 id="counter-title" tabindex="-1">Counterevidence</h2>
+          <div id="counterevidence" class="empty">Outcome comparisons appear here when outcomes are supplied.</div>
+        </section>
+        <section class="panel" aria-labelledby="sources-title">
+          <h2 id="sources-title" tabindex="-1">Evidence, uncertainty, and limitations</h2>
+          <div id="evidence" class="empty">Source links and limitations appear here.</div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="/ui/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+[
+  {
+    "id": "P2-01",
+    "input_challenge": "W1 repeated ETCH step instances",
+    "required_result": "preserve two distinct ETCH occurrences",
+    "oracle": "frozen step-instance sequence",
+    "implemented_in_bootstrap": true
+  },
+  {
+    "id": "P2-02",
+    "input_challenge": "C1 event and C2 processing same hour",
+    "required_result": "exclude C2 from exact C1 exposed",
+    "oracle": "fixed chamber/window oracle",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-03",
+    "input_challenge": "event without approved relationship",
+    "required_result": "REFUSED; never render as factual path",
+    "oracle": "approval flag oracle",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-04",
+    "input_challenge": "wafer with missing chamber but known tool",
+    "required_result": "unknown chamber exposure, not definitely exposed",
+    "oracle": "type semantics oracle",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-05",
+    "input_challenge": "event timestamp without timezone",
+    "required_result": "REFUSED/inconclusive time order",
+    "oracle": "clock ambiguity fixture",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-06",
+    "input_challenge": "multiple source wafer aliases collision",
+    "required_result": "no unapproved ID merge",
+    "oracle": "namespaced identity fixture",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-07",
+    "input_challenge": "maintenance between two chamber jobs",
+    "required_result": "classify before/after exposure separately",
+    "oracle": "time window oracle",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-08",
+    "input_challenge": "wafer rework loop vs missing event gap",
+    "required_result": "do not infer route violation from gap",
+    "oracle": "coverage fixture",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-09",
+    "input_challenge": "lot split and merge at dated events",
+    "required_result": "track membership at each step",
+    "oracle": "time-effective membership oracle",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-10",
+    "input_challenge": "normal wafers share suspected exposure",
+    "required_result": "contradiction clearly represented",
+    "oracle": "counterevidence oracle",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-11",
+    "input_challenge": "abnormal wafer has no alleged exposure",
+    "required_result": "alternative needed; no definitive root-cause claim",
+    "oracle": "negative exposure oracle",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-12",
+    "input_challenge": "13k ambiguous source catalog",
+    "required_result": "no invalid join accepted; compare baselines",
+    "oracle": "catalog and approval oracle",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-13",
+    "input_challenge": "exact tool scope with an event missing tool assignment",
+    "required_result": "exact tool match only; missing tool unknown; no chamber inference",
+    "oracle": "independent exact-tool set oracle",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-14",
+    "input_challenge": "operator labels an interval as maintenance or change without source evidence",
+    "required_result": "retain the label as explicitly unverified context; refuse invalid context types",
+    "oracle": "caller-context validation oracle",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-15",
+    "input_challenge": "nonmatching wafer with incomplete source-linked query coverage",
+    "required_result": "retain unknown exposure and do not use the wafer as a comparator",
+    "oracle": "fixed source/relationship provenance contract",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-16",
+    "input_challenge": "history coverage omits one of multiple observed process event sources",
+    "required_result": "mark covered journeys INCOMPLETE; do not claim complete process history",
+    "oracle": "independent fixed-answer multi-source coverage case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-17",
+    "input_challenge": "known tool observation lacks a chamber move record",
+    "required_result": "retain possible chamber exposure; do not mark exact or not observed exposed",
+    "oracle": "independent fixed-answer missing-move case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-18",
+    "input_challenge": "same wafer has repeated exact chamber processing instances in the query window",
+    "required_result": "retain one exposed wafer and provenance for both distinct event instances",
+    "oracle": "independent fixed-answer repeated-processing case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-19",
+    "input_challenge": "source-linked maintenance events before and after the suspected window",
+    "required_result": "report temporal context only; do not infer effect or cause",
+    "oracle": "independent fixed-answer temporal-boundary case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-20",
+    "input_challenge": "process history changes route version and follows an approved alternative sequence",
+    "required_result": "preserve version segments and accept only the explicitly approved alternative",
+    "oracle": "independent fixed-answer route-version and exception case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-21",
+    "input_challenge": "repeated process instance has an explicit verified rework predecessor",
+    "required_result": "retain both instances and provenance while excluding the rework instance from base route count",
+    "oracle": "independent fixed-answer rework case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-22",
+    "input_challenge": "normal wafer shares exact exposure while abnormal wafer lacks an observed match",
+    "required_result": "report both contradictions, no fabricated support, no statistical or causal conclusion",
+    "oracle": "independent fixed-answer hypothesis counterevidence case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-23",
+    "input_challenge": "wafer membership changes over time with a source-linked lot split edge",
+    "required_result": "show membership at each event time, preserve typed split provenance, refuse conflicting endpoint keys",
+    "oracle": "independent fixed-answer time-scoped material graph case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-24",
+    "input_challenge": "descendant lot has a two-hop split/merge chain, an expired edge, and sibling-wafer path",
+    "required_result": "show only time-relevant source-declared lot-to-lot paths; exclude expired edges and sibling traversal",
+    "oracle": "independent fixed-answer multi-hop lineage case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-25",
+    "input_challenge": "event row has a lot ID not declared by its approved source relationship",
+    "required_result": "do not attach unrelated material edges; expose the missing key and keep lineage unknown",
+    "oracle": "independent fixed-answer undeclared-lot-field case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-26",
+    "input_challenge": "event-time uncertainty crosses the source relationship effective start",
+    "required_result": "keep event-to-lot seed possible and report membership ambiguity",
+    "oracle": "independent fixed-answer effectivity-boundary case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-27",
+    "input_challenge": "exact exposure event uncertainty crosses the relationship effective start",
+    "required_result": "classify wafer unknown, not exposed or observed unexposed",
+    "oracle": "independent fixed-answer exposure effectivity case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-28",
+    "input_challenge": "route population contains no-row and chronology-uncertain members",
+    "required_result": "show declared and observed denominators separately and never invent a route for no-row members",
+    "oracle": "independent fixed-answer route denominator case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-29",
+    "input_challenge": "chamber field is present but omitted from process relationship keys",
+    "required_result": "exclude chamber from equipment strata and disclose it as unverified context",
+    "oracle": "independent fixed-answer hypothesis-context case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-30",
+    "input_challenge": "duplicate process instance has one identical copy and one conflicting chamber value",
+    "required_result": "collapse exact copies with a count, refuse the conflicting instance, and emit no investigation artifact",
+    "oracle": "independent fixed-answer duplicate/conflict case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-31",
+    "input_challenge": "verified event lot has no split/merge rows in submitted material snapshot",
+    "required_result": "report no connected path observed and keep material-edge completeness NOT_ESTABLISHED",
+    "oracle": "independent fixed-answer incomplete-material-snapshot case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-32",
+    "input_challenge": "material coverage record omits an entity, edge type/source, missing record, or full time bound",
+    "required_result": "accept only source-linked declared scope with lot seed, required types/sources, full event-time uncertainty, and explicit unauthenticated status",
+    "oracle": "independent fixed-answer material-coverage contract case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-33",
+    "input_challenge": "actual process interval uncertainty crosses the event source relationship effectivity boundary while timestamp remains inside",
+    "required_result": "keep exact exposure unknown for the crossing event; retain exact classification only for the interval fully inside effectivity",
+    "oracle": "independent fixed-answer processing-interval effectivity case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-34",
+    "input_challenge": "exposure and route coverage declares complete while naming an omitted process record, or omits the missing-record field",
+    "required_result": "missing records keep nonmatching population members unknown, exclude them from comparator use, and prevent route conformance; the explicit field must be source-authorized",
+    "oracle": "independent fixed-answer missing-coverage-record case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-35",
+    "input_challenge": "caller marks an expected route approved but supplies no source-authorized route-definition relationship",
+    "required_result": "refuse route conformance until the route source relationship authorizes approval, route identity/version, and sequence fields",
+    "oracle": "independent fixed-answer unlinked-route-definition case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-36",
+    "input_challenge": "expected route definition relationship effectivity starts inside an event clock-uncertainty interval",
+    "required_result": "report route definition effectivity uncertain, not a match or mismatch, and preserve route source/relationship provenance",
+    "oracle": "independent fixed-answer route-effectivity case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-37",
+    "input_challenge": "outcome timestamp is present in a row but omitted from its approved relationship keys",
+    "required_result": "refuse to use that timestamp for temporal strata or competing-hypothesis review",
+    "oracle": "independent fixed-answer outcome-time provenance case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-38",
+    "input_challenge": "population includes normal/abnormal outcomes across product and time strata plus an event-bearing wafer with no outcome row",
+    "required_result": "show only relationship-verified product/time strata, preserve selection denominators and missing outcomes, and keep association/cause unestablished",
+    "oracle": "independent fixed-answer product/time/selection counterexample",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-39",
+    "input_challenge": "process-event timestamp is present but omitted from the approved wafer-step relationship keys",
+    "required_result": "refuse chronology and event-time claims; do not use the caller field as verified event time",
+    "oracle": "independent fixed-answer process-time provenance case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-40",
+    "input_challenge": "MCP typed rows omit their source or relationship from response provenance, or the approved relationship omits the query time key",
+    "required_result": "reject the read before analysis; every typed row must be listed by the response and every plan relationship must authorize the timezone-aware time field",
+    "oracle": "independent synthetic-peer protocol compatibility case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-41",
+    "input_challenge": "delayed and out-of-order event rows have recording times that would reverse event-time chronology and exposure",
+    "required_result": "chronology and exact exposure use relationship-authorized process event time; recording time is displayed separately; complete coverage permits only the truly out-of-window wafer to be classified not observed exposed",
+    "oracle": "independent fixed-answer event-time-versus-recording-time case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-42",
+    "input_challenge": "two exact equipment patterns have the same outcome/exposure cross-tab and complete observation coverage",
+    "required_result": "retain both verified competing equipment hypotheses, do not rank either as preferred, and leave association and cause unestablished",
+    "oracle": "independent fixed-answer equal-support alternative-equipment case",
+    "implemented_in_bootstrap": false
+  },
+  {
+    "id": "P2-43",
+    "input_challenge": "complete source-linked route histories include a verified route mismatch, a valid allowed route alternative, and normal/abnormal outcomes under the same route",
+    "required_result": "show route/outcome/exposure groups descriptively with exact process and route-definition references; do not rank route causes or infer association or causality",
+    "oracle": "independent fixed-answer route-pattern counterevidence case",
+    "implemented_in_bootstrap": false
+  }
+]

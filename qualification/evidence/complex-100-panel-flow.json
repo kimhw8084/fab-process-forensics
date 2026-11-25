@@ -1,0 +1,28 @@
+{
+  "status": "PASS_COMPLEX_100_PANEL_FLOW",
+  "fixture": "qualification/fixtures/complex_engineer_investigation_v1.json",
+  "fixture_sha256": "e13d93aad63ea77024d2035a67d22f3fb9abe862c88b19160194a89e6554c068",
+  "investigation_id": "SYN-p2-effc3d4668a4",
+  "cohort_wafer_count": 98,
+  "filtered_conflict_wafer": "SYN-EW-010",
+  "conflict_step_instances": [
+    "SYN-EW-010-S02",
+    "SYN-EW-010-S03"
+  ],
+  "exact_membership_record": "SYN-MEM-010-B",
+  "membership_proposal_discoverable_after_search": true,
+  "relationship_keys_kept_separate": true,
+  "proposal_requires_authorization_and_was_not_executed": true,
+  "exposure_counts": {
+    "exact": 24,
+    "potential": 25,
+    "unknown": 51,
+    "verified_unexposed": 0,
+    "coverage_evidence_level": "CONTRADICTORY"
+  },
+  "causal_conclusion": "NOT_ESTABLISHED",
+  "evidence_export_bytes": 6122285,
+  "evidence_export_sha256": "adb23ede02a756907caf4f1c8c9f10b5ab2a7eb412851151714d4b42e7ab7a05",
+  "export_round_trip_preserves_provenance_coverage_and_contradictions": true,
+  "verification_scope": "Synthetic Python engine plus current P2 DOM panel rendering; not a company-source or engineer study."
+}

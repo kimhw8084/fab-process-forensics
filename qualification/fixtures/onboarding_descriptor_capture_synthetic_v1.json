@@ -1,0 +1,741 @@
+{
+  "capture_mode": "SYNTHETIC_TEST_ONLY",
+  "limits": {
+    "max_bytes": 32768,
+    "max_rows": 100,
+    "max_seconds": 5
+  },
+  "relationships": [
+    {
+      "approved": true,
+      "cardinality": "one declared row to one source record",
+      "effective_end": "2027-01-01T00:00:00Z",
+      "effective_start": "2026-01-01T00:00:00Z",
+      "grain": "one process_step_instance record",
+      "id": "SITE_REL_EVENTS_ALIAS",
+      "keys": [
+        "wafer_ref",
+        "operation_instance",
+        "processed_at",
+        "performed_op",
+        "tool_asset",
+        "chamber_asset",
+        "lot_ref"
+      ],
+      "relationship_type": null,
+      "source_ids": [
+        "SITE_EVENTS_ALIAS"
+      ],
+      "source_reference": {
+        "semantic_version": "site-sem-2026.11",
+        "source_hash": "7681fb0bf54709d61836f52a919939d820c4ba6ca8a359adfbfe9d4eda448edf",
+        "source_ids": [
+          "SITE_EVENTS_ALIAS"
+        ]
+      }
+    },
+    {
+      "approved": true,
+      "cardinality": "one declared row to one source record",
+      "effective_end": "2027-01-01T00:00:00Z",
+      "effective_start": "2026-01-01T00:00:00Z",
+      "grain": "one wafer_outcome record",
+      "id": "SITE_REL_OUTCOMES_ALIAS",
+      "keys": [
+        "wafer_ref",
+        "result_state",
+        "result_time"
+      ],
+      "relationship_type": null,
+      "source_ids": [
+        "SITE_OUTCOMES_ALIAS"
+      ],
+      "source_reference": {
+        "semantic_version": "site-sem-2026.11",
+        "source_hash": "abe1bcec86412ee3e8710f7df809ee3433bbe19a5d8625757c5bc940199b5df9",
+        "source_ids": [
+          "SITE_OUTCOMES_ALIAS"
+        ]
+      }
+    },
+    {
+      "approved": true,
+      "cardinality": "one declared row to one source record",
+      "effective_end": "2027-01-01T00:00:00Z",
+      "effective_start": "2026-01-01T00:00:00Z",
+      "grain": "one material_relationship record",
+      "id": "SITE_REL_MATERIAL_ALIAS",
+      "keys": [
+        "edge_id",
+        "parent_lot",
+        "parent_kind",
+        "member_wafer",
+        "member_kind",
+        "source_seen_at"
+      ],
+      "relationship_type": "LOT_MEMBERSHIP",
+      "source_ids": [
+        "SITE_MATERIAL_ALIAS"
+      ],
+      "source_reference": {
+        "semantic_version": "site-sem-2026.11",
+        "source_hash": "d2e6242bbb1c899b8d12be76fbd2915d24d8bdd4eda75a4803e7dafbc7b30dea",
+        "source_ids": [
+          "SITE_MATERIAL_ALIAS"
+        ]
+      }
+    },
+    {
+      "approved": true,
+      "cardinality": "one declared row to one source record",
+      "effective_end": "2027-01-01T00:00:00Z",
+      "effective_start": "2026-01-01T00:00:00Z",
+      "grain": "one exposure_coverage record",
+      "id": "SITE_REL_COVERAGE_ALIAS",
+      "keys": [
+        "coverage_ref",
+        "is_complete",
+        "wafers_in_scope",
+        "lots_in_scope",
+        "operations_in_scope",
+        "sources_in_scope",
+        "source_refs",
+        "population_grain",
+        "authority_label",
+        "scope_start",
+        "scope_end",
+        "expires_at",
+        "missing_refs",
+        "captured_at"
+      ],
+      "relationship_type": null,
+      "source_ids": [
+        "SITE_COVERAGE_ALIAS"
+      ],
+      "source_reference": {
+        "semantic_version": "site-sem-2026.11",
+        "source_hash": "316e41bd69c761f10047b634f7f9c8ba47acaba85fa32d679a7b3dcc11a248cc",
+        "source_ids": [
+          "SITE_COVERAGE_ALIAS"
+        ]
+      }
+    },
+    {
+      "approved": true,
+      "cardinality": "one declared row to one source record",
+      "effective_end": "2027-01-01T00:00:00Z",
+      "effective_start": "2026-01-01T00:00:00Z",
+      "grain": "one process_history_coverage record",
+      "id": "SITE_REL_HISTORY_ALIAS",
+      "keys": [
+        "coverage_ref",
+        "is_complete",
+        "wafers_in_scope",
+        "lots_in_scope",
+        "operations_in_scope",
+        "sources_in_scope",
+        "source_refs",
+        "population_grain",
+        "authority_label",
+        "scope_start",
+        "scope_end",
+        "expires_at",
+        "missing_refs",
+        "captured_at"
+      ],
+      "relationship_type": null,
+      "source_ids": [
+        "SITE_HISTORY_ALIAS"
+      ],
+      "source_reference": {
+        "semantic_version": "site-sem-2026.11",
+        "source_hash": "3e6a3c9eed7ea47c32b629ec52e1344c31100822704ce397e0737afbcd5268ca",
+        "source_ids": [
+          "SITE_HISTORY_ALIAS"
+        ]
+      }
+    },
+    {
+      "approved": true,
+      "cardinality": "one declared row to one source record",
+      "effective_end": "2027-01-01T00:00:00Z",
+      "effective_start": "2026-01-01T00:00:00Z",
+      "grain": "one route_coverage record",
+      "id": "SITE_REL_ROUTE_COVERAGE_ALIAS",
+      "keys": [
+        "coverage_ref",
+        "is_complete",
+        "wafers_in_scope",
+        "lots_in_scope",
+        "operations_in_scope",
+        "sources_in_scope",
+        "source_refs",
+        "population_grain",
+        "authority_label",
+        "scope_start",
+        "scope_end",
+        "expires_at",
+        "missing_refs",
+        "captured_at"
+      ],
+      "relationship_type": null,
+      "source_ids": [
+        "SITE_ROUTE_COVERAGE_ALIAS"
+      ],
+      "source_reference": {
+        "semantic_version": "site-sem-2026.11",
+        "source_hash": "089804e55be742d1034ad4846f40673780ec6a2d944a403643b018161593b13a",
+        "source_ids": [
+          "SITE_ROUTE_COVERAGE_ALIAS"
+        ]
+      }
+    },
+    {
+      "approved": true,
+      "cardinality": "one declared row to one source record",
+      "effective_end": "2027-01-01T00:00:00Z",
+      "effective_start": "2026-01-01T00:00:00Z",
+      "grain": "one route_definition record",
+      "id": "SITE_REL_ROUTE_DEFINITION_ALIAS",
+      "keys": [
+        "route_ref",
+        "version_ref",
+        "definition_approved",
+        "ordered_ops",
+        "valid_sequences",
+        "defined_at"
+      ],
+      "relationship_type": null,
+      "source_ids": [
+        "SITE_ROUTE_DEFINITION_ALIAS"
+      ],
+      "source_reference": {
+        "semantic_version": "site-sem-2026.11",
+        "source_hash": "9865267a303679475d26100146fd089f09910d03534ce6a891f78caef7e4fb58",
+        "source_ids": [
+          "SITE_ROUTE_DEFINITION_ALIAS"
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "approved": true,
+      "column_definitions": {
+        "chamber_asset": {
+          "entity": "chamber",
+          "type": "identifier"
+        },
+        "lot_ref": {
+          "entity": "lot",
+          "type": "identifier"
+        },
+        "operation_instance": {
+          "entity": "process_step_instance",
+          "type": "identifier"
+        },
+        "performed_op": {
+          "entity": "operation",
+          "meaning": "actual performed operation",
+          "type": "string"
+        },
+        "processed_at": {
+          "meaning": "event time",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "tool_asset": {
+          "entity": "tool",
+          "type": "identifier"
+        },
+        "wafer_ref": {
+          "entity": "wafer",
+          "type": "identifier"
+        }
+      },
+      "effectivity": {
+        "end": "2027-01-01T00:00:00Z",
+        "start": "2026-01-01T00:00:00Z"
+      },
+      "grain": "one process_step_instance record",
+      "record_kind": "PROCESS_STEP_INSTANCE",
+      "semantic_version": "site-sem-2026.11",
+      "source_hash": "7681fb0bf54709d61836f52a919939d820c4ba6ca8a359adfbfe9d4eda448edf",
+      "source_id": "SITE_EVENTS_ALIAS"
+    },
+    {
+      "approved": true,
+      "column_definitions": {
+        "result_state": {
+          "type": "enum",
+          "values": [
+            "ABNORMAL",
+            "NORMAL"
+          ]
+        },
+        "result_time": {
+          "meaning": "outcome time",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "wafer_ref": {
+          "entity": "wafer",
+          "type": "identifier"
+        }
+      },
+      "effectivity": {
+        "end": "2027-01-01T00:00:00Z",
+        "start": "2026-01-01T00:00:00Z"
+      },
+      "grain": "one wafer_outcome record",
+      "record_kind": "WAFER_OUTCOME",
+      "semantic_version": "site-sem-2026.11",
+      "source_hash": "abe1bcec86412ee3e8710f7df809ee3433bbe19a5d8625757c5bc940199b5df9",
+      "source_id": "SITE_OUTCOMES_ALIAS"
+    },
+    {
+      "approved": true,
+      "column_definitions": {
+        "edge_id": {
+          "entity": "relationship_record",
+          "type": "identifier"
+        },
+        "member_kind": {
+          "meaning": "to entity type",
+          "type": "string"
+        },
+        "member_wafer": {
+          "entity": "wafer",
+          "type": "identifier"
+        },
+        "parent_kind": {
+          "meaning": "from entity type",
+          "type": "string"
+        },
+        "parent_lot": {
+          "entity": "lot",
+          "type": "identifier"
+        },
+        "source_seen_at": {
+          "meaning": "source observation time",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "valid_from": {
+          "meaning": "effective start",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "valid_to": {
+          "meaning": "effective end",
+          "timezone_required": true,
+          "type": "timestamp"
+        }
+      },
+      "effectivity": {
+        "end": "2027-01-01T00:00:00Z",
+        "start": "2026-01-01T00:00:00Z"
+      },
+      "grain": "one material_relationship record",
+      "record_kind": "MATERIAL_RELATIONSHIP",
+      "semantic_version": "site-sem-2026.11",
+      "source_hash": "d2e6242bbb1c899b8d12be76fbd2915d24d8bdd4eda75a4803e7dafbc7b30dea",
+      "source_id": "SITE_MATERIAL_ALIAS"
+    },
+    {
+      "approved": true,
+      "column_definitions": {
+        "authority_label": {
+          "meaning": "authority label claim",
+          "type": "string"
+        },
+        "captured_at": {
+          "meaning": "source observation time",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "coverage_ref": {
+          "entity": "coverage_record",
+          "type": "identifier"
+        },
+        "expires_at": {
+          "meaning": "valid until",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "is_complete": {
+          "type": "boolean"
+        },
+        "lots_in_scope": {
+          "entity": "lot",
+          "type": "identifier_list"
+        },
+        "missing_refs": {
+          "entity": "record",
+          "type": "identifier_list"
+        },
+        "operations_in_scope": {
+          "entity": "operation",
+          "type": "identifier_list"
+        },
+        "population_grain": {
+          "meaning": "population identity grain",
+          "type": "string"
+        },
+        "scope_end": {
+          "meaning": "window end",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "scope_start": {
+          "meaning": "window start",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "source_refs": {
+          "entity": "source",
+          "meaning": "coverage record source identifiers",
+          "type": "identifier_list"
+        },
+        "sources_in_scope": {
+          "entity": "source",
+          "meaning": "sources covered by scope",
+          "type": "identifier_list"
+        },
+        "wafers_in_scope": {
+          "entity": "wafer",
+          "type": "identifier_list"
+        }
+      },
+      "effectivity": {
+        "end": "2027-01-01T00:00:00Z",
+        "start": "2026-01-01T00:00:00Z"
+      },
+      "grain": "one exposure_coverage record",
+      "record_kind": "EXPOSURE_COVERAGE",
+      "semantic_version": "site-sem-2026.11",
+      "source_hash": "316e41bd69c761f10047b634f7f9c8ba47acaba85fa32d679a7b3dcc11a248cc",
+      "source_id": "SITE_COVERAGE_ALIAS"
+    },
+    {
+      "approved": true,
+      "column_definitions": {
+        "authority_label": {
+          "meaning": "authority label claim",
+          "type": "string"
+        },
+        "captured_at": {
+          "meaning": "source observation time",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "coverage_ref": {
+          "entity": "coverage_record",
+          "type": "identifier"
+        },
+        "expires_at": {
+          "meaning": "valid until",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "is_complete": {
+          "type": "boolean"
+        },
+        "lots_in_scope": {
+          "entity": "lot",
+          "type": "identifier_list"
+        },
+        "missing_refs": {
+          "entity": "record",
+          "type": "identifier_list"
+        },
+        "operations_in_scope": {
+          "entity": "operation",
+          "type": "identifier_list"
+        },
+        "population_grain": {
+          "meaning": "population identity grain",
+          "type": "string"
+        },
+        "scope_end": {
+          "meaning": "window end",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "scope_start": {
+          "meaning": "window start",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "source_refs": {
+          "entity": "source",
+          "meaning": "coverage record source identifiers",
+          "type": "identifier_list"
+        },
+        "sources_in_scope": {
+          "entity": "source",
+          "meaning": "sources covered by scope",
+          "type": "identifier_list"
+        },
+        "wafers_in_scope": {
+          "entity": "wafer",
+          "type": "identifier_list"
+        }
+      },
+      "effectivity": {
+        "end": "2027-01-01T00:00:00Z",
+        "start": "2026-01-01T00:00:00Z"
+      },
+      "grain": "one process_history_coverage record",
+      "record_kind": "PROCESS_HISTORY_COVERAGE",
+      "semantic_version": "site-sem-2026.11",
+      "source_hash": "3e6a3c9eed7ea47c32b629ec52e1344c31100822704ce397e0737afbcd5268ca",
+      "source_id": "SITE_HISTORY_ALIAS"
+    },
+    {
+      "approved": true,
+      "column_definitions": {
+        "authority_label": {
+          "meaning": "authority label claim",
+          "type": "string"
+        },
+        "captured_at": {
+          "meaning": "source observation time",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "coverage_ref": {
+          "entity": "coverage_record",
+          "type": "identifier"
+        },
+        "expires_at": {
+          "meaning": "valid until",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "is_complete": {
+          "type": "boolean"
+        },
+        "lots_in_scope": {
+          "entity": "lot",
+          "type": "identifier_list"
+        },
+        "missing_refs": {
+          "entity": "record",
+          "type": "identifier_list"
+        },
+        "operations_in_scope": {
+          "entity": "operation",
+          "type": "identifier_list"
+        },
+        "population_grain": {
+          "meaning": "population identity grain",
+          "type": "string"
+        },
+        "scope_end": {
+          "meaning": "window end",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "scope_start": {
+          "meaning": "window start",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "source_refs": {
+          "entity": "source",
+          "meaning": "coverage record source identifiers",
+          "type": "identifier_list"
+        },
+        "sources_in_scope": {
+          "entity": "source",
+          "meaning": "sources covered by scope",
+          "type": "identifier_list"
+        },
+        "wafers_in_scope": {
+          "entity": "wafer",
+          "type": "identifier_list"
+        }
+      },
+      "effectivity": {
+        "end": "2027-01-01T00:00:00Z",
+        "start": "2026-01-01T00:00:00Z"
+      },
+      "grain": "one route_coverage record",
+      "record_kind": "ROUTE_COVERAGE",
+      "semantic_version": "site-sem-2026.11",
+      "source_hash": "089804e55be742d1034ad4846f40673780ec6a2d944a403643b018161593b13a",
+      "source_id": "SITE_ROUTE_COVERAGE_ALIAS"
+    },
+    {
+      "approved": true,
+      "column_definitions": {
+        "defined_at": {
+          "meaning": "route definition record time",
+          "timezone_required": true,
+          "type": "timestamp"
+        },
+        "definition_approved": {
+          "type": "boolean"
+        },
+        "ordered_ops": {
+          "type": "ordered_string_list"
+        },
+        "route_ref": {
+          "entity": "route",
+          "type": "identifier"
+        },
+        "valid_sequences": {
+          "type": "list_of_ordered_string_lists"
+        },
+        "version_ref": {
+          "entity": "route_version",
+          "type": "identifier"
+        }
+      },
+      "effectivity": {
+        "end": "2027-01-01T00:00:00Z",
+        "start": "2026-01-01T00:00:00Z"
+      },
+      "grain": "one route_definition record",
+      "record_kind": "ROUTE_DEFINITION",
+      "semantic_version": "site-sem-2026.11",
+      "source_hash": "9865267a303679475d26100146fd089f09910d03534ce6a891f78caef7e4fb58",
+      "source_id": "SITE_ROUTE_DEFINITION_ALIAS"
+    }
+  ],
+  "tool_versions": {
+    "site_audit_v4": "4.2.1",
+    "site_cancel_v4": "4.2.1",
+    "site_discover_v4": "4.2.1",
+    "site_read_bounded_v4": "4.2.1",
+    "site_relationships_v4": "4.2.1",
+    "site_semantics_v4": "4.2.1"
+  },
+  "tools": [
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": true
+      },
+      "description": "Inspect read-only capabilities",
+      "inputSchema": {
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "site_discover_v4"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": true
+      },
+      "description": "Read source semantics and definitions",
+      "inputSchema": {
+        "properties": {
+          "source_ids": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "source_ids"
+        ],
+        "type": "object"
+      },
+      "name": "site_semantics_v4"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": true
+      },
+      "description": "Inspect approved relationships and join keys",
+      "inputSchema": {
+        "properties": {
+          "entity_refs": {
+            "type": "array"
+          },
+          "time_window": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "entity_refs",
+          "time_window"
+        ],
+        "type": "object"
+      },
+      "name": "site_relationships_v4"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": true
+      },
+      "description": "Read bounded source rows",
+      "inputSchema": {
+        "properties": {
+          "approved_plan": {
+            "type": "object"
+          },
+          "limits": {
+            "type": "object"
+          },
+          "operation_id": {
+            "type": "string"
+          },
+          "permission_context": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "approved_plan",
+          "permission_context",
+          "limits",
+          "operation_id"
+        ],
+        "type": "object"
+      },
+      "name": "site_read_bounded_v4"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": true
+      },
+      "description": "Cancel a running request",
+      "inputSchema": {
+        "properties": {
+          "operation_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "operation_id"
+        ],
+        "type": "object"
+      },
+      "name": "site_cancel_v4"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": true
+      },
+      "description": "Read audit trace for a request",
+      "inputSchema": {
+        "properties": {
+          "operation_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "operation_id"
+        ],
+        "type": "object"
+      },
+      "name": "site_audit_v4"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": "p2-onboarding-mcp-performance-and-e2e/v1",
+  "date": "2026-11-24",
+  "synthetic_only": true,
+  "scenario": "engineer-100-alt-alias-13k",
+  "environment": {
+    "python": "3.11.7",
+    "mcp_sdk": "2.3 (offline pinned test environment)",
+    "protocol": "negotiated by official SDK",
+    "source_descriptors": 13008,
+    "unclassified_decoys": 13001,
+    "p2_role_sources": 7,
+    "semantics_batch_size": 64,
+    "semantics_batches": 204
+  },
+  "matched_single_run_metadata_timings_ms": {
+    "before_relationship_filter": {
+      "mcp_discover": 82.334,
+      "source_semantics": 1471.673,
+      "source_relationships": 1721.744,
+      "metadata_capture_total": 3275.752,
+      "tool_descriptor_inspection": 634.757,
+      "tool_mapping": 0.185,
+      "source_mapping": 35.420,
+      "relationship_refs": 13008
+    },
+    "after_relationship_filter": {
+      "mcp_discover": 74.910,
+      "source_semantics": 1219.056,
+      "source_relationships": 2.313,
+      "metadata_capture_total": 1296.280,
+      "tool_descriptor_inspection": 631.974,
+      "tool_mapping": 0.188,
+      "source_mapping": 34.166,
+      "relationship_refs": 7
+    },
+    "observed_change": {
+      "metadata_capture_reduction_percent": 60.43,
+      "relationship_phase_reduction_percent": 99.87,
+      "interpretation": "One matched synthetic run before and after the code change; directional engineering evidence, not a performance distribution or production-scale claim."
+    }
+  },
+  "scientific_and_pipeline_acceptance": {
+    "source_role_mappings": "7/7 unique review-required mappings; semantic decoys not accepted",
+    "logical_operations": "6/6 discovered; discovery executes no row reads",
+    "review": "explicit APPROVE_EXACT_PROPOSAL bound to the exact proposal SHA-256",
+    "bounded_reads": 7,
+    "read_audit_hashes_match": true,
+    "process_rows": 404,
+    "outcome_rows": 98,
+    "journeys": 98,
+    "route_variants_present": true,
+    "exposure_population_counts": {
+      "exact": 24,
+      "potential": 25,
+      "unknown": 49,
+      "verified_unexposed": 0
+    },
+    "exposure_coverage": "CONTRADICTORY",
+    "caller_maintenance_label": "CALLER_SUPPLIED_UNVERIFIED",
+    "membership_conflict_follow_up": "specific LOT_MEMBERSHIP_CONFLICT read proposal; not executed automatically",
+    "causal_conclusion": "NOT_ESTABLISHED",
+    "company_permission": false
+  },
+  "standalone_browser_acceptance": {
+    "host": "P2 reference runner on loopback, scenario engineer-100-alt-alias-13k",
+    "options_loaded": "45 abnormal targets and 98 observed cohort members via synthetic MCP",
+    "selected_target_count": 10,
+    "evidence_id_before_follow_up": "SYN-p2-cb397660e17b",
+    "journey_search": "Filtered by SYN-EW-010; five chronological process instances remained visible, including repeated ETCH/rework.",
+    "membership_detail": [
+      {"record_id": "SYN-MEM-010-A", "lot_id": "SYN-LOT-01", "effective": "2026-11-20T00:00:00Z/2026-11-21T02:00:00Z"},
+      {"record_id": "SYN-MEM-010-B", "lot_id": "SYN-LOT-01B", "effective": "2026-11-21T02:00:00Z/2026-11-30T00:00:00Z"}
+    ],
+    "coverage_and_exposure": "Displayed EXPOSED=24, POTENTIALLY_EXPOSED=25, UNKNOWN=49, NOT_OBSERVED_EXPOSED=0 under CONTRADICTORY coverage.",
+    "route_and_hypothesis_panels": "Five observed route variants across 98; incomplete route history remains coverage-incomplete; causal conclusion NOT_ESTABLISHED.",
+    "follow_up": "UI denial confirmed no MCP read; explicit synthetic authorization performed bounded reads and refreshed evidence. SYN-MEM-010-A/B/C remained visible and ambiguous.",
+    "evidence_id_after_follow_up": "SYN-p2-5717faec46aa",
+    "qualification_test": "tests/test_reference_workflow.py::ReferenceWorkflowTests::test_13k_unseen_catalog_runs_through_standalone_host_investigation_contract",
+    "company_approval": false
+  },
+  "acceptance_command": "rtk env P2_TEST_SDK_PATH=/tmp/p2-mcp-sdk-2.3 python -c 'import sys; sys.path.insert(0, \"/tmp/p2-mcp-sdk-2.3\"); import pytest; raise SystemExit(pytest.main([\"tests/test_onboarding_pipeline.py::LiveSyntheticDiscoveryTests::test_official_sdk_batches_13008_source_catalog_without_mapping_decoys\", \"-q\", \"--tb=short\"]))'",
+  "limitations": [
+    "Synthetic fixture metadata and source approvals do not authenticate company source semantics or permissions.",
+    "This benchmark excludes bounded record-read, scientific-analysis, browser-rendering, and human-review latency.",
+    "Human setup time, internal configuration effort, ROI, and production-scale performance were not measured."
+  ]
+}

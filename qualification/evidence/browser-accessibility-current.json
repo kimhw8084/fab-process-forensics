@@ -1,0 +1,61 @@
+{
+  "analysis": {
+    "exposure_window": {
+      "end_exclusive": "2026-11-21T03:00:00+00:00",
+      "scope": "CHAMBER C1",
+      "start": "2026-11-21T00:00:00+00:00"
+    },
+    "investigation_id": "SYN-p2-006c21a7c117",
+    "observations": {
+      "abnormal_not_observed_exposed": [
+        "W2"
+      ],
+      "causal_conclusion": "NOT_ESTABLISHED",
+      "normal_exposed": [
+        "W1"
+      ],
+      "statistical_association": "NOT_COMPUTED"
+    },
+    "status": "VALID"
+  },
+  "evidence_version": "1.0.0",
+  "export": {
+    "downloaded_filename": "SYN-p2-006c21a7c117 (1).json",
+    "evidence_copy_filename": "browser-accessibility-export.json",
+    "evidence_copy_path": "qualification/evidence/browser-accessibility-export.json",
+    "payload_input_sha256": "006c21a7c117ef58a1f678820182de9864e983dcb67fd4700fd5453afaf61e2a",
+    "payload_status": "VALID",
+    "sha256": "8a2021762a9d0355bd7e0e148f9fc32dce2670d55d0067373163e24faca0b821"
+  },
+  "fixture": "fixtures/case_positive.json",
+  "fixture_sha256": "78a3b5d03f95e442dfa9f6f44c10a18d3104f6654114ee131f309afa8bb6607d",
+  "keyboard_file_selection": {
+    "accessibility_role": "button",
+    "fixture_selection": "Browser automation file chooser setFiles; native dialog was not manually operated",
+    "keyboard_enter_opened_file_chooser": true,
+    "tab_stop_observed": true,
+    "visible_button": "Open JSON file",
+    "visible_focus_indicator_observed": true
+  },
+  "preflight": {
+    "events": 4,
+    "outcomes": 2,
+    "relationships": 3,
+    "source_query_issued": false,
+    "sources": 3,
+    "status": "READY_FOR_LOCAL_ANALYSIS"
+  },
+  "qualification_limitations": [
+    "Synthetic caller-supplied fixture only; no manufacturing qualification.",
+    "Browser automation keyboard activation and file-chooser event were exercised; native OS file-dialog selection was not manually tested.",
+    "No screen-reader assistive technology or target-host accessibility acceptance was performed."
+  ],
+  "rendered_tables": {
+    "all_have_caption": true,
+    "all_have_thead_and_tbody": true,
+    "all_headers_have_scope_col": true,
+    "count": 7
+  },
+  "status": "PASS_LOCAL_BROWSER_INTERACTION",
+  "url": "http://127.0.0.1:8769/"
+}

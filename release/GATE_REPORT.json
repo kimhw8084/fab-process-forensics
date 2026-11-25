@@ -1,0 +1,276 @@
+{
+  "evaluated_commit": null,
+  "evaluated_source_manifest": "release/BOOTSTRAP_MANIFEST.sha256 (exact archive checksum in release/RELEASE_RECEIPT.json)",
+  "gates": {
+    "E01": {
+      "evidence": [
+        "qualification/evidence/mcp-end-to-end-workflow.json",
+        "qualification/evidence/test-suite-pinned.log",
+        "qualification/evidence/react-host-compatibility.json",
+        "ui/p2-react/test/p2-host.integration.test.mjs",
+        "qualification/evidence/browser-workflow-current.json",
+        "qualification/evidence/browser-process-forensics-current.json",
+        "qualification/evidence/ui-state-smoke.json",
+        "tests/test_mcp_adapter.py",
+        "ui/P1_HOST_INTEGRATION_PROPOSAL.md",
+        "docs/MCP_ADAPTER.md"
+      ],
+      "gap": "The six-source SDK workflow feeds all five P2 panels and traces evidence to source records. Synthetic caller coverage remains unverified, so nonmatches are unknown and route conformance is incomplete; shared-suite integration and company source binding remain separate.",
+      "status": "PARTIAL"
+    },
+    "E02": {
+      "evidence": [
+        "qualification/evidence/test-suite.log",
+        "qualification/evidence/science-oracle-summary.json",
+        "tests/test_heldout_adversarial.py"
+      ],
+      "gap": "The separate adversarial module is not blinded. No independently reviewed manufacturing holdout, real FAB workload, or company scientific validation is available.",
+      "scope": "P2-01 through P2-43; MCP-01 through MCP-05 synthetic protocol challenges; seeded exact-chamber/tool/window, 25x4 permutation and 40 counterevidence cross-tab oracles; thirty-seven separate fixed-answer adversarial cases, including route/outcome/exposure patterns with exact provenance and no causal ranking. All are synthetic.",
+      "status": "PARTIAL"
+    },
+    "E03": {
+      "evidence": [
+        "qualification/evidence/test-suite.log",
+        "tests/test_heldout_adversarial.py"
+      ],
+      "scope": "P2-01 through P2-43, MCP-01 through MCP-05 protocol challenges, and fixed-answer synthetic refusals, including duplicate definitions/keys, source-undeclared joins, provenance omissions, event/record-time confusion, Streamable HTTP denial/bounds/cancel/recovery, uncertain membership/exposure/route definitions, product/time and route confounding, outcome gaps, multi-hop lineage traps, incomplete route histories, coverage gaps, conflicting duplicate processing instances, and equal-support hypotheses that remain unranked.",
+      "status": "PASS"
+    },
+    "E04": {
+      "evidence": [
+        "contracts/evidence.v1.schema.json",
+        "contracts/product-manifest.v1.schema.json",
+        "ui/contribution.manifest.json",
+        "ui/p2-react/package.json",
+        "qualification/evidence/react-host-compatibility.json",
+        "ui/P1_HOST_INTEGRATION_PROPOSAL.md",
+        "qualification/evidence/test-suite.log",
+        "tests/test_schema_and_ui.py"
+      ],
+      "scope": "Frozen v1.0.0 contracts and versioned P2 React module pass synthetic React 18/19 compatibility and type checks; actual P1 route/component integration is a separate pending gate.",
+      "status": "PASS"
+    },
+    "E05": {
+      "evidence": [
+        "docs/INTERNAL_COMPANY_FIRST_RUN.md",
+        "docs/DECISION_RECORD.md",
+        "qualification/evidence/mcp-end-to-end-workflow.json"
+      ],
+      "gap": "No live source authorization, real Fab Insight mapping, bounded read audit, or site permissions were available.",
+      "status": "PENDING_INTERNAL"
+    },
+    "E06": {
+      "evidence": [
+        "tests/test_preflight.py",
+        "qualification/evidence/test-suite.log"
+      ],
+      "scope": "Model-free deterministic path; no LLM or model tool-call path is bundled.",
+      "status": "PASS"
+    },
+    "E07": {
+      "evidence": [
+        "qualification/evidence/browser-p2-reference-workflow.json",
+        "qualification/evidence/browser-p2-reference-export.json",
+        "qualification/evidence/browser-accessibility-current.json",
+        "qualification/evidence/browser-accessibility-export.json",
+        "qualification/evidence/browser-process-forensics-current.json",
+        "qualification/evidence/browser-workflow-current.json",
+        "qualification/evidence/ui-state-smoke.json",
+        "qualification/evidence/react-host-compatibility.json",
+        "ui/p2-react/test/p2-host.integration.test.mjs",
+        "tests/test_schema_and_ui.py",
+        "tests/test_engine.py",
+        "tests/test_local_server.py"
+      ],
+      "gap": "Keyboard focus and accessible tables were checked in a real browser. Native dialog operation, assistive technology, broader screen-reader acceptance, and target-host UX remain unverified.",
+      "status": "PARTIAL"
+    },
+    "E08": {
+      "evidence": [
+        "qualification/evidence/bundle-verification.log",
+        "qualification/evidence/network-block-check.log",
+        "release/install_offline.py"
+      ],
+      "gap": "Fresh extraction, hash-checked no-index MCP install, full suite, demo, and rollback passed on macOS arm64 CPython 3.11. The company target OS/runtime and target-site network controls remain unknown.",
+      "status": "PARTIAL"
+    },
+    "E09": {
+      "evidence": [
+        "release/SBOM.spdx.json",
+        "release/SECURITY_AND_LICENSE_REVIEW.md",
+        "qualification/evidence/p2-react-dependency-audit.json",
+        "qualification/evidence/p2-react-npm-audit.json",
+        "vendor/mcp-sdk-2.3.0/macos-arm64-cp311/license-inventory.json",
+        "vendor/mcp-sdk-2.3.0/macos-arm64-cp311/cyclonedx.cdx.json",
+        "qualification/evidence/mcp-dependency-vulnerability-scan.json",
+        "qualification/evidence/security-tool-availability.json"
+      ],
+      "gap": "The pinned 28-package MCP dependency closure has wheel license inventory, SBOM, hashes, and a current pip-audit scan with no known findings. Project ownership/transfer rights, company OSS approval, and host/target-OS security review remain unresolved.",
+      "status": "PARTIAL"
+    },
+    "E10": {
+      "evidence": [
+        "release/FAB_PROCESS_FORENSICS_P2_CANDIDATE.zip",
+        "release/BUNDLE_SHA256SUMS.txt",
+        "qualification/evidence/bundle-verification.log",
+        "qualification/evidence/test-run-reconciliation.json",
+        "qualification/evidence/react-host-compatibility.json",
+        "qualification/evidence/server-stop-smoke.json",
+        "tests/test_local_server.py"
+      ],
+      "scope": "Deterministic archive, checksum, safe extraction, hash-checked no-index MCP install, all reconciled SDK tests, six-source MCP-to-evidence workflow, offline npm install, React panel tests/typecheck and reference-host build, demo, rollback, foreground stop, and cancellation recovery on the current host.",
+      "status": "PASS"
+    },
+    "E11": {
+      "evidence": [
+        "qualification/evidence/benchmark-local.json",
+        "qualification/evidence/benchmark-foundation-comparison.json",
+        "qualification/evidence/benchmark-analysis-scaling.json",
+        "qualification/evidence/benchmark-p2-react-render.json",
+        "qualification/evidence/graph-library-benchmark.json",
+        "qualification/evidence/benchmark-material-edge-index-run.log",
+        "qualification/benchmark_analysis_scaling.py",
+        "qualification/benchmark_graph_traversal.py",
+        "qualification/benchmark_material_edge_index.py",
+        "qualification/benchmark_p2_react_render.mjs",
+        "docs/OSS_CATALOG_BENCHMARK_PROTOCOL.md",
+        "docs/ANALYSIS_SCALING_BENCHMARK_PROTOCOL.md",
+        "docs/MATERIAL_EDGE_INDEX_BENCHMARK_PROTOCOL.md",
+        "docs/DECISION_RECORD.md"
+      ],
+      "gap": "Synthetic evidence includes 13,000-source lookup, 100-to-100,000-event analysis scaling, 100,000-edge NetworkX traversal, a 100,000-edge material interval-index screen, and JSDOM panel rendering for 1,000 wafers/8,000 steps after pagination (218 table rows mounted, 136 ms). JSDOM is not a native browser. Representative FAB workloads, target memory limits, faithful OCEL2 data, and measured engineer task-time improvement remain unavailable.",
+      "status": "PARTIAL"
+    },
+    "E12": {
+      "evidence": [
+        "docs/INTERNAL_COMPANY_FIRST_RUN.md",
+        "requirements/mcp-discovery.template.json",
+        "qualification/evidence/internal-preflight-template-check.json",
+        "qualification/evidence/mcp-end-to-end-workflow.json",
+        "tests/test_preflight.py",
+        "tests/test_snapshot_preflight.py"
+      ],
+      "gap": "Versioned local capability-capture and snapshot checks do not perform live authorized MCP discovery, source retrieval, or a first real engineering result.",
+      "status": "PENDING_INTERNAL"
+    }
+  },
+  "host": {
+    "architecture": "arm64",
+    "os": "Darwin",
+    "python": "3.14.5",
+    "release": "25.6.0"
+  },
+  "internal": {
+    "state": "PENDING_INTERNAL",
+    "unverified": [
+      "real Fab Insight MCP tools and permissions",
+      "approved source definitions and relationships",
+      "target OS and authentication",
+      "approved model endpoint and host integration",
+      "company engineering and accessibility review",
+      "corporate transfer and source-license approval",
+      "literal Samsung R01-R53 text and corporate interpretation of the pinned Golden reference"
+    ]
+  },
+  "known_critical_defects": [],
+  "product_states": {
+    "EXTERNAL_TRANSFER_READY": {
+      "gap": "Project source ownership/redistribution rights, designated target environment and complete transfer/security review are not verified.",
+      "status": "NOT_QUALIFIED"
+    },
+    "INTERNAL_QUALIFICATION_PENDING": {
+      "gap": "Company MCP permissions, source semantics, manufacturing validation, company environment and approvals remain internal qualification dependencies.",
+      "status": "PENDING_INTERNAL"
+    },
+    "P2_PRODUCT_IMPLEMENTATION_COMPLETE": {
+      "evidence": [
+        "qualification/evidence/test-suite-pinned.log",
+        "qualification/evidence/mcp-end-to-end-workflow.json",
+        "qualification/evidence/browser-p2-reference-workflow.json"
+      ],
+      "scope": "B01/B02/B03/B05 deterministic implementation and engineer workflow are complete against the external synthetic contracts; this is not company manufacturing qualification.",
+      "status": "COMPLETE_FOR_SYNTHETIC_EXTERNAL_CONTRACTS"
+    },
+    "P2_STANDALONE_WORKFLOW_VERIFIED": {
+      "evidence": [
+        "qualification/evidence/browser-p2-reference-workflow.json",
+        "qualification/evidence/browser-p2-reference-export.json",
+        "qualification/evidence/mcp-end-to-end-workflow.json"
+      ],
+      "scope": "The local browser executed the SDK-backed synthetic peer, six source reads, all five presentation panels, provenance inspection, cancellation/retry, and evidence export.",
+      "status": "PASS_LOCAL_BROWSER_WORKFLOW"
+    },
+    "SHARED_SUITE_COMPATIBILITY_READY": {
+      "evidence": [
+        "ui/contribution.manifest.json",
+        "ui/p2-react/",
+        "qualification/evidence/react-host-compatibility.json",
+        "integration/P2_REACT_HOST_HANDOFF.md"
+      ],
+      "status": "READY_VERSIONED_REACT_CONTRIBUTION"
+    },
+    "SHARED_SUITE_INTEGRATION_PENDING": {
+      "evidence": [
+        "ui/P1_HOST_INTEGRATION_PROPOSAL.md",
+        "integration/P2_REACT_HOST_HANDOFF.md"
+      ],
+      "gap": "No combined shared suite host checkout or actual host API is present for integrated acceptance.",
+      "status": "PENDING_SHARED_HOST"
+    }
+  },
+  "qualification_layers": {
+    "actual_integrated_suite_qualification": {
+      "evidence": [
+        "ui/P1_HOST_INTEGRATION_PROPOSAL.md",
+        "qualification/evidence/react-host-compatibility.json"
+      ],
+      "gap": "A unified suite host must mount this module with its actual route and host lifecycle adapters and run integrated acceptance.",
+      "status": "PENDING_SHARED_HOST"
+    },
+    "external_offline_release_qualification": {
+      "evidence": [
+        "qualification/evidence/bundle-verification.log",
+        "qualification/evidence/test-run-reconciliation.json"
+      ],
+      "gap": "Only the observed macOS arm64 CPython 3.11 and local offline npm-cache environment are exercised; target-company OS/runtime/network policy are unknown.",
+      "status": "PARTIAL_CURRENT_HOST"
+    },
+    "internal_company_qualification": {
+      "evidence": [
+        "qualification/evidence/mcp-end-to-end-workflow.json",
+        "requirements/AUTHORITY_AND_GAPS.md"
+      ],
+      "gap": "No company credentials, source approvals/mappings, real data, internal review, or canonical R01-R53 text were available.",
+      "status": "PENDING_INTERNAL"
+    },
+    "p2_module_readiness_for_shared_host": {
+      "evidence": [
+        "ui/p2-react/",
+        "ui/contribution.manifest.json",
+        "qualification/evidence/react-host-compatibility.json",
+        "ui/P1_HOST_INTEGRATION_PROPOSAL.md"
+      ],
+      "gap": "Actual combined-suite host API and integration run remain pending.",
+      "status": "READY_VERSIONED_REACT_CONTRIBUTION"
+    },
+    "p2_product_implementation": {
+      "evidence": [
+        "qualification/evidence/test-suite-pinned.log",
+        "qualification/evidence/mcp-end-to-end-workflow.json",
+        "qualification/evidence/browser-p2-reference-workflow.json"
+      ],
+      "gap": "Synthetic contracts are externally tested; independent manufacturing validation and company source semantics remain separate qualification layers.",
+      "status": "COMPLETE_FOR_SYNTHETIC_EXTERNAL_CONTRACTS"
+    },
+    "p2_standalone_workflow": {
+      "evidence": [
+        "qualification/evidence/browser-p2-reference-workflow.json",
+        "qualification/evidence/browser-p2-reference-export.json"
+      ],
+      "gap": "Browser evidence is synthetic and does not establish assistive-technology or engineer acceptance.",
+      "status": "PASS_LOCAL_BROWSER_WORKFLOW"
+    }
+  },
+  "release_note": "No EXTERNAL_TRANSFER_READY or READY_INTERNAL claim. See each gate's evidence and gap.",
+  "state": "CANDIDATE"
+}

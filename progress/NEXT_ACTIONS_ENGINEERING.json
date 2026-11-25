@@ -1,0 +1,83 @@
+{
+  "phase": "P2_ENGINEERING_GRADE_PROCESS_FORENSICS",
+  "updated": "2026-11-24",
+  "working_revision": "/Users/haewonkim/home/work/product 2/P2_ENGINEERING_PHASE_2026-11-23",
+  "frozen_candidate_sha256": "8cd4d26b58cec464e21bebc3a6c4704ea862ed496de5c729568f297970303f5d",
+  "frozen_source_snapshot_sha256": "dbfe462fa80ae9117a8541d9b6c75b7747c42d4683aee538d925babe8ccfcf88",
+  "current_state": "INDEPENDENT_P2_ONBOARDING_PASS_BROWSER_LATENCY_PARTIAL",
+  "verified_this_checkpoint": {
+    "complex_100wafer_search_and_proposal": "PASS: SYN-EW-010 filter retains two conflicted steps and exact SYN-MEM-010-B provenance; authorization-gated proposal remains discoverable; pair-specific relationship keys remain separate.",
+    "coverage_and_science_boundary": "PASS: exact/potential/unknown = 24/25/51, verified-unexposed = 0, coverage CONTRADICTORY, causality NOT_ESTABLISHED; evidence JSON round-trip preserves provenance and contradictions.",
+    "official_sdk_followup": "PASS: denial performs no read; explicit synthetic authorization performs two bounded pair-scoped reads with correlated audit; refresh reports two conflicting memberships and remains ambiguous.",
+    "b05_check_prioritization": "PASS: overlapping exact-step checks merge; different steps remain separate; ranking factors are explicit proxies, not causal or information-gain probabilities.",
+    "onboarding_descriptor_catalog": "PASS synthetic: 13,008 descriptors, 7/7 roles, 6/6 logical operations, decoy rejected, 0 false positives, 0 reads, 5 manual review decisions; human setup time not measured.",
+    "large_history_performance": "PASS fixed oracle after benchmark-builder optimization: 9,800 journeys / 40,400 event rows / 23,187,869-byte input, 1.386 s analysis, 386,088,960-byte peak process RSS. Same expected answers as the prior build.",
+    "performance_profile": "Benchmark harness re-walked the growing snapshot for every replica; one-pass coverage extension cut profiled snapshot-generation cumulative time from 25.403 s to 1.101 s (~23x under cProfile), with unchanged fixed answers. Engine time is measured separately.",
+    "matched_frozen_baseline": "PASS: exact archive and manifest digests verified; 98 journeys, 403 steps, exposure counts, coverage and no-causality result unchanged; 5 specific current checks vs 0 baseline candidates.",
+    "python_regression": "PASS: SDK-enabled 199/199, zero skips; core 163 passed and 36 SDK-dependent skipped out of 199; zero failures/errors.",
+    "react_regression": "PASS: 14/14 tests, 0 skipped.",
+    "real_browser": "PASS: current loopback synthetic MCP investigation, explicit authorize action, refreshed ambiguity, provenance drill-down, export action.",
+    "frozen_candidate_preservation": "PASS: ZIP SHA-256 8cd4d26b58cec464e21bebc3a6c4704ea862ed496de5c729568f297970303f5d; source-manifest SHA-256 dbfe462fa80ae9117a8541d9b6c75b7747c42d4683aee538d925babe8ccfcf88; no rebuild.",
+    "13k_catalog_to_evidence_pipeline": "PASS: official SDK discovered 13,008 descriptors, inspected semantics in 204 batches of 64, narrowed relationships to 7 eligible source IDs, digest-bound the synthetic exact proposal, and ran seven bounded reads through B01/B02/B03/B05. Expected 98 journeys, 404 process rows, 24/25/49 exposure, no verified-unexposed population, contradictory coverage, unresolved cause, and specific unexecuted membership check all passed.",
+    "onboarding_metadata_performance": "PASS: one matched synthetic run measured metadata capture 3.276 s before to 1.296 s after role-kind-bounded relationship references; relationship phase 1.722 s to 0.002 s; 13,008 references to 7. One run only, not a production or latency-distribution claim.",
+    "13k_standalone_browser_and_follow_up": "PASS: actual P2 loopback browser loaded the aliased 13k environment, searched SYN-EW-010, showed repeated process rows and exact membership provenance, and displayed exposure/coverage/route/counterevidence. Denial performed no MCP read; explicit synthetic authorization refreshed with SYN-MEM-010-A/B/C and retained ambiguity. Browser acceptance and SDK test are recorded in qualification/evidence/onboarding-13k-mcp-performance-and-e2e-2026-11-24.json.",
+    "live_onboarding_topology_benchmark": "PASS: seven official-SDK synthetic descriptor topologies, eight fixed role expectations; zero false mappings, zero automatic approvals, zero discovery row reads; five abstentions pending semantics/relationship evidence; group-only source remains chamber-partial.",
+    "partial_mapping_authorization": "PASS: exact proposal approval refuses a partial role; explicit reviewer mapping succeeds only with role selections and missing-field acknowledgments.",
+    "descriptor_capture_binding": "PASS: reviewer decisions cite descriptor_capture_sha256; materialization recomputes the proposal from that exact capture and rejects stale capture or stale proposal/capture pair.",
+    "synthetic_cli_end_to_end": "PASS: actual onboard-live -> onboard-review -> investigate-mcp sequence against unseen alternate field/source aliases; seven bounded reads; 98 journeys, 403 actual process instances, six route variants; exposure counts for selected ten = 1 exact / 4 potential / 5 unknown / 0 observed-unexposed; caller maintenance remains unverified; causality NOT_ESTABLISHED.",
+    "evidence_artifact_integrity": "PASS: individual JSON and gzip hashes recorded; byte-for-byte decompression and same-input deterministic gzip verified. Independent MCP runs differ in byte content due per-run operation/audit identifiers; no cross-run byte-identity claim.",
+    "onboarding_effort_boundary": "Three CLI stages reach first investigation; complete unique proposal uses one digest-bound synthetic review record and no individual source-role selections. Partial mapping requires explicit selection/acknowledgment. Frozen-baseline human setup effort is not reconstructable and remains NOT_MEASURED.",
+    "standalone_browser_latency_sample": "PARTIAL: one real browser MCP-backed run completed in a 3,334 ms click-to-completed-observation interval (automation/query overhead included); 98 journeys, 403 step instances, five route variants, 24 exact / 25 potential / 49 unknown exposure, zero verified-unexposed, contradictory coverage, no causal conclusion. SYN-EW-010 filtering returned one five-step journey. No p50/p95 or separate stage timings; one stale session token recovered by page reload. Evidence: qualification/evidence/browser-onboarding-workflow-latency-2026-11-24.json.",
+    "site_measurement_protocol": "PREPARED_NOT_EXECUTED: paired current-site-practice versus P2-assisted procedure; defined authorization stop conditions, phase timing, decision/error/evidence scoring, observer review, and ROI inputs. The frozen archive is explicitly not treated as the manual baseline. qualification/ONBOARDING_SITE_MEASUREMENT_PROTOCOL.md.",
+    "dependency_security_refresh": "PASS_LIMITED_SCOPE: pip-audit 2.10.1 against OSV reports 0 known vulnerabilities in all 28 pinned MCP SDK closure packages; npm 11.20.0 audit reports 0 known vulnerabilities in its locked React dependency tree. Exact lock/report hashes and scope are in qualification/evidence/dependency-security-scan-2026-11-24.json. No install performed; project ownership/transfer and OS/target security remain unqualified."
+  },
+  "evidence_files": [
+    "qualification/verify_complex_100_panel_flow.mjs",
+    "qualification/evidence/complex-100-panel-flow.json",
+    "qualification/compare_frozen_engine.py",
+    "qualification/evidence/frozen-baseline-matched-investigation.json",
+    "qualification/evidence/benchmark-engineering-phase-100x.json",
+    "qualification/evidence/onboarding-13k-descriptor-benchmark.json",
+    "qualification/evidence/engineering-phase-python-regression.log",
+    "qualification/evidence/engineering-phase-react-regression.log",
+    "qualification/evidence/engineering-phase-python-regression-2026-11-24.log",
+    "qualification/evidence/onboarding-13k-mcp-performance-and-e2e-2026-11-24.json",
+    "qualification/evidence/onboarding-baseline-comparison-2026-11-24.json",
+    "qualification/fixtures/live_onboarding_topologies_expected_v1.json",
+    "qualification/benchmark_live_onboarding_topologies.py",
+    "qualification/evidence/onboarding-live-topologies-2026-11-24.json",
+    "qualification/execute_synthetic_onboarding_cli.py",
+    "qualification/evidence/onboarding-cli-100-alias-e2e-2026-11-24.json",
+    "qualification/evidence/onboarding-cli-100-alias-evidence.json.gz",
+    "qualification/evidence/onboarding-cli-evidence-repeatability-2026-11-24.json",
+    "qualification/evidence/engineering-phase-python-regression-onboarding-2026-11-24.log",
+    ".agents/skills/p2-internal-onboarding/SKILL.md",
+    "qualification/evidence/browser-onboarding-workflow-latency-2026-11-24.json",
+    "qualification/evidence/dependency-security-scan-2026-11-24.json",
+    "qualification/evidence/mcp-dependency-vulnerability-scan-2026-11-24.json",
+    "qualification/evidence/p2-react-npm-audit-2026-11-24.json"
+  ],
+  "next_executable_actions": [
+    {
+      "priority": 1,
+      "task": "Complete only the outstanding repeated browser-latency measurement if the current browser tool can return bounded per-run observations; do not change product code from a single sample.",
+      "acceptance": "Collect five confirmed synthetic runs with compact status selectors and a separate render/search/export observation; report distributions only for returned runs. Keep discovery/read/analysis values from the existing CLI evidence separate. If the browser automation timeout recurs, record the precise limitation and advance to independent release/security work.",
+      "resume_commands": [
+        "rtk env P2_TEST_SDK_PATH=/tmp/p2-mcp-sdk-2.3 P2_REFERENCE_SYNTHETIC_SCENARIO=engineer-100-alt-alias-13k python -m fabintel serve --port 8773",
+        "Reload http://127.0.0.1:8773/reference/ after host restart; measure runs individually and record each completed investigation ID."
+      ]
+    },
+    {
+      "priority": 2,
+      "task": "Advance to the highest remaining independent offline/security or synthetic scientific qualification task; do not repeat onboarding topology research or rebuild the frozen candidate.",
+      "acceptance": "Use a concrete unmet requirement, fixed oracle, and reproducible evidence; keep company authorization and transfer rights pending."
+    }
+  ],
+  "optional_interoperability": "Other-product host mounting is optional and is not a P2 dependency or completion gate.",
+  "limitations": [
+    "Synthetic only; no independent manufacturing holdout or real engineer task study.",
+    "Company-side engineering hours and ROI are not measured. The frozen candidate has no equivalent live-onboarding workflow from which manual setup time can be reconstructed.",
+    "No company permissions, source semantics, source completeness grants, target OS approval, transfer rights, or manufacturing validation is established.",
+    "The standalone browser has previously been operated end to end through the 13,008-source/100-wafer synthetic MCP case; the new three-command CLI run is an independent end-to-evidence workflow, not a new browser observation."
+  ]
+}

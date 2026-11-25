@@ -1,0 +1,44 @@
+{
+  "declared_react_peer_range": ">=18.2.0 <20",
+  "interpretation": "Compatibility is demonstrated against the named synthetic React hosts and adapters. It does not establish compatibility with the unavailable P1 shell or its exact React/component versions.",
+  "module": "@fab-intelligence/p2-process-forensics-panels",
+  "module_version": "1.0.0",
+  "p1_host_integration": "NOT_RUN_P1_SOURCE_TREE_AND_COMPONENT_API_UNAVAILABLE",
+  "react_18_host": {
+    "declaration_typecheck": {
+      "command": "rtk proxy /tmp/p2-react18-host/node_modules/.bin/tsc -p /tmp/p2-react18-host/tsconfig.json",
+      "evidence": "qualification/evidence/react-host-react18-typecheck.log",
+      "status": "PASS"
+    },
+    "react": "18.3.1",
+    "react_dom": "18.3.1",
+    "react_types": "18.3.28",
+    "runtime_tests": {
+      "cancelled": 0,
+      "fail": 0,
+      "log": "qualification/evidence/react-host-react18.log",
+      "log_sha256": "3b002d3e4d04538eb70444a7891e33dcd99b4a526097369379b3b7184c064ae5",
+      "pass": 7,
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 7
+    },
+    "typescript": "5.9.3"
+  },
+  "react_19_host": {
+    "react": "19.3.1",
+    "react_dom": "19.3.1",
+    "runtime_tests": {
+      "cancelled": 0,
+      "fail": 0,
+      "log": "qualification/evidence/react-host-react19.log",
+      "log_sha256": "3842000e296136cb2acc2bf4e2a2e92a01abf04f188e0d70471b6728e3e0677a",
+      "pass": 7,
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 7
+    },
+    "typescript": "5.9.3"
+  },
+  "status": "PASS_SYNTHETIC_REACT_HOST_COMPATIBILITY"
+}

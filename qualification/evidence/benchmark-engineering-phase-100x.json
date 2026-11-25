@@ -1,0 +1,22 @@
+{
+  "analysis_seconds": 1.386,
+  "collapsed_duplicate_copies": 100,
+  "coverage_evidence_level": "CONTRADICTORY",
+  "event_rows_including_duplicate_copies": 40400,
+  "exact_exposure_count": 2400,
+  "fixture": "qualification/fixtures/complex_engineer_investigation_v1.json",
+  "host_platform": "macOS-26.6.2-arm64-arm-64bit",
+  "journeys": 9800,
+  "outcome_rows": 9800,
+  "payload_bytes": 23187869,
+  "potential_exposure_count": 2500,
+  "process_max_rss_bytes": 386088960,
+  "process_rss_increase_from_pre_analysis_bytes": 268861440,
+  "qualification_scope": "Synthetic local engine timing only; not browser, MCP, concurrency, deployment, or production-scale qualification.",
+  "replicas": 100,
+  "retained_step_instances": 40300,
+  "scaled_fixed_answer_oracle": "PASS",
+  "status": "PARTIAL",
+  "unknown_exposure_count": 5100,
+  "verified_unexposed_count": 0
+}

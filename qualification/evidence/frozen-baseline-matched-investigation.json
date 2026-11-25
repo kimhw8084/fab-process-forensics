@@ -1,0 +1,109 @@
+{
+  "execution": "The frozen candidate archive was safely extracted to a temporary directory; both engines analyzed the same snapshot using the same Python executable.",
+  "fixture": "qualification/fixtures/complex_engineer_investigation_v1.json",
+  "fixture_sha256": "e13d93aad63ea77024d2035a67d22f3fb9abe862c88b19160194a89e6554c068",
+  "frozen_baseline": {
+    "bounded_check_candidate_count": 0,
+    "bounded_check_categories": [],
+    "causal_conclusion": "NOT_ESTABLISHED",
+    "exposure": {
+      "coverage_evidence_level": "CONTRADICTORY",
+      "exact": 24,
+      "potential": 25,
+      "unknown": 51,
+      "verified_unexposed": 0
+    },
+    "generic_next_check_present": true,
+    "journeys": 98,
+    "membership_conflict_target_and_records": [],
+    "retained_step_instances": 403,
+    "status": "PARTIAL"
+  },
+  "frozen_candidate_sha256": "8cd4d26b58cec464e21bebc3a6c4704ea862ed496de5c729568f297970303f5d",
+  "frozen_source_snapshot_manifest_sha256": "dbfe462fa80ae9117a8541d9b6c75b7747c42d4683aee538d925babe8ccfcf88",
+  "limitations": [
+    "This is a matched synthetic engine-output task, not a blinded engineer study or company ROI estimate.",
+    "The direct browser interaction replay is recorded separately; this comparison does not measure operator completion time."
+  ],
+  "measured_increment": {
+    "causal_or_exposure_result_changed": false,
+    "new_bounded_check_candidates": 5,
+    "specific_membership_conflict_check_added": true
+  },
+  "protected_scientific_result_parity": true,
+  "status": "PASS_MATCHED_FROZEN_BASELINE_ENGINE_TASK",
+  "working_revision": {
+    "bounded_check_candidate_count": 5,
+    "bounded_check_categories": [
+      "EXPOSURE_COVERAGE",
+      "UNKNOWN_CHAMBER",
+      "LOT_MEMBERSHIP_CONFLICT",
+      "MISSING_OUTCOMES",
+      "TIME_BOUNDARY_UNCERTAIN"
+    ],
+    "causal_conclusion": "NOT_ESTABLISHED",
+    "exposure": {
+      "coverage_evidence_level": "CONTRADICTORY",
+      "exact": 24,
+      "potential": 25,
+      "unknown": 51,
+      "verified_unexposed": 0
+    },
+    "generic_next_check_present": true,
+    "journeys": 98,
+    "membership_conflict_target_and_records": [
+      {
+        "authorization_status": "MUST_BE_CONFIRMED_BY_THE_CONFIGURED_MCP_SERVER",
+        "material_relationship_refs": [
+          {
+            "record_id": "SYN-MEM-010-B",
+            "relationship_id": "SYN_REL_EW_LOT_MEMBERSHIP",
+            "relationship_type": "LOT_MEMBERSHIP",
+            "source_id": "SYN_EW_MATERIAL"
+          }
+        ],
+        "proposed_not_executed": true,
+        "relationship_scoped_keys": [
+          {
+            "keys": [
+              "from_entity_id",
+              "from_entity_type",
+              "to_entity_id",
+              "to_entity_type"
+            ],
+            "relationship_id": "SYN_REL_EW_LOT_MEMBERSHIP",
+            "source_id": "SYN_EW_MATERIAL"
+          },
+          {
+            "keys": [
+              "lot_id",
+              "step_instance_id",
+              "time_uncertainty_seconds",
+              "timestamp",
+              "wafer_id"
+            ],
+            "relationship_id": "SYN_REL_EW_PROCESS",
+            "source_id": "SYN_EW_PROCESS"
+          }
+        ],
+        "step_instance_refs": [
+          {
+            "relationship_id": "SYN_REL_EW_PROCESS",
+            "source_id": "SYN_EW_PROCESS",
+            "step_instance_id": "SYN-EW-010-S02"
+          },
+          {
+            "relationship_id": "SYN_REL_EW_PROCESS",
+            "source_id": "SYN_EW_PROCESS",
+            "step_instance_id": "SYN-EW-010-S03"
+          }
+        ],
+        "target_wafer_ids": [
+          "SYN-EW-010"
+        ]
+      }
+    ],
+    "retained_step_instances": 403,
+    "status": "PARTIAL"
+  }
+}

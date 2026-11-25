@@ -1,0 +1,26 @@
+{
+  "architecture": "arm64",
+  "benchmark_kind": "local synthetic baseline; exploratory, not a release threshold",
+  "cpu_count": 12,
+  "created_on": "2026-11-22",
+  "decision": "No advanced graph/mining dependency selected; this synthetic run does not prove fab-scale performance or engineering ROI.",
+  "event_analysis": {
+    "event_count": 1000,
+    "p50_ms": 9.420957416296005,
+    "p95_ms": 11.408916674554348,
+    "peak_traced_bytes_one_run": 5045711,
+    "wafer_count": 100
+  },
+  "processor": "arm",
+  "python": "3.11.7 (main, Dec 15 2023, 12:09:56) [Clang 14.0.6 ]",
+  "release": "25.6.0",
+  "runs_per_measurement": 15,
+  "synthetic_catalog": {
+    "generator_p50_ms": 7.845083251595497,
+    "generator_p95_ms": 9.792749769985676,
+    "table_count": 13000,
+    "unapproved_join_lookup_p50_ms": 0.4180418327450752,
+    "unapproved_join_lookup_p95_ms": 0.7015420123934746
+  },
+  "system": "Darwin"
+}

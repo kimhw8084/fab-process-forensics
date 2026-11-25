@@ -1,0 +1,51 @@
+P2 onboarding adaptation and authorization boundary — 2026-11-24
+
+SDK-enabled regression:
+  discovered/executed/passed: 199
+  failed/errors/skipped: 0 / 0 / 0
+  command: rtk env P2_TEST_SDK_PATH=/tmp/p2-mcp-sdk-2.3 python -c 'import sys; sys.path.insert(0, "/tmp/p2-mcp-sdk-2.3"); import pytest; raise SystemExit(pytest.main(["tests", "-q", "--tb=short"]))'
+
+Core regression without optional SDK:
+  discovered: 199
+  executed/passed: 163
+  failed/errors: 0 / 0
+  skipped: 36 SDK-dependent tests; skips are not counted as passes
+  command: rtk python -m pytest tests -q --tb=short
+
+Focused SDK onboarding pipeline:
+  discovered/executed/passed: 17 / 17 / 17 across onboarding pipeline and CLI suites
+  failed/errors/skipped: 0 / 0 / 0
+
+Live synthetic mapping topology benchmark:
+  7 official-SDK MCP environments; 8 fixed role expectations; 7/7 environments passed
+  0 false mapping acceptances; 0 automatic approvals; 0 source-row reads during discovery
+  exact semantic drift, static membership, absent event relationship keys, equipment-group-only identity,
+  duplicate event semantic versions, and untyped combined process/outcome records were independently challenged
+  proposal and descriptor-capture hashes both bind review; stale capture and stale proposal-to-capture mapping refuse
+  partial chamber mapping rejected by exact-approval shortcut; explicitly selected partial mapping validates
+  benchmark: qualification/evidence/onboarding-live-topologies-2026-11-24.json
+  fixed-answer oracle: qualification/fixtures/live_onboarding_topologies_expected_v1.json
+
+Documented CLI procedure against an unseen synthetic alias environment:
+  onboard-live -> onboard-review -> investigate-mcp; three commands
+  seven metadata roles; seven bounded reads; 98 journeys; 403 actual step instances; six route variants
+  10 selected wafers: 1 exact exposed, 4 potentially exposed, 5 unknown, 0 observed-unexposed
+  caller maintenance label remains CALLER_SUPPLIED_UNVERIFIED; causal conclusion NOT_ESTABLISHED
+  query/audit hashes correlated; synthetic reviewer record does not establish company authorization
+  onboarding stage latencies: discovery/mapping 1148.902 ms, explicit review 67.840 ms,
+  bounded investigation 1064.750 ms (one local run; not a latency distribution)
+  evidence manifest: qualification/evidence/onboarding-cli-100-alias-e2e-2026-11-24.json
+  evidence envelope is per-run due request/audit IDs; identical captured bytes recompress deterministically with gzip mtime=0.
+  Repeatability check and exact hashes: qualification/evidence/onboarding-cli-evidence-repeatability-2026-11-24.json
+  artifact: qualification/evidence/onboarding-cli-100-alias-evidence.json.gz
+
+Frozen candidate unchanged:
+  archive SHA-256: 8cd4d26b58cec464e21bebc3a6c4704ea862ed496de5c729568f297970303f5d
+  source-manifest file SHA-256: dbfe462fa80ae9117a8541d9b6c75b7747c42d4683aee538d925babe8ccfcf88
+
+Limitations:
+  Synthetic descriptors, rows, approval and server permission only. Company schema/permissions, authenticated
+  completeness, manufacturing validation, target OS, transfer rights and actual engineer time/ROI remain pending.
+  SDK-enabled complete regression is now 199/199; core is 163 passed with 36 SDK-dependent skips out of 199.
+  The frozen baseline has no equivalent executable live-onboarding flow, so a configuration-time reduction is
+  not measurable from this comparison.

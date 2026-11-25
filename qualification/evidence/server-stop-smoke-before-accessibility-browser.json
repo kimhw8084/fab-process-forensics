@@ -1,0 +1,11 @@
+{
+  "active_request_shutdown_test": "tests.test_local_server.LocalServerTests.test_shutdown_signals_active_analysis_threads",
+  "command": "rtk sandbox-exec -f qualification/no_external_network.sb python -m fabintel serve --host 127.0.0.1 --port 8767",
+  "date": "2026-11-22",
+  "observed_process_exit_code": 130,
+  "post_stop_loopback_connect_ex": 61,
+  "post_stop_result": "Connection refused; listener closed.",
+  "scope": "Current macOS host. The observed foreground process had no analysis in flight; the named loopback test separately verifies that shutdown cancellation signals and finishes an active request. No MCP query or company source was involved.",
+  "status": "PASS",
+  "stop_action": "Ctrl-C sent to the foreground threaded local server after current UI inspection"
+}
